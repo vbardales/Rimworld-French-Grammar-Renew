@@ -8,8 +8,7 @@ packageId:    nelim.frenchgrammar
 repo:         Rimworld-French-Grammar-Renew
 visibility:   public
 detached:     yes
-stage:        done
-workflow_stage: done
+workflow_stage: playTests[0.1.0]
 licence:      silent
 licence_at:   b606's repository and Workshop item carry no licence (checked again on 2026-09-28), and the source has declared only RimWorld 1.0 to 1.2 since its last update on 2020-11-30. No file, no line and no word list of his is copied. One idea is his and is credited in ATTRIBUTION.md: the zero-width guard that keeps the vanilla elision rules off an aspirated word. This mod's own LICENSE is a bare MIT.
 upstream_mod_remotes:
@@ -39,8 +38,9 @@ remaining:
     be based on his code (licence `silent`).
   - unverified: nothing has been uploaded since the 0.1.0 creation, so the page's description, gallery
     and change notes have never been seen in place.
-session:      local_f7c8f179-b0fc-432a-bd6f-23aa8e0fddd0
-updated:      2026-10-02, audited against AUDIT.md (protocols d1fdbe1); `done` holds, `tested` not reached (manual checks)
+session:      local_82860736-8ac6-4da1-8b6b-542b87bbe12e
+updated:      2026-10-11, state vocabulary migrated (done -> playTests[0.1.0], AUDIT.md section 16); manual checks and French review still open
+protocols_read_sha: 71363b2e20b7f8457c78f8f5d87e2b01ae06d782
 ---
 
 # French Grammar Renew (unofficial): status
@@ -286,3 +286,8 @@ same names. `licence`: `open`, `silent`, `alive`, `forbidden`, `original`. `rema
 `defect` (a known fault), `unverified` (could not be checked). `upstream_mod_remotes`: the git repositories of
 the mods this one is a French-grammar port or fork of, one list entry each; `N/A` if none is found. Distinct
 from `repo` (this mod's own repository) and from `origin` (this checkout's git remote).
+
+
+## Preview source migration — 2026-10-03
+
+Copy, typography, layout and palette are consolidated in `Art/Preview.config.json`. Canonical inputs are `Art/Preview-source.png`, `Art/echo.png` and `Art/ModIcon-source.png`; temporary renderer diagnostics belong under ignored `Art/.render/`. Existing Preview, gallery and ICO outputs were preserved because they were present and coherent; no render was run. Superseded JSON files and generated QA intermediates were removed. Nothing published.
