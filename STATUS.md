@@ -18,14 +18,7 @@ showcase:     complete
 tested_on:
 workshop:     3806761557 (0.1.0, creation of the publishIdFile only; Steam keeps every new item private, and switching it to public is the owner's)
 remaining:
-  - unverified: `done -> tested` is checked item by item on 2026-10-02 (see "Audit, 2026-10-02"). Met: all four
-    Pickle passes played and green (48 of 48, `exitReason: passed` on each, every `@review` capture opened), no
-    `@wip`, every `@requires` has run (RIMMSQOL in pass 4), logs and both languages read. **Not met: "no manual
-    test left to tick".**
-  - unverified: the manual checks of `TESTING.md` ("Manual checks left"): a sentence the engine builds and
-    displays (rows 3, 4, 5, 8), a real label that carries a colour tag (row 9, which needs a mod that colours a
-    label, none chosen) and whether the font draws the no-break space (row 10). Each is to be automated or
-    declared not applicable with its reason; none is declared yet.
+  - unverified: a final regression pass on the last revision (texts changed on 2026-10-11 after the French review): passes 1 French, 2b English, 3b restart and 4 RIMMSQOL, then the code review (`code_review_sha`), as AUDIT.md 8.c and 8.m ask.
   - feature: for `prepublished`, not yet started. No `PUBLICATION.md`; the description in `About.xml`
     lacks the `IF I GO QUIET`, `AI-GENERATED` and `THANKS` sections and the attribution line that
     AUDIT.md orders after the body; no thank-you comment for b606's page (2081845369, absent from the

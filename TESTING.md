@@ -321,7 +321,7 @@ runs in a game, never by reading the code.
 **Standing on 2026-10-02:** scenarios run and passed, yes (48 of 48, `exitReason: passed` read on each, every
 `@review` capture opened); no `@wip` in any feature (searched); every `@requires` has had its pass (RIMMSQOL, pass 4;
 ScreenshotMode and LoadAudit are in passes 1 and 2); logs read; both languages, restart persistence and the MainButton
-done. **Not met: "no manual test is left to tick"** (last bullet, and "Manual checks left" below). `tested` waits on it.
+done. **"No manual test is left to tick" was not met on that date; it is met since 2026-10-11** ("Manual checks left" below).
 
 - **Every scenario above has run in game and passed**, through a Pickle suite where a running game is
   the only thing that can show it. A green Pickle run says the path was walked, not that the text on
@@ -342,14 +342,13 @@ done. **Not met: "no manual test is left to tick"** (last bullet, and "Manual ch
 
 ## Manual checks left
 
-None is declared not applicable yet; each is either to automate or to declare, with its reason, by the owner's
-decision. Until then they keep `done -> tested` open.
+None. The six that were open on 2026-10-02 are automated (2026-10-11, ticket `20261011-223954-920-e4ca`, feature `02-french-grammar`, 31 of 31, `exitReason: passed`):
 
-| Rows | What is not shown | Way out |
+| Rows | Was | Now |
 |---|---|---|
-| 3, 4, 5, 8 | A sentence the engine builds and displays, passing through the patched worker | Either a step that makes the game build one (a tale, a letter) and reads it back, or declare it the engine's own business: the patch installation is proved in game (feature 01) and the entry points on strings (feature 02) |
-| 9 | Elision across a tag on a real label | Needs a mod that colours a label, none chosen (`BACKLOG.md`); or declare it not applicable, the base game having no tagged French string |
-| 10 | Whether the font draws the no-break space | One `@review` capture of the setting on, read by a person; or declare it a font matter |
+| 3, 4, 5, 8 | A sentence the engine builds and displays | `SentenceSteps`: the game's grammar resolver builds the sentence from a rule and a word, and the text it writes is read |
+| 9 | Elision across a tag on a real label | The real label of `Gold` and `Steel`, wrapped in a colour tag, through the same resolver; no third-party mod needed |
+| 10 | Whether the font draws the no-break space | The game's three fonts are asked for U+00A0 and U+202F, no capture needed |
 
 ## Passes
 
