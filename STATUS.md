@@ -1,14 +1,14 @@
 ---
 localization: complete
 translation_en: complete
-translation_fr: partial
+translation_fr: complete
 settings_audit: complete
 mod:          French Grammar Renew (unofficial)
 packageId:    nelim.frenchgrammar
 repo:         Rimworld-French-Grammar-Renew
 visibility:   public
 detached:     yes
-workflow_stage: writeTests[1.0.0]
+workflow_stage: playTests[1.0.0]
 licence:      silent
 licence_at:   b606's repository and Workshop item carry no licence (checked again on 2026-09-28), and the source has declared only RimWorld 1.0 to 1.2 since its last update on 2020-11-30. No file, no line and no word list of his is copied. One idea is his and is credited in ATTRIBUTION.md: the zero-width guard that keeps the vanilla elision rules off an aspirated word. This mod's own LICENSE is a bare MIT.
 upstream_mod_remotes:
@@ -30,17 +30,14 @@ remaining:
     lacks the `IF I GO QUIET`, `AI-GENERATED` and `THANKS` sections and the attribution line that
     AUDIT.md orders after the body; no thank-you comment for b606's page (2081845369, absent from the
     register); this mod is not yet in the `Covers` of the Harmony, Pickle, RimLogging and RIMMSQOL rows.
-  - unverified: French review by Virginie (TRANSLATIONS.md, "Systematic French review", 2026-09-30). The
-    session's own inventory and gender-switch check pass, but `translation_fr` cannot be `complete` until
-    she has read `FRENCH_REVIEW.md`.
   - feature: pull request to the origin's repository (`b606/RimWorld-LanguageWorker_French`), systematic since
     PUBLISHING.md's rule of 2026-09-28; in `BACKLOG.md`. Public, so not before the owner's word. The mod cannot
     be based on his code (licence `silent`).
   - unverified: nothing has been uploaded since the 0.1.0 creation, so the page's description, gallery
     and change notes have never been seen in place.
 session:      local_82860736-8ac6-4da1-8b6b-542b87bbe12e
-updated:      2026-10-11, reaudited against AUDIT.md: writeTests[1.0.0] (translation_fr partial blocks playTests, 6.g)
-protocols_read_sha: 71363b2e20b7f8457c78f8f5d87e2b01ae06d782
+updated:      2026-10-11, French review done, four corrections applied: playTests[1.0.0]
+protocols_read_sha: e520c40709f1a348a71e4409673c97e5f6baee93
 ---
 
 # French Grammar Renew (unofficial): status
@@ -222,8 +219,7 @@ this mod corrects through Harmony patches, not through its own Keyed or DefInjec
 the mod's own `_tools/Generate-FrenchReview.ps1`, removed), from revision `0e072bb`. Two tables, one per file, 17
 rows, Original column equal to English throughout: this mod has no source in another language. No row flagged `?`.
 
-**Systematic French review by Virginie:** not yet done. `translation_fr` stays `partial` until she reads
-`FRENCH_REVIEW.md`; see `remaining`.
+**Systematic French review by Virginie, 2026-10-11, revision `9d786c2`: done (full reading).** No gender-switch branch needed (the species-noun gender is distinct from the pawn gender). Four corrections, applied the same day: `FGP.KindGender.Tip` (French: explicit referent), `FGP.Possessive.Tip` (English: accents kept in the example), two lines of `CHANGELOG.md` (the "Deliberately absent" item and the last paragraph). No upstream pull request needed for them (local texts of the port). `FGP.RichText.Tip` (the French text shows a literal `<color>` example the English does not) was read and left as is.
 
 ## The original mod, looked at
 

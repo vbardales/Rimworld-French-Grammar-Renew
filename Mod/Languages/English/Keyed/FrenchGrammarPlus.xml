@@ -9,7 +9,7 @@
   <FGP.AspiratedH.Tip>Words with an aspirated h keep their article. Word list in Data/aspirated-h.txt.</FGP.AspiratedH.Tip>
 
   <FGP.Possessive>Possessive before a vowel</FGP.Possessive>
-  <FGP.Possessive.Tip>"sa epee" becomes "son epee". The engine does not do this at all.</FGP.Possessive.Tip>
+  <FGP.Possessive.Tip>"sa épée" becomes "son épée". The engine does not do this at all.</FGP.Possessive.Tip>
 
   <FGP.KindGender>Grammatical gender of species</FGP.KindGender>
   <FGP.KindGender.Tip>A species noun keeps its own gender whatever the sex of the animal. Word list in Data/pawnkind-gender.txt.</FGP.KindGender.Tip>

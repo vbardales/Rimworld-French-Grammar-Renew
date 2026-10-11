@@ -12,7 +12,7 @@
   <FGP.Possessive.Tip>« son épée » au lieu de « sa épée ».</FGP.Possessive.Tip>
 
   <FGP.KindGender>Genre grammatical des espèces</FGP.KindGender>
-  <FGP.KindGender.Tip>Le genre du nom d'espèce ne suit pas le sexe de l'animal : « la mégaraignée » reste féminin pour un mâle. La liste est dans Data/pawnkind-gender.txt.</FGP.KindGender.Tip>
+  <FGP.KindGender.Tip>Le genre du nom d'espèce ne dépend pas du sexe de l'animal : le nom « mégaraignée » reste féminin, même pour un mâle. La liste est dans Data/pawnkind-gender.txt.</FGP.KindGender.Tip>
 
   <FGP.Typography>Espaces insécables</FGP.Typography>
   <FGP.Typography.Tip>Avant : ; ! et ?. Désactivé par défaut : la police du jeu n'a pas toujours l'espace fine insécable, qui apparaît alors comme un carré vide.</FGP.Typography.Tip>
