@@ -11,8 +11,8 @@
       Since the Mod/ split, only Mod/ is published and Source/ sits outside it - but the rule holds
       anyway, and it keeps the repository free of a 6 MB assembly.
     -->
-    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)..\.build\obj\FrenchGrammarPlus\</BaseIntermediateOutputPath>
-    <BaseOutputPath>$(MSBuildThisFileDirectory)..\.build\bin\FrenchGrammarPlus\</BaseOutputPath>
+    <BaseIntermediateOutputPath>$(MSBuildThisFileDirectory)obj\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(MSBuildThisFileDirectory)bin\</BaseOutputPath>
   </PropertyGroup>
 
 </Project>

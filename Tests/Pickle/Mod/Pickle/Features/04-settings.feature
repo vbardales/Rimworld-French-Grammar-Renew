@@ -2,7 +2,7 @@
 # the captures show the French page.
 #
 # The defaults, the save and reload of all 64 combinations, the shortcut's Def and its worker contract are proved
-# outside the game (_tools/Run-Tests.ps1). What only a game shows is that the real Dialog_ModSettings draws the
+# outside the game (Tests/Run-Tests.ps1). What only a game shows is that the real Dialog_ModSettings draws the
 # page, that it belongs to THIS mod, that the shortcut and Mod options lead to the same one, and how it reads.
 #
 # Revealing the shortcut in RIMMSQOL is not here: RIMMSQOL is not in the default staging. It is 07, played by the

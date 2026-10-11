@@ -11,7 +11,7 @@ using Verse.Grammar;
 namespace FrenchGrammarRenew.PickleSteps
 {
     /// <summary>
-    /// What only a running game can show about the mod, and what the offline suite (_tools/Run-Tests.ps1)
+    /// What only a running game can show about the mod, and what the offline suite (Tests/Run-Tests.ps1)
     /// cannot: that Harmony really installed the three patches, and what the REAL, patched language worker
     /// makes of a string once the game has loaded everything.
     ///

@@ -3,7 +3,7 @@ Section 'Settings, language isolation and shortcut contract'
 
 $optionNames = @('fixRichTextElision','fixAspiratedH','fixPossessive','fixPawnKindGender','frenchTypography','verboseLogging')
 $defaultValues = @($true,$true,$true,$true,$false,$false)
-$scratch = Join-Path $ModRoot '.build\test-settings'
+$scratch = Join-Path ([IO.Path]::GetTempPath()) 'frenchgrammar-test-settings'
 New-Item -ItemType Directory -Force -Path $scratch | Out-Null
 
 It 'fresh settings and missing stored values use the documented defaults' {

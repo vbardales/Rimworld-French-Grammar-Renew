@@ -1,7 +1,8 @@
 # Build intermediates.
-# Directory.Build.props sends them to .build/ at the root of this repository, outside Mod/: they
+# Directory.Build.props sends them to obj/ and bin/ beside each Source/, outside Mod/: they
 # must never end up back inside Mod/, which is uploaded to the Workshop whole, as-is.
-.build/
+Tests/Pickle/Source/obj/
+Tests/Pickle/Source/bin/
 Source/obj/
 Source/bin/
 
@@ -37,3 +38,6 @@ evidence/
 Thumbs.db
 desktop.ini
 .DS_Store
+
+# Reproducible Preview diagnostics generated locally by the shared renderer.
+Art/.render/

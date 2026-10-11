@@ -68,11 +68,11 @@
   it, and a missing DLL fails them by name.
 
 .EXAMPLE
-  powershell -NoProfile -File _tools/Run-Tests.ps1
+  powershell -NoProfile -File Tests/Run-Tests.ps1
 
 .EXAMPLE
   # From Git Bash, where the machine's execution policy refuses a script file:
-  powershell -NoProfile -ExecutionPolicy Bypass -File _tools/Run-Tests.ps1
+  powershell -NoProfile -ExecutionPolicy Bypass -File Tests/Run-Tests.ps1
 #>
 
 param(
@@ -651,7 +651,7 @@ It 'the folder Steam receives carries nothing but the mod' {
     foreach ($name in @('STATUS.md', 'TESTING.md', 'README.md', 'CHANGELOG.md', '.gitignore')) {
         if (Test-Path (Join-Path $modDir $name)) { $strays += $name }
     }
-    foreach ($d in @('obj', 'bin', 'Source', '_tools', 'Art')) {
+    foreach ($d in @('obj', 'bin', 'Source', 'Tests', 'Art')) {
         if (Test-Path (Join-Path $modDir $d)) { $strays += "$d/" }
     }
     foreach ($s in $strays) { "Mod/$s would be published to the Workshop" }
@@ -698,7 +698,7 @@ It 'the status sheet has a closed front matter with its session and date' {
     $lines = @(Get-Content $p -Encoding UTF8)
     $fences = @($lines | Where-Object { $_ -ceq '---' }).Count
     if ($fences -lt 2) { "the front matter is not closed: $fences '---' lines. An unclosed one turns the sheet into prose and the next reader finds nothing" }
-    foreach ($key in @('mod:', 'packageId:', 'stage:', 'licence:', 'session:', 'updated:')) {
+    foreach ($key in @('mod:', 'packageId:', 'workflow_stage:', 'licence:', 'session:', 'updated:')) {
         if (-not ($lines | Where-Object { $_.StartsWith($key) })) { "the front matter has no '$key'" }
     }
 }

@@ -3,7 +3,7 @@
 Nothing in this mod has ever been watched to run in a colony. This file is the list of what has to
 be seen there, and what counts as a pass.
 
-A test suite runs beside it, `_tools/Run-Tests.ps1`, and it is not a substitute. What it does cover
+A test suite runs beside it, `Tests/Run-Tests.ps1`, and it is not a substitute. What it does cover
 is more than a static check: the game's own `LanguageWorker_French` loads outside RimWorld, so the
 suite runs each correction sandwiched around the real vanilla rules, exactly as Harmony arranges
 them in game. The tested input/output cases are documented in `Tests/RESULTS.md`.
@@ -372,7 +372,7 @@ for an incompatibility (none is declared; b606's old mod is not, see `BACKLOG.md
 
 ## Where each scenario stands
 
-"Offline" means `_tools/Run-Tests.ps1`, which runs the mod's own code around the game's own French rules without
+"Offline" means `Tests/Run-Tests.ps1`, which runs the mod's own code around the game's own French rules without
 starting the game. "In game" is what only a running colony can show. "Written as" is the Pickle feature that
 asserts it. All four passes have been played and are green (48 of 48); what they deliberately do not show is in
 the "Not shown" cells and in "Manual checks left" above.

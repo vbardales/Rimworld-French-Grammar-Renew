@@ -11,7 +11,7 @@ a running game is needed for, and why the rest is not here.
 
 ## What needs a running game, and what does not
 
-The offline suite, `_tools/Run-Tests.ps1`, runs the mod's own rules around the **game's own**
+The offline suite, `Tests/Run-Tests.ps1`, runs the mod's own rules around the **game's own**
 `LanguageWorker_French`, on strings, without starting the game. So the rules, the word lists against the game's
 defs, the six settings and all 64 combinations round-tripped through the real `Scribe`, and the shortcut's Def and
 worker contract are proved there and **not repeated in Gherkin**.
@@ -93,7 +93,7 @@ dotnet build Tests\Pickle\Source\FrenchGrammarRenew.PickleSteps.csproj
 powershell.exe -ExecutionPolicy Bypass -File Tests\Pickle\Check-Steps.ps1
 ```
 
-Intermediates go to `.build/pickle/`, outside the companion, since the staging copies `Mod/` whole.
+Intermediates go to `Tests/Pickle/Source/obj` and `bin`, outside the companion, since the staging copies `Mod/` whole.
 
 ## Evidence
 

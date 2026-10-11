@@ -87,7 +87,7 @@ has not yet been verified.
 
 ## Tests
 
-    powershell -NoProfile -File _tools/Run-Tests.ps1
+    powershell -NoProfile -File Tests/Run-Tests.ps1
 
 Thirty-three tests, a few seconds, and RimWorld is never started. The game's own
 `LanguageWorker_French` loads outside it, so the grammar tests run each correction sandwiched
