@@ -91,3 +91,35 @@ Feature: the French corrections apply in a running French game
     When French Grammar Renew: the richtext setting is turned off
     Then French Grammar Renew: the language worker leaves "de <color=#D09B61FF>Eclat</color>" unchanged
     And no errors were logged
+
+  # TESTING.md scenarios 3, 4, 5 and 8, the other way round: the sentence is BUILT by the engine's grammar
+  # resolver (the path of tales, letters and log entries), not handed to the worker. The word goes into a rule,
+  # the running game resolves and post-processes it, and the text it writes is read.
+  Scenario Outline: the engine writes the corrected sentence itself
+    Then French Grammar Renew: the engine builds "<pattern>" around the word "<word>" and writes "<written>"
+
+    Examples:
+      | pattern                | word      | written     |
+      | de [FGP_word]          | husky     | de husky    |
+      | de [FGP_word]          | herbe     | d'herbe     |
+      | la [FGP_word]          | hache     | la hache    |
+      | sa [FGP_word]          | epee      | son epee    |
+      | sa [FGP_word]          | hache     | sa hache    |
+      | de [FGP_word]          | <color=#D09B61FF>Eclat</color> | d'<color=#D09B61FF>Eclat</color> |
+
+  Scenario: the engine writes the typography of a sentence it builds, once the setting is on
+    When French Grammar Renew: the typography setting is turned on
+    Then French Grammar Renew: the engine builds "[FGP_word] !" around the word "Attention" and writes "Attention !"
+    And French Grammar Renew: the engine builds "[FGP_word] :" around the word "Ces colons" and writes "Ces colons :"
+
+  # TESTING.md scenario 9: a real label, not a string written for the test. The Def's own label in the language of
+  # the pass, wrapped in a colour tag as a mod that colours a label would, goes through the engine's resolver.
+  Scenario: elision crosses the colour tag of a real label
+    Then French Grammar Renew: the engine builds "de [FGP_word]" around the coloured label of the thing "Gold" and elides to "d'"
+    And French Grammar Renew: the engine builds "la [FGP_word]" around the coloured label of the thing "Steel" and elides to "l'"
+
+  # TESTING.md scenario 10: whether the fonts draw the two spaces the typography setting writes. Asked of the
+  # fonts the game draws with, so no capture is needed.
+  Scenario: the game's fonts draw the no-break spaces the typography setting writes
+    Then French Grammar Renew: every game font draws the character " "
+    And French Grammar Renew: every game font draws the character " "

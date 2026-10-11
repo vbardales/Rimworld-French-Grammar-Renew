@@ -4,7 +4,7 @@ Functional tests played by [Pickle](https://github.com/RimWorks/Rimworld-Pickle)
 only, never published**: the companion mod sits in `Mod/`, beside the shipped mod's own `Mod/`, and the staging
 copies it verbatim. **All four passes are played and green (48 of 48, 2026-09-28 to 30)**, one line each in
 `../../docs/runs/history.md`. The suite was written on 2026-09-28 and its step patterns compile against Pickle's own
-expression engine (`Check-Steps.ps1`).
+expression engine (the collection's `scripts/Check-Steps.ps1`).
 
 The scenarios themselves are described in `../../TESTING.md` (fourteen, numbered). This file says what of them
 a running game is needed for, and why the rest is not here.
@@ -29,12 +29,7 @@ What only a game shows, and what this suite asserts:
 
 ## What is deliberately not here, and why
 
-- **A sentence the engine builds and displays.** The steps prove the patched entry point, `PostProcessed` and
-  `WithDefiniteArticle`, and the rules the game builds for a pawn. They do not read a letter or a tale back off
-  the screen: no step in either catalogue triggers one and reads it, and writing that C# is the next step if the
-  first run shows it is needed. It stays `unverified` in `STATUS.md`.
-- **A real label that carries a colour tag** (TESTING.md, scenario 9). The rule is asserted on a string that
-  carries the tag. Which mod colours a label is not chosen, so no pass mounts one.
+- **Nothing of scenarios 3 to 5 and 8 to 10 is left to a person.** `SentenceSteps` makes the engine's grammar resolver build the sentence (the path of tales, letters and log entries) and reads it; a real Def label wrapped in a colour tag goes through the same path (scenario 9, no third-party mod needed); and the game's own fonts are asked whether they draw the two no-break spaces (scenario 10, no capture needed). All in `02-french-grammar`.
 - **Editing a shipped word list** (scenario 2's junk line, scenario 11's restart after removing a word). It
   changes a file of the mod under test; the offline suite proves the parsing rules instead.
 - **A German pass.** The mod ships English and French, so a load audit in German would report missing keys by
@@ -78,7 +73,6 @@ Keep `Mod/` and `Tests/` still until the run is done, and write the revision in 
 ```
 Tests/Pickle/
   README.md                       this file
-  Check-Steps.ps1                 compiles every step pattern with Pickle's own engine; no game, two seconds
   wsl-deps.sans-facultatifs.map   ScreenshotMode and LoadAudit, development-only tools of PickleTools
   wsl-deps.avec-rimmsqol.map      RIMMSQOL, its Pickle steps and ScreenshotMode
   Source/                         the local steps: net48, bound against the shipped FrenchGrammarPlus.dll
@@ -90,7 +84,7 @@ do; rebuild it after any change:
 
 ```powershell
 dotnet build Tests\Pickle\Source\FrenchGrammarRenew.PickleSteps.csproj
-powershell.exe -ExecutionPolicy Bypass -File Tests\Pickle\Check-Steps.ps1
+powershell.exe -ExecutionPolicy Bypass -File scripts\Check-Steps.ps1 -ModRoot FrenchGrammarRenew
 ```
 
 Intermediates go to `Tests/Pickle/Source/obj` and `bin`, outside the companion, since the staging copies `Mod/` whole.
