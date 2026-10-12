@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.Linq;
 using RimWorks.Pickle;
 using UnityEngine;
+using RimWorld;
 using Verse;
 using Verse.Grammar;
 
@@ -83,6 +84,23 @@ namespace FrenchGrammarRenew.PickleSteps
             finally { Text.Font = before; }
             ctx.Assert(missing.Count == 0,
                 $"'{Driver.Show(c)}' is not drawn by: {string.Join(", ", missing.ToArray())}");
+        }
+
+        /// <summary>
+        /// A letter whose text the engine writes: the body goes through the grammar resolver like generated text,
+        /// then the letter is received and opened, the way a player reads it. For the gallery: the image shows the
+        /// dialog the game draws, not a string.
+        /// </summary>
+        [When("French Grammar Renew: a letter titled {string} is opened with the text {string}")]
+        public void OpenLetter(PickleContext ctx, string title, string text)
+        {
+            ctx.Require(Current.Game != null, "no game is running: load the fixture before this step");
+            var request = default(GrammarRequest);
+            request.Rules.Add(new Rule_String(Root, Driver.Unescape(text)));
+            var body = GrammarResolver.Resolve(Root, request, "French Grammar Renew letter", capitalizeFirstSentence: false);
+            var letter = LetterMaker.MakeLetter(Driver.Unescape(title), body, LetterDefOf.NeutralEvent);
+            Find.LetterStack.ReceiveLetter(letter);
+            letter.OpenLetter();
         }
 
         private static string Build(string pattern, string word)
