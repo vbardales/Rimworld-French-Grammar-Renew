@@ -18,10 +18,12 @@ Source/bin/
 *.suo
 *.csproj.user
 
-# Windows Explorer folder icons. desktop.ini is listed under System below; the .ico files it points
-# at (Art/ModIcon.ico, Art/Preview.ico) are local derivatives and never belong in the repository.
-# Steam receives Mod/ as it is, so a desktop.ini or an .ico that slipped into it would reach players.
+# Windows Explorer folder icons. desktop.ini is listed under System below. Art/ModIcon.ico and
+# Art/Preview.ico are publishable outputs (PUBLISHING.md, "Jeu minimal de sources et sorties") and are tracked;
+# an .ico anywhere else, above all in Mod/ (Steam receives it as it is), never belongs in the repository.
 *.ico
+!Art/ModIcon.ico
+!Art/Preview.ico
 
 # Compiled DirectDraw textures. RimWorld loads a .dds in preference to the .png beside it, so a stale
 # one silently overrides the texture that was edited. Derived files: never versioned. Written twice
