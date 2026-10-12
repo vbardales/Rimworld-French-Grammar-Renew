@@ -40,7 +40,7 @@
     "file": "ModIcon-source.png",
     "corner": "bottom-left",
     "width": 180,
-    "translate": "5%, -2%",
+    "translate": "-12.5%, 12.5%",
     "outline": false,
     "veil": "radial",
     "veilSize": 275,
