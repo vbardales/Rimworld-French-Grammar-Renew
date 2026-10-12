@@ -2,23 +2,22 @@
 localization: complete
 translation_en: complete
 translation_fr: complete
-settings_audit: complete
+settings_audit: passed
 mod:          French Grammar Renew (unofficial)
 packageId:    nelim.frenchgrammar
 repo:         Rimworld-French-Grammar-Renew
 visibility:   public
 detached:     yes
-workflow_stage: playTests[1.0.0]
+workflow_stage: shootGallery[1.0.0]
 licence:      silent
 licence_at:   b606's repository and Workshop item carry no licence (checked again on 2026-09-28), and the source has declared only RimWorld 1.0 to 1.2 since its last update on 2020-11-30. No file, no line and no word list of his is copied. One idea is his and is credited in ATTRIBUTION.md: the zero-width guard that keeps the vanilla elision rules off an aspirated word. This mod's own LICENSE is a bare MIT.
 upstream_mod_remotes:
   - https://github.com/b606/RimWorld-LanguageWorker_French
 dependencies: declared
 showcase:     complete
-tested_on:
+tested_on:    4be6004 (2026-10-11 and 12: Pickle passes 1b, 1c, 2c green; 1, 2b, 3b, 4 of 2026-09-28 to 30 on the same code)
 workshop:     3806761557 (0.1.0, creation of the publishIdFile only; Steam keeps every new item private, and switching it to public is the owner's)
 remaining:
-  - unverified: a final regression pass on the last revision (texts changed on 2026-10-11 after the French review): passes 1 French, 2b English, 3b restart and 4 RIMMSQOL, then the code review (`code_review_sha`), as AUDIT.md 8.c and 8.m ask.
   - feature: for `prepublished`, not yet started. No `PUBLICATION.md`; the description in `About.xml`
     lacks the `IF I GO QUIET`, `AI-GENERATED` and `THANKS` sections and the attribution line that
     AUDIT.md orders after the body; no thank-you comment for b606's page (2081845369, absent from the
@@ -29,8 +28,9 @@ remaining:
   - unverified: nothing has been uploaded since the 0.1.0 creation, so the page's description, gallery
     and change notes have never been seen in place.
 session:      local_82860736-8ac6-4da1-8b6b-542b87bbe12e
-updated:      2026-10-11, French review done, four corrections applied: playTests[1.0.0]
-protocols_read_sha: e520c40709f1a348a71e4409673c97e5f6baee93
+code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
+updated:      2026-10-12, playTests closed (AUDIT.md 8.a to 8.n): code review done, settings passed, shootGallery[1.0.0]
+protocols_read_sha: 843f1aacadc7192af7042a9fadd4ac614785700a
 ---
 
 # French Grammar Renew (unofficial): status
@@ -291,3 +291,8 @@ The old `done` is mapped to `playTests` by the table of AUDIT.md, which calls it
 - Finding, 3.c: `CHANGELOG.md` heads the pending section `## [1.0.0] - unreleased`, not `## [Unreleased]`.
 - Finding, 2.a / 2.f: `Art/ModIcon-source.png` differs from its committed version (modified 2026-10-02, not by this session), and `Art/` holds `ModIcon-original.png` and `ModIcon-signature-candidate.png`, untracked. The source is Virginie's: left untouched, decision hers.
 - Mod root: `_tools/` moved to `Tests/` and `.build/` replaced by `Source/obj` and `bin` (commit `253ccc3`).
+
+## playTests closed, 2026-10-12 (AUDIT.md 8.a to 8.n)
+
+Tested revision `4be6004` (the code has not changed since the passes; `Source/` last touched before them, the corrections of 2026-10-11 were texts). 8.b: `Mods/FrenchGrammarRenew` is a junction to `Mod/`, so the game runs the repository's texts; the French and English readings are done. 8.c/8.d: Pickle 1b French 02 31/31, 1c French 01 and 04 9/9, 2c English 12/12, earlier 3b restart 2/2 and 4 RIMMSQOL 3/3; every `@review` capture opened (settings page in French and English through both routes: no raw key, no clipping, four switches on, two off). 8.e: no `@wip`. 8.f: every `@requires` has run. 8.g/8.k: the fourteen scenarios are automated and green, or not applicable with reason (13); no manual check left. 8.h/8.i: settings `passed` in both languages, persistence over a restart, MainButton through RIMMSQOL; logs read. 8.l: evidence kept minified, one line per run in `docs/runs/history.md`. **8.m code review**, `0.1.0` to HEAD, `Source/` read whole (`FrenchGrammar.cs`, `Settings.cs`, `FrenchGrammarPlusMod.cs`, patches): no defect found; the regexes are guarded by their settings, the zero-width guard always leaves, no unguarded null path. `code_review_sha` set.
+No full final pass here (AUDIT.md 8.c): that everything stays green after the commit is checked at `followUp`.
