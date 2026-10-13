@@ -30,7 +30,7 @@ remaining:
 session:      local_82860736-8ac6-4da1-8b6b-542b87bbe12e
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
 updated:      2026-10-12, playTests closed (AUDIT.md 8.a to 8.n): code review done, settings passed, shootGallery[1.0.0]
-protocols_read_sha: 843f1aacadc7192af7042a9fadd4ac614785700a
+protocols_read_sha: e8f5738ee2228246ab626d3fd9ba5f9e1faf7cbf
 ---
 
 # French Grammar Renew (unofficial): status
