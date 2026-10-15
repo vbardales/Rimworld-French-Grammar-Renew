@@ -30,7 +30,7 @@ remaining:
 session:      local_82860736-8ac6-4da1-8b6b-542b87bbe12e
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
 updated:      2026-10-15, audit replayed from setupRepo to shootGallery (section below): the stage holds, shootGallery[1.0.0], gallery recomposition ticket queued
-protocols_read_sha: 23f263539905e7d5a57ecaf3f85c29c92dc4b10d
+protocols_read_sha: 6eeb289af92096fa3a7ee40825e3b5221030873d
 ---
 
 # French Grammar Renew (unofficial): status
