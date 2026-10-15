@@ -18,7 +18,7 @@ showcase:     complete
 tested_on:    4be6004 (2026-10-11 and 12: Pickle passes 1b, 1c, 2c green; 1, 2b, 3b, 4 of 2026-09-28 to 30 on the same code)
 workshop:     3806761557 (0.1.0, creation of the publishIdFile only; Steam keeps every new item private, and switching it to public is the owner's)
 remaining:
-  - feature: for `prepublished`, not yet started. No `PUBLICATION.md`; the description in `About.xml`
+  - feature: for `writeDocs` and `prepareRelease`, not yet started. No `PUBLICATION.md`; the description in `About.xml`
     lacks the `IF I GO QUIET`, `AI-GENERATED` and `THANKS` sections and the attribution line that
     AUDIT.md orders after the body; no thank-you comment for b606's page (2081845369, absent from the
     register); this mod is not yet in the `Covers` of the Harmony, Pickle, RimLogging and RIMMSQOL rows.
@@ -29,8 +29,8 @@ remaining:
     and change notes have never been seen in place.
 session:      local_82860736-8ac6-4da1-8b6b-542b87bbe12e
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
-updated:      2026-10-12, playTests closed (AUDIT.md 8.a to 8.n): code review done, settings passed, shootGallery[1.0.0]
-protocols_read_sha: e8f5738ee2228246ab626d3fd9ba5f9e1faf7cbf
+updated:      2026-10-15, audit replayed from setupRepo to shootGallery (section below): the stage holds, shootGallery[1.0.0], gallery recomposition ticket queued
+protocols_read_sha: 23f263539905e7d5a57ecaf3f85c29c92dc4b10d
 ---
 
 # French Grammar Renew (unofficial): status
@@ -164,20 +164,9 @@ the mods this one is a French-grammar port or fork of, one list entry each; `N/A
 from `repo` (this mod's own repository) and from `origin` (this checkout's git remote).
 
 
-## Preview source migration — 2026-10-03
+## Earlier sections
 
-Copy, typography, layout and palette are consolidated in `Art/Preview.config.json`. Canonical inputs are `Art/Preview-source.png`, `Art/echo.png` and `Art/ModIcon-source.png`; temporary renderer diagnostics belong under ignored `Art/.render/`. Existing Preview, gallery and ICO outputs were preserved because they were present and coherent; no render was run. Superseded JSON files and generated QA intermediates were removed. Nothing published.
-
-## Reaudit, 2026-10-11 (AUDIT.md chain, `setupRepo` to `playTests`)
-
-The old `done` is mapped to `playTests` by the table of AUDIT.md, which calls it indicative: the reaudit decides. **Verdict: `writeTests[1.0.0]`, not `playTests`.** Criterion 6.g / 7.g is not met: `translation_fr` is `partial` until Virginie has read `FRENCH_REVIEW.md` (regenerated today at `9d786c2`). Everything else of 1 to 7 holds or is minor:
-
-- Held: 3.b DLL built and equal to the sources, 4 (Harmony the only hard dependency, `Check-TypeRefs` clean), 5 (six settings, all 64 combinations round-trip, `settings_audit: complete`), 6.a to 6.f (`Check-DefInjected` 2 keys 0 errors, `Check-XmlFields`, `Check-DefRefs`, `Check-ModBasics` pass), 7.b (`Tests/Run-Tests.ps1` 33 of 33), 7.c, 7.d (seven features, scope justified; four passes already played, 48 of 48), 7.f.
-- Finding, `Check-Translations`: `FGP.RichText.Tip` differs in formatting tokens between English and French (the French text shows a literal `<color>` example the English lacks). To settle in Virginie's French reading: add the example to English or drop it from French.
-- Finding, 7.a: the functional scenarios live in `TESTING.md`; AUDIT.md names `TEST_SCENARIOS.md`. Naming gap, to settle with the Audit workflow session.
-- Finding, 3.c: `CHANGELOG.md` heads the pending section `## [1.0.0] - unreleased`, not `## [Unreleased]`.
-- Finding, 2.a / 2.f: `Art/ModIcon-source.png` differs from its committed version (modified 2026-10-02, not by this session), and `Art/` holds `ModIcon-original.png` and `ModIcon-signature-candidate.png`, untracked. The source is Virginie's: left untouched, decision hers.
-- Mod root: `_tools/` moved to `Tests/` and `.build/` replaced by `Source/obj` and `bin` (commit `253ccc3`).
+The Preview source migration (2026-10-03) and the reaudit of 2026-10-11 are in `docs/runs/2026-10-11-status-reaudit.md` (folded 2026-10-15).
 
 ## playTests closed, 2026-10-12 (AUDIT.md 8.a to 8.n)
 
@@ -187,3 +176,23 @@ No full final pass here (AUDIT.md 8.c): that everything stays green after the co
 ## Preview regenerated with the new echo, 2026-10-12
 
 `Art/echo-preview.png` (the owner's line-art, drawn from `Art/Preview-source.png`: the open book and the lamp) replaces `Art/echo.png` and `echo-source.svg`. `Art/Preview.config.json`: `echo.file` is `echo-preview.png`, `flipX` true, and `panelTop` 24 / `panelWidth` 42 (was 16 / 48: at 48 the lamp touched the last R of GRAMMAR). Rendered by `node ../scripts/Render-Preview.cjs`: `Mod/About/Preview.png` 896 x 504, 507,6 KB, `Art/Gallery/0-preview.png` byte-identical, both `.ico` regenerated. Opened at full size and at 268 px: title, tagline and badge clear, the book reads at 268 px, the lamp is small but legible. Still to do at `mountPreview`: validate the echo against the accepted gallery (`echo_review_sha`), and the GitHub social preview (`social_preview_sha256`) once the repository is public.
+
+## Audit replayed, 2026-10-15 (AUDIT.md 1 to 9, against the current protocols)
+
+Revision `2cbc1eb` (master, pushed), tree clean. Verdict: **`shootGallery[1.0.0]` holds; nothing moves back.** Criteria 1 to 8 are established; 9 (gallery) is the work in progress. Replayed today, offline only (no game started): `Tests/Run-Tests.ps1` 33 of 33; `Check-ModBasics` pass; `Check-XmlFields`, `Check-DefRefs`, `Check-TypeRefs` clean; `Check-DefInjected` 2 keys 0 errors; `Check-Status` 0 error.
+
+| Step | Verdict |
+|---|---|
+| 1 setupRepo | validated: own repository and remote, `.gitignore`, `.gitattributes`, README, ATTRIBUTION, LICENSE, CHANGELOG; licence `silent` with `(unofficial)` suffix and the `UNOFFICIAL` paragraph first in the description; names consistent (`nelim.frenchgrammar`) |
+| 2 makeSources | validated: both sources and `echo-preview.png` in `Art/`, `ModIcon.png` 128 x 128, `Preview.png` 896 x 504 under 1 MiB, `Art/Gallery/0-preview.png` byte-identical to it. `ModIcon.png` is 31,148 B: fine, the weight is only a guard against the absurd (AUDIT.md 2.c, 2026-10-13) |
+| 3 code | validated: no `feature` left for the version; DLL equal to the sources (checked 2026-10-11, `Source/` untouched since). Reservations: CHANGELOG heads the section `[1.0.0] - unreleased`, not `[Unreleased]`, and its first paragraph still says "a few manual checks remain", which is out of date |
+| 4 declareDependencies | validated: Harmony the only hard dependency (`brrainz.harmony`, Workshop id given), `loadAfter` Harmony and Core, no `LoadFolders`, `Check-TypeRefs` clean today |
+| 5 settings | validated: `settings_audit: passed` (six settings, 64 combinations round-tripped, MainButton hidden by default, both languages in game) |
+| 6 localize | validated, with one point **corrected**: `Check-Translations` reports `FGP.RichText.Tip` (French shows a literal `<color>` example the English lacks). That is not a defect: Virginie read it on 2026-10-11 and left it as is (see the French review above). The linter finding is an accepted exception, not to be re-opened |
+| 7 writeTests | validated: tests replayed today, Pickle suite written (eight features with the gallery one) and its scope justified. Naming gap: AUDIT.md says `TEST_SCENARIOS.md`, the mod keeps its scenarios in `TESTING.md` (to settle with the Audit workflow session) |
+| 8 playTests | validated: 8.a tested `4be6004`, and `Mod/` changed since only through `Preview.png`; 8.c to 8.l as written in "playTests closed"; 8.m review done (`code_review_sha` `4be6004`; the `Mod/About` images do not reopen it, AUDIT.md 8.m, 2026-10-13) |
+| 9 shootGallery | in progress: the two first captures (run `2026-10-12-gallery-v1`) were judged weak (letter text three lines in a two-thirds empty window, learning helper and map clutter around it) and refused by the session; feature 08 recomposed (`window-backdrop-for-height`, learning helper hidden, six-paragraph letter), commit `9abd7f5`; Pickle ticket `20261015-002842-441-4222` queued. Next: open the captures, crop sideways to the window, candidates in `Art/Gallery/`, then 9.b to 9.e |
+
+**Rules read today that bear on the next states** (protocols of 2026-10-13 to 15): Nelim is the protagonist of a Sanctuary gallery and animals, when shown, face the camera at least once (GALLERY.md, 2026-10-14); once the gallery holds an accepted capture besides `0-`, `Art/echo-preview.png` is invalidated and the echo is redone from the gallery at `mountPreview` (`echo-source.png`, then `echo_review_sha`); the session name carries no marker, the Workflow Board computes the colour (AGENTS.md, 2026-10-15).
+
+**Open before `mountPreview`:** the gallery (9); `social_preview_sha256` missing (AUDIT.md 10.f, repository public). **Open before `writeDocs`/`prepareRelease`:** the `About.xml` description names RimWorld 1.6 and 1.7 (owner rule of 2026-10-13: write "the latest RimWorld version"); `Check-Status` warns `rimworld-version`. `tested_1_7` absent: the 1.7 pass is not made, which is not a defect.
