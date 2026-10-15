@@ -1,15 +1,21 @@
 # Gallery of the Workshop page (AUDIT.md 9, GALLERY.md). Plays in the SANCTUARY pass only (wsl-deps.sanctuary.map), French,
 # and is left out of every other pass by name. A green run proves nothing about an image: each one is opened and read.
 #
-# THE STORY: an evening at the tea house (the hut, by the water). Nelim writes down her day, and the game turns it into a
-# letter. The same letter is shown twice: first as the game writes it with this mod, then as the game alone writes it (the four
-# corrections switched off). The difference is the whole mod: l'husky / le husky, d'haricots / de haricots, sa épée / son épée,
-# and the two words in gold that the engine's own rules stop in front of.
+# THE STORY: one evening in Nelim's life, told by the letter itself. A full-screen game window is a screen capture, not a staged
+# photo (GALLERY.md: windows are taken on window-backdrop-for-height and cropped sideways to the window), so the story lives in the
+# text: Nelim feeds the husky, polishes her father's sword, comes back from the old forge Eclat, and ends the day with tea. The same
+# letter is shown twice, the game as it writes it with this mod, then the game alone (the three settings switched off). The
+# difference is the whole mod: l'husky / le husky, d'haricots / de haricots, sa épée / son épée, and the two words in gold that the
+# engine's own rules stop in front of (d'Éclat / de Éclat, l'épée / la épée).
 #
-# SHOT PLAN (GALLERY.md, full-screen window): place window-backdrop-for-height (bamboo backdrop), subject = the open letter alone,
-# no learning helper, text long enough to fill the window; each image cropped sideways to the window (5 px each side).
-# 1 = with the mod, 2 = the same letter without the four corrections: the difference reads in the text.
+# SHOT PLAN (one line per image, GALLERY.md):
+# 1. place window-backdrop-for-height, noon, subject the open letter, bamboo and the river behind it, no learning helper, text long
+#    enough to fill the window; says: the game writes elision and possessives the French way (le husky, de haricots, son épée, d'Éclat).
+# 2. same place, same hour, same letter with the mod's three corrections off; says: this is what the game alone writes (l'husky,
+#    d'haricots, sa épée, de Éclat). Each image cropped sideways to the window (5 px each side).
+# No living subject and no waiting: nothing in a modal letter shows them, and Nelim is already the author of the text.
 #
+
 # The letter text is what the game's grammar produces BEFORE its post-processing (le husky, de haricots, sa épée, la <tag>épée,
 # de <tag>Éclat): the engine builds it, the running worker corrects it or not, and the dialog the game draws is photographed.
 @review @requires:nelim.pickletools.screenshotmode
