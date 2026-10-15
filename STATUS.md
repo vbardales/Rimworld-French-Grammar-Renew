@@ -8,7 +8,7 @@ packageId:    nelim.frenchgrammar
 repo:         Rimworld-French-Grammar-Renew
 visibility:   public
 detached:     yes
-workflow_stage: shootGallery[1.0.0]
+workflow_stage: mountPreview[1.0.0]
 licence:      silent
 licence_at:   b606's repository and Workshop item carry no licence (checked again on 2026-09-28), and the source has declared only RimWorld 1.0 to 1.2 since its last update on 2020-11-30. No file, no line and no word list of his is copied. One idea is his and is credited in ATTRIBUTION.md: the zero-width guard that keeps the vanilla elision rules off an aspirated word. This mod's own LICENSE is a bare MIT.
 upstream_mod_remotes:
@@ -29,7 +29,7 @@ remaining:
     and change notes have never been seen in place.
 session:      local_82860736-8ac6-4da1-8b6b-542b87bbe12e
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
-updated:      2026-10-15, audit replayed from setupRepo to shootGallery (section below): the stage holds, shootGallery[1.0.0], gallery recomposition ticket queued
+updated:      2026-10-15, gallery accepted (AUDIT.md 9.a to 9.f), mountPreview[1.0.0]
 protocols_read_sha: 6eeb289af92096fa3a7ee40825e3b5221030873d
 ---
 
@@ -191,8 +191,18 @@ Revision `2cbc1eb` (master, pushed), tree clean. Verdict: **`shootGallery[1.0.0]
 | 6 localize | validated, with one point **corrected**: `Check-Translations` reports `FGP.RichText.Tip` (French shows a literal `<color>` example the English lacks). That is not a defect: Virginie read it on 2026-10-11 and left it as is (see the French review above). The linter finding is an accepted exception, not to be re-opened |
 | 7 writeTests | validated: tests replayed today, Pickle suite written (eight features with the gallery one) and its scope justified. Naming gap: AUDIT.md says `TEST_SCENARIOS.md`, the mod keeps its scenarios in `TESTING.md` (to settle with the Audit workflow session) |
 | 8 playTests | validated: 8.a tested `4be6004`, and `Mod/` changed since only through `Preview.png`; 8.c to 8.l as written in "playTests closed"; 8.m review done (`code_review_sha` `4be6004`; the `Mod/About` images do not reopen it, AUDIT.md 8.m, 2026-10-13) |
-| 9 shootGallery | in progress: run `2026-10-15-gallery-v3b` (2 of 2, letter of 12 paragraphs on `window-backdrop-for-height`, cropped sideways to the window) opened and accepted as candidates by the session: `Art/Gallery/1-candidate-letter-with-the-mod.png` and `2-candidate-letter-without-the-mod.png`. Waiting for Virginie to accept or refuse them, then 9.b to 9.e (contiguous indexes, order, table here) |
+| 9 shootGallery | validated 2026-10-15: both candidates accepted by Virginie, `candidate` dropped, indexes `0-`, `1-`, `2-` contiguous (9.a to 9.e), table below |
 
 **Rules read today that bear on the next states** (protocols of 2026-10-13 to 15): Nelim is the protagonist of a Sanctuary gallery and animals, when shown, face the camera at least once (GALLERY.md, 2026-10-14); once the gallery holds an accepted capture besides `0-`, `Art/echo-preview.png` is invalidated and the echo is redone from the gallery at `mountPreview` (`echo-source.png`, then `echo_review_sha`); the session name carries no marker, the Workflow Board computes the colour (AGENTS.md, 2026-10-15).
 
-**Open before `mountPreview`:** the gallery (9); `social_preview_sha256` missing (AUDIT.md 10.f, repository public). **Open before `writeDocs`/`prepareRelease`:** the `About.xml` description names RimWorld 1.6 and 1.7 (owner rule of 2026-10-13: write "the latest RimWorld version"); `Check-Status` warns `rimworld-version`. `tested_1_7` absent: the 1.7 pass is not made, which is not a defect.
+## Gallery, accepted 2026-10-15
+
+| # | File | Shows | Why this order |
+|---|---|---|---|
+| 0 | `0-preview.png` | the Preview, byte copy of `Mod/About/Preview.png` | Steam shows the first image large |
+| 1 | `1-letter-with-the-mod.png` | a letter of 12 paragraphs as the game writes it with the mod (`le husky`, `de haricots`, `son épée`, `d'Éclat`) | the mod's result first |
+| 2 | `2-letter-without-the-mod.png` | the same letter with the three corrections off (`l'husky`, `d'haricots`, `sa épée`, `de Éclat`) | the contrast that explains why the mod exists |
+
+Both are 630 x 1080, cropped sideways to the window on `window-backdrop-for-height`, under 900 KB. Next, at `mountPreview`: the provisional `Art/echo-preview.png` is invalidated by the accepted gallery (AUDIT.md 9.f); the echo is redone from it by Virginie (`echo-source.png`), then `echo_review_sha`.
+
+**Open before `mountPreview` (closed):** the gallery (9); `social_preview_sha256` missing (AUDIT.md 10.f, repository public). **Open before `writeDocs`/`prepareRelease`:** the `About.xml` description names RimWorld 1.6 and 1.7 (owner rule of 2026-10-13: write "the latest RimWorld version"); `Check-Status` warns `rimworld-version`. `tested_1_7` absent: the 1.7 pass is not made, which is not a defect.
