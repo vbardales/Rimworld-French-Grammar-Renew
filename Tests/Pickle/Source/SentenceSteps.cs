@@ -103,6 +103,21 @@ namespace FrenchGrammarRenew.PickleSteps
             letter.OpenLetter();
         }
 
+        /// <summary>
+        /// The same path as the letter, for the message the game draws at the top left of the map: the text is
+        /// resolved by the grammar resolver (so the running worker corrects it or not), then posted. A scene of
+        /// the gallery shows it over a staged map, which a modal letter never does.
+        /// </summary>
+        [When("French Grammar Renew: a message is shown with the text {string}")]
+        public void ShowMessage(PickleContext ctx, string text)
+        {
+            ctx.Require(Current.Game != null, "no game is running: load the fixture before this step");
+            var request = default(GrammarRequest);
+            request.Rules.Add(new Rule_String(Root, Driver.Unescape(text)));
+            var body = GrammarResolver.Resolve(Root, request, "French Grammar Renew message", capitalizeFirstSentence: false);
+            Messages.Message(body, MessageTypeDefOf.NeutralEvent, false);
+        }
+
         private static string Build(string pattern, string word)
         {
             var request = default(GrammarRequest);

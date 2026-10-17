@@ -18,7 +18,7 @@
 
 # The letter text is what the game's grammar produces BEFORE its post-processing (le husky, de haricots, sa épée, la <tag>épée,
 # de <tag>Éclat): the engine builds it, the running worker corrects it or not, and the dialog the game draws is photographed.
-@review @requires:nelim.pickletools.screenshotmode
+@review @requires:nelim.pickletools.screenshotmode @requires:nelim.pickletools.screenshotstudio
 Feature: the gallery images of French Grammar Renew
 
   Background:

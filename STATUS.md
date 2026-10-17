@@ -8,7 +8,7 @@ packageId:    nelim.frenchgrammar
 repo:         Rimworld-French-Grammar-Renew
 visibility:   public
 detached:     yes
-workflow_stage: mountPreview[1.0.0]
+workflow_stage: shootGallery[1.0.0]
 licence:      silent
 licence_at:   b606's repository and Workshop item carry no licence (checked again on 2026-09-28), and the source has declared only RimWorld 1.0 to 1.2 since its last update on 2020-11-30. No file, no line and no word list of his is copied. One idea is his and is credited in ATTRIBUTION.md: the zero-width guard that keeps the vanilla elision rules off an aspirated word. This mod's own LICENSE is a bare MIT.
 upstream_mod_remotes:
@@ -29,7 +29,7 @@ remaining:
     and change notes have never been seen in place.
 session:      local_82860736-8ac6-4da1-8b6b-542b87bbe12e
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
-updated:      2026-10-15, gallery accepted (AUDIT.md 9.a to 9.f), mountPreview[1.0.0]
+updated:      2026-10-18, gallery reopened by the owner (two letters were not a story), shootGallery[1.0.0]
 protocols_read_sha: 117fb9642df7e57bece2318904c644a9c39296df
 ---
 # French Grammar Renew (unofficial): status
