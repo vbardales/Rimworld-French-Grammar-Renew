@@ -30,7 +30,7 @@ remaining:
 session:      local_82860736-8ac6-4da1-8b6b-542b87bbe12e
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
 updated:      2026-10-15, gallery accepted (AUDIT.md 9.a to 9.f), mountPreview[1.0.0]
-protocols_read_sha: 6eeb289af92096fa3a7ee40825e3b5221030873d
+protocols_read_sha: 117fb9642df7e57bece2318904c644a9c39296df
 ---
 
 # French Grammar Renew (unofficial): status
