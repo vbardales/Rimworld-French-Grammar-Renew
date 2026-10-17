@@ -13,7 +13,7 @@
 #    and the water; message "le husky ... de haricots". Says: the day ends with a quiet meal, and the game writes it right.
 # 2. 18h, hut, Nelim at the shelf, calm face, a long sword and an axe on the floor beside her (decor, removed after); message
 #    "son épée ... l'épée de son père" (the gold word). Says: the sword is hers, and the possessive agrees.
-# 3. 19h, hut door seen from outside at dusk, Nelim at the door, Yuki at her feet facing the camera; message "d'Éclat ... le husky".
+# 3. 19h, hut, at the south door (141, 68), Nelim and Yuki just come in, both facing the camera, dusk light through the door; message "d'Éclat ... le husky".
 #    Says: the forge Éclat keeps its elision, the husky its article.
 # 4. 21h, hut, night, Nelim with her hair down, Yuki facing the camera, braziers lit; message "le husky dort, et le Sanctuaire aussi".
 #    Says: the evening ends.
@@ -69,9 +69,9 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
-    And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (139, 73)
-    And Nelim's Pickle Tools: I place the decor "MeleeWeapon_Axe" at (138, 74)
-    And Nelim's Pickle Tools: "Nelim" stands at (140, 72) facing East
+    And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (139, 74)
+    And Nelim's Pickle Tools: I place the decor "MeleeWeapon_Axe" at (140, 74)
+    And Nelim's Pickle Tools: "Nelim" stands at (138, 74) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Bun"
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
@@ -94,9 +94,9 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
-    And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (147, 72)
-    And Nelim's Pickle Tools: the animal "Yuki" stands at (147, 72) facing West
-    And Nelim's Pickle Tools: "Nelim" stands at (148, 73) facing West
+    And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (142, 69)
+    And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 69) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (140, 69) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Bun"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"

@@ -27,6 +27,7 @@ Feature: the gallery images of French Grammar Renew
     And French Grammar Renew: the settings are at their documented defaults
     And Nelim's Sanctuary: I am at the sanctuary "window-backdrop-for-height"
     And Nelim's Pickle Tools: the learning helper is hidden
+    And Nelim's Pickle Tools: the colonist bar is hidden
     And Nelim's Sanctuary: Nelim has her own face
 
   @timeout:240
