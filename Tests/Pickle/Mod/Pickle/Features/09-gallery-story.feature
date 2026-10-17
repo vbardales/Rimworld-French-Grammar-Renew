@@ -9,7 +9,7 @@
 # Scene 5 replays scene 1 with the three corrections off: the whole mod is the difference between the two.
 #
 # SHOT PLAN (one line per image, GALLERY.md; hut, hut cells are guesses to read on the first run; Clear weather; Nelim 20 degrees):
-# 1. 17h, hut, Nelim at the low table facing the camera, small smile, Yuki beside her facing the camera, wide enough to show the door
+# 1. 17h, hut, Nelim at the low table facing the camera, small smile, Yuki beside her facing the camera, a bean (VGP Vegetable Garden, French label «haricot») on the table, wide enough to show the door
 #    and the water; message "le husky ... de haricots". Says: the day ends with a quiet meal, and the game writes it right.
 # 2. 18h, hut, Nelim at the shelf, calm face, a long sword and an axe on the floor beside her (decor, removed after); message
 #    "son épée ... l'épée de son père" (the gold word). Says: the sword is hers, and the possessive agrees.
@@ -45,6 +45,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: I place the decor "Rawbean" at (140, 72)
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (143, 71)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing South
@@ -70,14 +71,13 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (139, 74)
-    And Nelim's Pickle Tools: I place the decor "MeleeWeapon_Axe" at (140, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (138, 74) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Bun"
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: the camera is centered on "Nelim" at root size 6
     And Nelim's Pickle Tools: I let 5 frames pass
-    When French Grammar Renew: a message is shown with the text "Elle range son épée près de sa hache, puis polit l'<color=#D09B61FF>épée</color> de son père."
+    When French Grammar Renew: a message is shown with the text "Elle range son épée près de la lampe, puis polit l'<color=#D09B61FF>épée</color> de son père."
     And Nelim's Pickle Tools: I let 2 frames pass
     Then I take a screenshot "story 2 the sword"
     And Nelim's Pickle Tools: the decor is removed
@@ -145,6 +145,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: I place the decor "Rawbean" at (140, 72)
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (143, 71)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing South
