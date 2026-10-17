@@ -70,6 +70,7 @@ Audited 2026-09-30 against `FrenchGrammarRenew` revision `23a392e`. Inventory: t
 **`FRENCH_REVIEW.md`** regenerated 2026-10-02 by collection's `scripts/Make-FrenchReview.ps1` (replaces mod's own `_tools/Generate-FrenchReview.ps1`, removed), from revision `0e072bb`. Two tables, one per file, 17 rows, Original column equal to English throughout: mod has no source in another language. No row flagged `?`.
 
 **Systematic French review by Virginie, 2026-10-11, revision `9d786c2`: done (full reading).** No gender-switch branch needed (species-noun gender distinct from pawn gender). Four corrections, applied same day: `FGP.KindGender.Tip` (French: explicit referent), `FGP.Possessive.Tip` (English: accents kept in example), two lines of `CHANGELOG.md` ("Deliberately absent" item, last paragraph). No upstream pull request needed (local texts of port). `FGP.RichText.Tip` (French text shows literal `<color>` example English does not) read, left as is.
+**ChatGPT review of French texts, 2026-10-18, revision `b8847ad`+: no correction.** Only finding: `PUBLICATION.md` absent from input (expected, written at `writeDocs`). Read and validated by Virginie the same day ("relu, validé"); nothing applied.
 
 ## The original mod, looked at
 
