@@ -13,8 +13,8 @@
 #    (VGP Vegetable Garden, French label haricot) on the table; message "le hamster ... le husky de haricots". Says: a quiet meal, written right.
 # 2. 18h, hut, Nelim at the shelf, calm face, a long sword and a fire axe (Fort's Firefighter Gadget, French label hache de pompier) on the floor
 #    beside her (decor, removed after); message "son épée ... la hache de pompier ... l'épée de son père" (gold word). Says: the sword is hers.
-# 3. 19h, hut, Nelim and Yuki facing the camera, an oriental harp (Oriental Instruments Expanded, French label harpe orientale) behind them,
-#    dusk through the door; message "la harpe orientale ... la forge d'Éclat". Says: the evening goes on with music.
+# 3. 19h, hut, Nelim and Yuki facing the camera, a harp (Royalty, French label harpe) behind them,
+#    dusk through the door; message "la harpe ... la forge d'Éclat". Says: the evening goes on with music.
 # 4. 21h, hut, night, Nelim with her hair down, Yuki facing the camera, braziers lit; message "le husky dort, et le Sanctuaire aussi".
 #    Says: the evening ends.
 # 5. 17h, the same frame as 1, same pawns, the three corrections off; message "l'husky ... d'haricots". Says: this is the game alone.
@@ -97,7 +97,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
-    And Nelim's Pickle Tools: I place the decor "ORI_OrientalHarp" at (144, 74)
+    And Nelim's Pickle Tools: I place the decor "Harp" at (144, 74)
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (141, 73)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (141, 73) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (143, 73) facing South
@@ -106,7 +106,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: the camera is centered on "Nelim" at root size 7
     And Nelim's Pickle Tools: I let 5 frames pass
-    When French Grammar Renew: a message is shown with the text "Nelim s'assoit près de la harpe orientale ; au loin, la forge d'<color=#D09B61FF>Éclat</color> s'éteint."
+    When French Grammar Renew: a message is shown with the text "Nelim s'assoit près de la harpe ; au loin, la forge d'<color=#D09B61FF>Éclat</color> s'éteint."
     And Nelim's Pickle Tools: I let 2 frames pass
     Then I take a screenshot "story 3 the harp"
     And no errors were logged
