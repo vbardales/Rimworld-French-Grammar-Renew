@@ -9,12 +9,12 @@
 # Scene 5 replays scene 1 with the three corrections off: the whole mod is the difference between the two.
 #
 # SHOT PLAN (one line per image, GALLERY.md; hut, hut cells are guesses to read on the first run; Clear weather; Nelim 20 degrees):
-# 1. 17h, hut, Nelim at the low table facing the camera, small smile, Yuki beside her facing the camera, a bean (VGP Vegetable Garden, French label «haricot») on the table, wide enough to show the door
-#    and the water; message "le husky ... de haricots". Says: the day ends with a quiet meal, and the game writes it right.
-# 2. 18h, hut, Nelim at the shelf, calm face, a long sword and an axe on the floor beside her (decor, removed after); message
-#    "son épée ... l'épée de son père" (the gold word). Says: the sword is hers, and the possessive agrees.
-# 3. 19h, hut, at the south door (141, 68), Nelim and Yuki just come in, both facing the camera, dusk light through the door; message "d'Éclat ... le husky".
-#    Says: the forge Éclat keeps its elision, the husky its article.
+# 1. 17h, hut, Nelim at the low table facing the camera, small smile, Yuki the husky and Noisette the hamster (More Rodents) beside her, a bean
+#    (VGP Vegetable Garden, French label haricot) on the table; message "le hamster ... le husky de haricots". Says: a quiet meal, written right.
+# 2. 18h, hut, Nelim at the shelf, calm face, a long sword and a fire axe (Fort's Firefighter Gadget, French label hache de pompier) on the floor
+#    beside her (decor, removed after); message "son épée ... la hache de pompier ... l'épée de son père" (gold word). Says: the sword is hers.
+# 3. 19h, hut, Nelim and Yuki facing the camera, an oriental harp (Oriental Instruments Expanded, French label harpe orientale) behind them,
+#    dusk through the door; message "la harpe orientale ... la forge d'Éclat". Says: the evening goes on with music.
 # 4. 21h, hut, night, Nelim with her hair down, Yuki facing the camera, braziers lit; message "le husky dort, et le Sanctuaire aussi".
 #    Says: the evening ends.
 # 5. 17h, the same frame as 1, same pawns, the three corrections off; message "l'husky ... d'haricots". Says: this is the game alone.
@@ -47,6 +47,8 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: I place the decor "Rawbean" at (140, 72)
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (143, 71)
+    And Nelim's Pickle Tools: an adult animal of kind "Hamster" named "Noisette" is spawned at (139, 71)
+    And Nelim's Pickle Tools: the animal "Noisette" stands at (139, 71) facing South
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Bun"
@@ -54,7 +56,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: the camera is centered on "Nelim" at root size 7
     And Nelim's Pickle Tools: I let 5 frames pass
-    When French Grammar Renew: a message is shown with the text "Nelim nourrit le husky et prépare un plat de haricots."
+    When French Grammar Renew: a message is shown with the text "Nelim nourrit le hamster et le husky de haricots."
     And Nelim's Pickle Tools: I let 2 frames pass
     Then I take a screenshot "story 1 the meal"
     And no errors were logged
@@ -71,19 +73,20 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (139, 74)
+    And Nelim's Pickle Tools: I place the decor "MeleeWeapon_FireAxe" at (140, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (138, 74) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Bun"
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: the camera is centered on "Nelim" at root size 6
     And Nelim's Pickle Tools: I let 5 frames pass
-    When French Grammar Renew: a message is shown with the text "Elle range son épée près de la lampe, puis polit l'<color=#D09B61FF>épée</color> de son père."
+    When French Grammar Renew: a message is shown with the text "Elle range son épée près de la hache de pompier, puis polit l'<color=#D09B61FF>épée</color> de son père."
     And Nelim's Pickle Tools: I let 2 frames pass
     Then I take a screenshot "story 2 the sword"
     And Nelim's Pickle Tools: the decor is removed
     And no errors were logged
 
-  Scenario: story-3-the-door
+  Scenario: story-3-the-harp
     Given I set the hour to 19
     And Nelim's Sanctuary: the animals are kept out of the sanctuary "hut"
     And Nelim's Sanctuary: I am at the sanctuary "hut"
@@ -94,17 +97,18 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
-    And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (142, 69)
-    And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 69) facing South
-    And Nelim's Pickle Tools: "Nelim" stands at (140, 69) facing South
+    And Nelim's Pickle Tools: I place the decor "ORI_OrientalHarp" at (144, 74)
+    And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (141, 73)
+    And Nelim's Pickle Tools: the animal "Yuki" stands at (141, 73) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (143, 73) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Bun"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: the camera is centered on "Nelim" at root size 7
     And Nelim's Pickle Tools: I let 5 frames pass
-    When French Grammar Renew: a message is shown with the text "Le husky suit Nelim jusqu'à la hutte ; le forgeron lui a parlé d'<color=#D09B61FF>Éclat</color>."
+    When French Grammar Renew: a message is shown with the text "Nelim s'assoit près de la harpe orientale ; au loin, la forge d'<color=#D09B61FF>Éclat</color> s'éteint."
     And Nelim's Pickle Tools: I let 2 frames pass
-    Then I take a screenshot "story 3 the door"
+    Then I take a screenshot "story 3 the harp"
     And no errors were logged
 
   Scenario: story-4-the-night
@@ -147,6 +151,8 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: I place the decor "Rawbean" at (140, 72)
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (143, 71)
+    And Nelim's Pickle Tools: an adult animal of kind "Hamster" named "Noisette" is spawned at (139, 71)
+    And Nelim's Pickle Tools: the animal "Noisette" stands at (139, 71) facing South
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Bun"
@@ -154,7 +160,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: the camera is centered on "Nelim" at root size 7
     And Nelim's Pickle Tools: I let 5 frames pass
-    When French Grammar Renew: a message is shown with the text "Nelim nourrit le husky et prépare un plat de haricots."
+    When French Grammar Renew: a message is shown with the text "Nelim nourrit le hamster et le husky de haricots."
     And Nelim's Pickle Tools: I let 2 frames pass
     Then I take a screenshot "story 5 the meal without the mod"
     And no errors were logged
