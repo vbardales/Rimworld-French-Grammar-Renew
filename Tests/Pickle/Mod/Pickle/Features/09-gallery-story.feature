@@ -7,6 +7,10 @@
 # the hamster Noisette are her guests. What the mod does is invisible on a pawn, so each scene shows it where the player meets it: the line
 # the game writes at the top left of the map for what is happening, built by the engine's grammar and corrected by the mod. Every scene
 # carries an object or an animal whose French label exercises a correction (hamster, husky, haricot, hache de pompier, harpe, épée).
+# EPISODES (criterion k, one story that moves forward): who = Nelim (protagonist), Yuki the husky, Noisette the hamster; where = the tea room;
+# which day = one autumn evening and the morning after; rhythm = one scene per hour, 17h 18h 19h 21h, then 7h. 1 she feeds her two guests;
+# 2 she puts away her father's sword while the husky watches; 3 the rain starts and she listens to the harp with a cup of tea; 4 late, she
+# brings the husky its bowl and the tea has gone cold; 5 next morning the same meal is written by the game alone, without the mod.
 # Scene 5 plays scene 1's sentence again with the three corrections off: the whole mod is the difference between the two sentences.
 #
 # TIME (criterion a): the game stays paused in each scene; the hour is set per scene (17, 18, 19, 21, then 7 the next morning), so the story
