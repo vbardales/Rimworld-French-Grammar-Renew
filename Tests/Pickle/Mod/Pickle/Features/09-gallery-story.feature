@@ -18,6 +18,7 @@
 # 4. 21h, hut, night, Nelim with her hair down, Yuki facing the camera, braziers lit; message "le husky dort, et le Sanctuaire aussi".
 #    Says: the evening ends.
 # 5. 17h, the same frame as 1, same pawns, the three corrections off; message "l'husky ... d'haricots". Says: this is the game alone.
+# Animals: scenes with a spawned animal clear the place ONCE ("are removed from") before spawning; "kept out of" would send the spawned husky away again.
 # No pose of sitting or lying exists (GALERIE.md): Nelim and Yuki stand. The message is posted LAST, right before the screenshot, because it
 # fades after a few seconds of real time.
 
@@ -36,7 +37,7 @@ Feature: the gallery story of French Grammar Renew
 
   Scenario: story-1-the-meal
     Given I set the hour to 17
-    And Nelim's Sanctuary: the animals are kept out of the sanctuary "hut"
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "hut"
     And Nelim's Sanctuary: I am at the sanctuary "hut"
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: the colonist bar is hidden
@@ -88,7 +89,7 @@ Feature: the gallery story of French Grammar Renew
 
   Scenario: story-3-the-harp
     Given I set the hour to 19
-    And Nelim's Sanctuary: the animals are kept out of the sanctuary "hut"
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "hut"
     And Nelim's Sanctuary: I am at the sanctuary "hut"
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: the colonist bar is hidden
@@ -113,7 +114,7 @@ Feature: the gallery story of French Grammar Renew
 
   Scenario: story-4-the-night
     Given I set the hour to 21
-    And Nelim's Sanctuary: the animals are kept out of the sanctuary "hut"
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "hut"
     And Nelim's Sanctuary: I am at the sanctuary "hut"
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: the colonist bar is hidden
@@ -122,6 +123,10 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (142, 74)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (142, 74) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (138, 70)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (138, 70) is lit
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (143, 71)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
     And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing South
@@ -130,7 +135,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: the camera is centered on "Nelim" at root size 7
     And Nelim's Pickle Tools: I let 5 frames pass
-    When French Grammar Renew: a message is shown with the text "Le thé refroidit ; le husky dort, et le Sanctuaire aussi."
+    When French Grammar Renew: a message is shown with the text "Le thé refroidit ; le husky veille, et le Sanctuaire dort."
     And Nelim's Pickle Tools: I let 2 frames pass
     Then I take a screenshot "story 4 the night"
     And no errors were logged
@@ -140,7 +145,7 @@ Feature: the gallery story of French Grammar Renew
     And French Grammar Renew: the possessive setting is turned off
     And French Grammar Renew: the richtext setting is turned off
     And I set the hour to 17
-    And Nelim's Sanctuary: the animals are kept out of the sanctuary "hut"
+    And Nelim's Sanctuary: the animals are removed from the sanctuary "hut"
     And Nelim's Sanctuary: I am at the sanctuary "hut"
     And Nelim's Pickle Tools: studio presentation mode is enabled
     And Nelim's Pickle Tools: the colonist bar is hidden

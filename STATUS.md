@@ -142,3 +142,18 @@ Revision `2cbc1eb` (master, pushed), tree clean. Verdict: **`shootGallery[1.0.0]
 Both 630 x 1080, cropped sideways to window on `window-backdrop-for-height`, under 900 KB. Next, at `mountPreview`: provisional `Art/echo-preview.png` invalidated by accepted gallery (AUDIT.md 9.f); echo redone from it by Virginie (`echo-source.png`), then `echo_review_sha`.
 
 **Open before `mountPreview` (closed):** gallery (9); `social_preview_sha256` missing (AUDIT.md 10.f, repository public). **Open before `writeDocs`/`prepareRelease`:** `About.xml` description names RimWorld 1.6 and 1.7 (owner rule 2026-10-13: write "the latest RimWorld version"); `Check-Status` warns `rimworld-version`. `tested_1_7` absent: 1.7 pass not made, not a defect.
+## Shotlist, 2026-10-18 (write-shotlist, AUDIT 9.0; supersedes the 2026-10-15 gallery table above)
+
+Gallery reopened by the owner on 2026-10-18: two letters are not a story. Story: one evening in the tea room (`hut`), Nelim protagonist with Yuki the husky; each scene shows an object or animal whose French label exercises a correction, with the sentence the engine builds in a message at the top left. Feature `Tests/Pickle/Mod/Pickle/Features/09-gallery-story.feature` (plan in its header); letters `08-gallery.feature`. Mods added to `wsl-deps.sanctuary.map`: More Rodents (hamster), Fort's Firefighter Gadget (fire axe), VGP Vegetable Garden (bean). Estimates before any run (scale 1 to 5, rule: 4 or more before playing); verdicts to add after the run.
+
+| # | Scene | Estimate | Main risk | Verdict |
+|---|---|---|---|---|
+| 1 | 17h hut, Nelim, Yuki, hamster, bean on the table; message `le hamster`, `le husky de haricots` | 4 | message legibility at the top left; hamster small | |
+| 2 | 18h hut, Nelim, long sword and fire axe on the floor; message `son épée`, `la hache de pompier`, gold `l'épée` | 4 | weapons small on the floor | |
+| 3 | 19h hut, Nelim and Yuki, Royalty harp (1x1) at (144, 74); message `la harpe`, `d'Éclat` | 4 | harp cell guessed; dusk light | |
+| 4 | 21h hut, hair down, two lit torches; message `le husky veille` | 4 | torch cells guessed; darkness | |
+| 5 | 17h as scene 1 with the three corrections off: `l'hamster`, `l'husky`, `d'haricots` | 4 | near twin of scene 1 at thumbnail size | |
+| 6 | letter, twelve paragraphs, with the mod (window, no subtitle) | 4 | smiley blobs of the backdrop by design; bottom bar cropped | |
+| 7 | the same letter, corrections off (window, no subtitle) | 4 | same as 6 | |
+
+Lowest estimate 4; none to redo before the first run. Fixed from the first draft: spawned animals were sent away by `kept out of` (now `removed from`, once), cells read on the hut's empty photograph (table x 140, z 71-72; seats x 139 and 141), axe and mod harp replaced by items with French labels (vanilla harp), a standing husky no longer "sleeps". Ticket `20261018-004951-777-0a46` (queued) plays scenes 1 to 5.
