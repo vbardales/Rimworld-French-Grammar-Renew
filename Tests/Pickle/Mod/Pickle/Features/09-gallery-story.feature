@@ -47,6 +47,8 @@
 #    mod is the difference.
 #    RISK: fog hides the message backdrop; the sentence is the same as scene 1, so the images may read as a repeat. PLAN: different outfit,
 #    corner, hour and weather; if it still reads as a repeat, move its text to the harp sentence of scene 3.
+# HATS (owner rule, GALLERY.md criterion d): no scene dresses Nelim in a hat (shirts, robe, parka only), so no hair-under-hat mod is needed; if a hat is added later, mount a
+# show-hair mod in the map and keep her hair long and loose, never a ponytail or a bun under it.
 # Pose: no sitting or lying step exists (GALERIE.md): Nelim stands and holds, the animals stand. The message is posted LAST, right before the
 # screenshot, because it fades after a few seconds of real time.
 # Animals: scenes with a spawned animal clear the place ONCE (the animals are removed from the sanctuary) before spawning: "kept out of" would
