@@ -27,6 +27,8 @@ remaining:
     be based on his code (licence `silent`).
   - unverified: nothing has been uploaded since the 0.1.0 creation, so the page's description, gallery
     and change notes have never been seen in place.
+  - unverified: gallery story (feature 09) not yet seen. Ticket 20261019-184214-288-8c52 queued (the first, 0a46, stalled at startup with no report: suspect one of the three added mods, bisect if it stalls again). Judge each capture against 4, redo weak scenes in small tickets, keep serious ones as candidates, reindex, then burn subtitles (lines in PUBLICATION.md).
+  - feature: after the accepted gallery, redo Art/echo-source.png by the owner, then echo_review_sha; PUBLICATION.md open points (illustration tool for AI-GENERATED, THANKS for gallery staging mods, register rows for b606, Harmony, Pickle, RimLogging, RIMMSQOL); NPT to extract More Rodents, Fort Firefighter, VGP into GALLERY-PROPS.md (done by NPT, unplayed).
 session:      local_82860736-8ac6-4da1-8b6b-542b87bbe12e
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
 updated:      2026-10-18, gallery reopened by the owner (two letters were not a story), shootGallery[1.0.0]
