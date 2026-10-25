@@ -1,8 +1,8 @@
 # Gallery of the Workshop page, the story series (AUDIT.md 9, GALLERY.md "Une seule histoire" and "Shotlist : critères d'une scène à 4/5").
 # Plays in the SANCTUARY pass only (wsl-deps.sanctuary.map), French, and is left out of every other pass by name. A green run proves
-# nothing about an image: each one is opened and read. PLAN REWRITTEN 2026-10-25 (fourth version, table in STATUS.md): the SCENES BELOW
-# STILL HOLD THE 2026-10-18 TEXT and are rewritten once the step that advances the game N ticks and pauses it again is confirmed
-# (asked of NPT through the TM). The letter pair (08-gallery.feature) stays as the last two images; they are interface windows, set aside.
+# nothing about an image: each one is opened and read. PLAN AND SCENES REWRITTEN 2026-10-25 (fourth version, table in STATUS.md), NOT PLAYED: gestures by forced job, then `I advance the paused game by exactly N ticks`
+# (StudioSteps), the big message last. Scene 1 and 5: Yuki follows Nelim to the table (mid-walk); scene 3: Yuki lies down, Nelim stands at (142, 72).
+# The letter pair (08-gallery.feature) stays as the last two images; they are interface windows, set aside.
 #
 # THE STORY: one autumn evening and the morning after in the tea room (the hut). Nelim is the protagonist, her husky Yuki and the hamster
 # Noisette her guests. Same outfit and hair all evening (forest green collar shirt (46, 98, 74), FancyBun); the morning after she wears a
@@ -24,8 +24,8 @@
 #   the cold tea still on the table; Nelim centre-left. She hauls Kibble to Yuki, 25 ticks then pause. Instant: the bowl is lowered
 #   (after: Yuki eats). "Elle sert le husky."
 # 5 7h Fog, WIDE zoom 4, frame (141, 72), closing bookend of 1: same frame, same gesture a night later. Foreground: Yuki (142, 72) and
-#   Noisette (139, 73) facing South; background: wall and shelves, the sword on the floor (141, 74), the cold PsychiteTea cup and Rawbean (140,
-#   71) on the table, the torch (142, 74) unlit; Nelim off-centre. Three settings off. She starts at the stool and `Ingest` on Rawbean, 40
+#   Noisette (139, 73) facing South; background: wall and shelves, the sword on the floor (141, 74) and Rawbean (140,
+#   71) on the table, no torch; Nelim off-centre. Three settings off. She starts at the stool and `Ingest` on Rawbean, 40
 #   ticks then pause. Instant: she has just sat after dressing (after: she eats). Same message text as 1, which the game alone writes as
 #   "L'husky et l'hamster attendent." The mod is the difference.
 # THUMBNAIL (criterion j): the message is 2x Medium at the top centre; read each capture at 268 px wide, and if the message is not legible
@@ -64,15 +64,17 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
     And Nelim's Pickle Tools: an adult animal of kind "Hamster" named "Noisette" is spawned at (139, 73)
     And Nelim's Pickle Tools: the animal "Noisette" stands at (139, 73) facing South
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (214, 92, 64)
-    And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing South
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
+    And Nelim's Pickle Tools: "Nelim" stands at (140, 72) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "FancyBun"
-    And Nelim's Pickle Tools: "Nelim" carries the item "Rawbean"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
-    And Nelim's Pickle Tools: I frame the cell (139, 71) at zoom 6
-    And Nelim's Pickle Tools: I let 5 frames pass
-    When French Grammar Renew: a message is shown with the text "Nelim nourrit le hamster et le husky de haricots."
+    And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 4
+    And Nelim's Pickle Tools: time is paused for the capture
+    And Nelim's Pickle Tools: "Yuki" follows "Nelim" within 2 cells
+    And Nelim's Pickle Tools: "Nelim" is forced into the job "Ingest" on the item "Rawbean" at (140, 71)
+    And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
+    And Nelim's Pickle Tools: a big message "Le husky et le hamster attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     Then I take a screenshot "story 1 the meal"
     And Nelim's Pickle Tools: the decor is removed
@@ -96,14 +98,15 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (142, 73)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 73) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
-    And Nelim's Pickle Tools: "Nelim" stands at (138, 74) facing South
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Ponytails"
-    And Nelim's Pickle Tools: "Nelim" carries the item "MeleeWeapon_LongSword"
+    And Nelim's Pickle Tools: "Nelim" stands at (138, 74) facing East
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "FancyBun"
     And Nelim's Pickle Tools: "Nelim" face kit is "smug"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: I frame the cell (140, 73) at zoom 6
-    And Nelim's Pickle Tools: I let 5 frames pass
-    When French Grammar Renew: a message is shown with the text "Elle range son épée près de la hache de pompier, puis polit l'<color=#D09B61FF>épée</color> de son père."
+    And Nelim's Pickle Tools: time is paused for the capture
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "MeleeWeapon_LongSword" to (141, 74)
+    And Nelim's Pickle Tools: I advance the paused game by exactly 25 ticks
+    And Nelim's Pickle Tools: a big message "Elle pose sa épée." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     Then I take a screenshot "story 2 the sword"
     And Nelim's Pickle Tools: the decor is removed
@@ -124,17 +127,21 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I place the decor "Harp" at (144, 74)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (141, 76)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (141, 76) is lit
+    And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
+    And Nelim's Pickle Tools: I place the decor "PsychiteTea" at (140, 71)
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (141, 73)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (141, 73) facing South
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Robe" dyed rgb (112, 64, 140)
-    And Nelim's Pickle Tools: "Nelim" stands at (143, 73) facing East
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Wavy"
-    And Nelim's Pickle Tools: "Nelim" carries the item "PsychiteTea"
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
+    And Nelim's Pickle Tools: "Nelim" stands at (142, 72) facing West
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "FancyBun"
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
-    And Nelim's Pickle Tools: I frame the cell (142, 72) at zoom 5.5
-    And Nelim's Pickle Tools: I let 5 frames pass
-    When French Grammar Renew: a message is shown with the text "Nelim écoute la harpe ; au loin, la forge d'<color=#D09B61FF>Éclat</color> s'éteint sous la pluie."
+    And Nelim's Pickle Tools: I frame the cell (142, 72) at zoom 7
+    And Nelim's Pickle Tools: time is paused for the capture
+    And Nelim's Pickle Tools: "Yuki" lies down
+    And Nelim's Pickle Tools: "Nelim" is forced into the job "Ingest" on the item "PsychiteTea" at (140, 71)
+    And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
+    And Nelim's Pickle Tools: a big message "Nelim écoute la harpe." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     Then I take a screenshot "story 3 the harp"
     And Nelim's Pickle Tools: the decor is removed
@@ -156,17 +163,20 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the decor "TorchLamp" at (142, 74) is lit
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (138, 70)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (138, 70) is lit
+    And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
+    And Nelim's Pickle Tools: I place the decor "PsychiteTea" at (140, 71)
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (143, 72)
-    And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 72) facing South
-    And Nelim's Pickle Tools: "Nelim" wears "Apparel_Parka" dyed rgb (36, 52, 104)
-    And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing South
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Long"
-    And Nelim's Pickle Tools: "Nelim" carries the item "Kibble"
+    And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 72) facing West
+    And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
+    And Nelim's Pickle Tools: "Nelim" stands at (140, 73) facing East
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "FancyBun"
     And Nelim's Pickle Tools: "Nelim" face kit is "sad"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 5
-    And Nelim's Pickle Tools: I let 5 frames pass
-    When French Grammar Renew: a message is shown with the text "Le thé refroidit ; le husky veille, et le Sanctuaire dort."
+    And Nelim's Pickle Tools: time is paused for the capture
+    And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Kibble" to (142, 72)
+    And Nelim's Pickle Tools: I advance the paused game by exactly 25 ticks
+    And Nelim's Pickle Tools: a big message "Elle sert le husky." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     Then I take a screenshot "story 4 the night"
     And Nelim's Pickle Tools: the decor is removed
@@ -187,19 +197,24 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: I place the decor "Rawbean" at (140, 71)
+    And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (142, 72)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 72) facing South
-    And Nelim's Pickle Tools: an adult animal of kind "Hamster" named "Noisette" is spawned at (143, 74)
-    And Nelim's Pickle Tools: the animal "Noisette" stands at (143, 74) facing South
+    And Nelim's Pickle Tools: an adult animal of kind "Hamster" named "Noisette" is spawned at (139, 73)
+    And Nelim's Pickle Tools: the animal "Noisette" stands at (139, 73) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 190, 70)
-    And Nelim's Pickle Tools: "Nelim" stands at (140, 74) facing South
+    And Nelim's Pickle Tools: "Nelim" stands at (140, 72) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Pigtails"
-    And Nelim's Pickle Tools: "Nelim" carries the item "Rawbean"
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
-    And Nelim's Pickle Tools: I frame the cell (141, 74) at zoom 6.5
-    And Nelim's Pickle Tools: I let 5 frames pass
-    When French Grammar Renew: a message is shown with the text "Nelim nourrit le hamster et le husky de haricots."
+    And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 4
+    And Nelim's Pickle Tools: time is paused for the capture
+    And Nelim's Pickle Tools: "Yuki" follows "Nelim" within 2 cells
+    And Nelim's Pickle Tools: "Nelim" is forced into the job "Ingest" on the item "Rawbean" at (140, 71)
+    And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
+    And Nelim's Pickle Tools: a big message "Le husky et le hamster attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     Then I take a screenshot "story 5 the morning without the mod"
+    And Nelim's Pickle Tools: the decor is removed
     And no errors were logged
