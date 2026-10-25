@@ -18,7 +18,7 @@
 #   axe (140, 74); Nelim left of centre. She hauls the long sword to (141, 74), 25 ticks then pause. Instant: the sword has just left her
 #   hands (after: she straightens up). "Elle pose sa épée." (shows "son épée").
 # 3 19h Rain, TIGHT zoom 7, frame (142, 72). Foreground: the PsychiteTea cup on the table; background: Royalty harp (144, 74), lit TorchLamp
-#   (141, 76), the sword still on the floor; Yuki (141, 73) at the edge. `Ingest` on PsychiteTea, 30 ticks then pause. Instant: the first
+#   (141, 76), the sword still on the floor; Yuki (141, 73) lies down and listens (LayDown); Nelim stands right of the cup at (142, 72), off-centre. `Ingest` on PsychiteTea, 30 ticks then pause. Instant: the first
 #   sip (before: the harp started; after: she listens on). "Nelim écoute la harpe." (source "la harpe").
 # 4 21h Clear, MEDIUM zoom 5, frame (141, 72). Foreground: Yuki (143, 72) facing her; background: two lit torches (142, 74), (138, 70),
 #   the cold tea still on the table; Nelim centre-left. She hauls Kibble to Yuki, 25 ticks then pause. Instant: the bowl is lowered
