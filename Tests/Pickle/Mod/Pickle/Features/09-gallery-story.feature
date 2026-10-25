@@ -1,29 +1,38 @@
 # Gallery of the Workshop page, the story series (AUDIT.md 9, GALLERY.md "Une seule histoire" and "Shotlist : critères d'une scène à 4/5").
 # Plays in the SANCTUARY pass only (wsl-deps.sanctuary.map), French, and is left out of every other pass by name. A green run proves
-# nothing about an image: each one is opened and read. PLAN REWRITTEN 2026-10-25 (third version, table in STATUS.md): the SCENES BELOW
-# STILL HOLD THE 2026-10-18 TEXT and are rewritten when NPT pushes `a big message {string} is held on screen`. The letter pair
-# (08-gallery.feature) stays as the last two images; they are interface windows, set aside from the score.
+# nothing about an image: each one is opened and read. PLAN REWRITTEN 2026-10-25 (fourth version, table in STATUS.md): the SCENES BELOW
+# STILL HOLD THE 2026-10-18 TEXT and are rewritten once the step that advances the game N ticks and pauses it again is confirmed
+# (asked of NPT through the TM). The letter pair (08-gallery.feature) stays as the last two images; they are interface windows, set aside.
 #
 # THE STORY: one autumn evening and the morning after in the tea room (the hut). Nelim is the protagonist, her husky Yuki and the hamster
 # Noisette her guests. Same outfit and hair all evening (forest green collar shirt (46, 98, 74), FancyBun); the morning after she wears a
 # mustard basic shirt (232, 190, 70) and Pigtails (she dressed and redid her hair overnight). What the mod does is invisible on a pawn, so
-# each scene shows a short message (34 characters or fewer, one line) that the grammar resolver writes: the French worker corrects the
-# source text or not (le husky, la harpe, son épée from the source "sa épée").
-# RHYTHM: 17h, 18h, 19h, 21h, then 7h; the game is paused in each scene.
-# 1 17h Clear, WIDE zoom 4, frame (141, 72), opening: Nelim starts at the stool (140, 72) and `Ingest` on Rawbean (140, 71), 40 ticks then
-#   pause (she just sat, the guests wait); Yuki (143, 71) and Noisette (139, 73) face South. "Le husky et le hamster attendent."
-# 2 18h Clear, MEDIUM zoom 6, frame (140, 73): fire axe (140, 74), lit TorchLamp (142, 74); she hauls the long sword to (141, 74), 25 ticks
-#   then pause; Yuki (142, 73). "Elle pose sa épée." (shows "son épée").
-# 3 19h Rain, TIGHT zoom 7, frame (142, 72): Royalty harp (144, 74), lit TorchLamp (141, 76), the sword stays on the floor, PsychiteTea
-#   on the table; `Ingest` on PsychiteTea, 30 ticks; Yuki (141, 73). "Nelim écoute la harpe." (source "la harpe").
-# 4 21h Clear, MEDIUM zoom 5, frame (141, 72): two lit torches (142, 74), (138, 70), the cold tea still on the table; she hauls Kibble to
-#   Yuki (143, 72), 25 ticks. "Elle sert le husky."
-# 5 7h Fog, WIDE zoom 4, frame (141, 72), closing bookend of 1: same gesture (`Ingest` on Rawbean), three settings off, same message
-#   text "Le husky et le hamster attendent." which the game alone writes as "L'husky et l'hamster attendent." The mod is the difference.
-# RISKS: zoom 4 and 7 and the gesture ticks are unplayed; `Ingest` on PsychiteTea may be blocked by drug policy; harp cell a guess; fog and
-# rain may not show in a roofed hut; message must be resolved by GrammarResolver. HATS: none in the series (GALLERY.md criterion d).
-# Pose: no sitting step exists; `Ingest` at a table seats her. Animals: clear the place ONCE before spawning ("kept out of" would send the
-# spawned husky away). Hairstyle names are NPT's CATALOGUE-LOOKS.
+# each scene shows a short message (34 characters or fewer, one line, `a big message ... is held on screen`) that the grammar resolver
+# writes: the French worker corrects the source text or not (le husky, la harpe, son épée from the source "sa épée").
+# RHYTHM: 17h, 18h, 19h, 21h, then 7h; each gesture is started by a forced job, the game runs 25 to 40 ticks, then is paused.
+# LIGHT: the hut is roofed, so the light is its own: daylight through the doorway at 17h and 18h, dusk and torches at 19h and 21h, grey at 7h.
+# 1 17h Clear, WIDE zoom 4, frame (141, 72), opening. Foreground: Yuki (143, 71) and Noisette (139, 73) facing South; background: wooden
+#   wall and shelves; Nelim off-centre at the table. She starts at the stool (140, 72) and `Ingest` on Rawbean (140, 71), 40 ticks then
+#   pause. Instant: she has just sat, the guests wait (before: she came in; after: she eats). "Le husky et le hamster attendent."
+# 2 18h Clear, MEDIUM zoom 6, frame (140, 73). Foreground: Yuki (142, 73) watching; background: the lit TorchLamp (142, 74) and the fire
+#   axe (140, 74); Nelim left of centre. She hauls the long sword to (141, 74), 25 ticks then pause. Instant: the sword has just left her
+#   hands (after: she straightens up). "Elle pose sa épée." (shows "son épée").
+# 3 19h Rain, TIGHT zoom 7, frame (142, 72). Foreground: the PsychiteTea cup on the table; background: Royalty harp (144, 74), lit TorchLamp
+#   (141, 76), the sword still on the floor; Yuki (141, 73) at the edge. `Ingest` on PsychiteTea, 30 ticks then pause. Instant: the first
+#   sip (before: the harp started; after: she listens on). "Nelim écoute la harpe." (source "la harpe").
+# 4 21h Clear, MEDIUM zoom 5, frame (141, 72). Foreground: Yuki (143, 72) facing her; background: two lit torches (142, 74), (138, 70),
+#   the cold tea still on the table; Nelim centre-left. She hauls Kibble to Yuki, 25 ticks then pause. Instant: the bowl is lowered
+#   (after: Yuki eats). "Elle sert le husky."
+# 5 7h Fog, WIDE zoom 4, frame (141, 72), closing bookend of 1: same frame, same gesture a night later. Foreground: Yuki (142, 72) and
+#   Noisette (139, 73) facing South; background: wall and shelves, the sword on the floor (141, 74), the cold PsychiteTea cup and Rawbean (140,
+#   71) on the table, the torch (142, 74) unlit; Nelim off-centre. Three settings off. She starts at the stool and `Ingest` on Rawbean, 40
+#   ticks then pause. Instant: she has just sat after dressing (after: she eats). Same message text as 1, which the game alone writes as
+#   "L'husky et l'hamster attendent." The mod is the difference.
+# THUMBNAIL (criterion j): the message is 2x Medium at the top centre; read each capture at 268 px wide, and if the message is not legible
+#   there, ask NPT for a larger scale before refiling. RISKS: zoom 4 and 7 and the gesture ticks are unplayed; `Ingest` on PsychiteTea may
+#   be blocked by drug policy; harp cell a guess; fog and rain may not show in a roofed hut. HATS: none in the series (GALLERY.md d).
+# Pose: no sitting step exists; `Ingest` at a table seats her. Animals: clear the place ONCE before spawning. Hairstyle names: NPT's
+# CATALOGUE-LOOKS. Each scene removes its decor (`the decor is removed`), and carried props (sword, cup) are placed again by the next scene.
 
 
 @review @timeout:900 @requires:nelim.pickletools.screenshotmode @requires:nelim.pickletools.clickdiagnostics @requires:lucius.eyegenes3 @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.camerazoom @requires:nelim.pickletools.stagedecor
