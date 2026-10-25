@@ -1,58 +1,30 @@
 # Gallery of the Workshop page, the story series (AUDIT.md 9, GALLERY.md "Une seule histoire" and "Shotlist : critères d'une scène à 4/5").
 # Plays in the SANCTUARY pass only (wsl-deps.sanctuary.map), French, and is left out of every other pass by name. A green run proves
-# nothing about an image: each one is opened and read. REWRITTEN 2026-10-18 after the shotlist audit (outfit per scene, action, plan per
-# risk), NOT PLAYED. The letter pair (08-gallery.feature) stays as the last two images; they are interface windows, set aside from the score.
+# nothing about an image: each one is opened and read. PLAN REWRITTEN 2026-10-25 (third version, table in STATUS.md): the SCENES BELOW
+# STILL HOLD THE 2026-10-18 TEXT and are rewritten when NPT pushes `a big message {string} is held on screen`. The letter pair
+# (08-gallery.feature) stays as the last two images; they are interface windows, set aside from the score.
 #
-# THE STORY: one evening and the next morning in the tea room (the hut, at the water's edge). Nelim is the protagonist, her husky Yuki and
-# the hamster Noisette are her guests. What the mod does is invisible on a pawn, so each scene shows it where the player meets it: the line
-# the game writes at the top left of the map for what is happening, built by the engine's grammar and corrected by the mod. Every scene
-# carries an object or an animal whose French label exercises a correction (hamster, husky, haricot, hache de pompier, harpe, épée).
-# EPISODES (criterion k, one story that moves forward): who = Nelim (protagonist), Yuki the husky, Noisette the hamster; where = the tea room;
-# which day = one autumn evening and the morning after; rhythm = one scene per hour, 17h 18h 19h 21h, then 7h. 1 she feeds her two guests;
-# 2 she puts away her father's sword while the husky watches; 3 the rain starts and she listens to the harp with a cup of tea; 4 late, she
-# brings the husky its bowl and the tea has gone cold; 5 next morning the same meal is written by the game alone, without the mod.
-# Scene 5 plays scene 1's sentence again with the three corrections off: the whole mod is the difference between the two sentences.
-#
-# TIME (criterion a): the game stays paused in each scene; the hour is set per scene (17, 18, 19, 21, then 7 the next morning), so the story
-# passes four hours, a night, then a morning. Weather: Clear, Clear, Rain, Clear, Fog. Temperature 20 degrees. Place: the hut, one corner per scene.
-# FRAMING (criterion f): the camera is framed on a cell next to the subject (`I frame the cell`), so Nelim sits off-centre; foreground = the
-# animals and the held item, background = the wooden wall and shelves; light = daylight at 17h and 18h, dusk rain at 19h, two lit torches
-# at 21h, grey morning at 7h.
-# DECOR (criterion b): each scene names its own props, placed or lit before the pawns and removed after the shot (`the decor is removed`).
-# NO SCENE IS A LINEUP (criterion i): one subject per image, the animals at different cells, facing South (toward the camera) in 1 to 5.
-#
-# SHOT PLAN, one line per scene (a to j; risk AND plan, criterion h):
-# 1. 17h Clear, hut, frame (139, 71) zoom 6. Nelim, terracotta basic shirt (214, 92, 64), hairstyle FancyBun, kit smile; ACTION: she holds a
-#    bean out (carries the item Rawbean). Decor: Rawbean on the table (140, 71) ((140, 72) holds a Stool, run 20261019-gallery-story-2). Living: Yuki the husky (143, 71) and Noisette the hamster
-#    (139, 73), both facing South (More Rodents). Says: Nelim feeds her guests, and the game writes it right (le hamster, le husky de haricots).
-#    RISK: the message at the top left may be too small or hidden by presentation mode. PLAN: read it on the first capture; if illegible at full
-#    size, ask NPT for a larger message step, else fall back to the letters; hamster hidden behind the table: move it to (139, 74).
-# 2. 18h Clear, hut, frame (140, 73) zoom 6. Nelim, forest green collar shirt (46, 98, 74), hairstyle Ponytails, kit smug (proud); ACTION: she
-#    holds the long sword she polishes (carries the item MeleeWeapon_LongSword). Decor: fire axe on the floor (140, 74) (Fort's Firefighter
-#    Gadget), TorchLamp lit (142, 74). Living: Yuki (142, 73) facing South. Says: the sword is hers (son épée, the gold l'épée de son père).
-#    RISK: the carried sword may not draw, or the floor axe be lost in the shelves. PLAN: if the sword is not drawn, put it on the floor beside
-#    the axe; the lit torch gives a bright pool at 18h to show the axe.
-# 3. 19h Rain, hut, frame (142, 72) zoom 5.5. Nelim, plum robe (112, 64, 140), hairstyle Wavy, kit calm; ACTION: she holds a cup of tea (carries
-#    the item PsychiteTea) and faces the harp. Decor: Royalty harp (144, 74) (1x1, French label harpe), TorchLamp lit (141, 76). Living: Yuki
-#    (141, 73) facing South. Says: music in the tea room while the rain falls (la harpe, la forge d'Éclat).
-#    RISK: the harp cell is a guess (the hut photograph shows a shelf at (144, 75) and a brazier at (144, 70)); rain may darken the frame.
-#    PLAN: the placing step fails loudly on a blocked cell, then try (143, 75); a second torch if the frame is dark.
-# 4. 21h Clear, hut, frame (141, 72) zoom 5. Nelim, navy parka (36, 52, 104), hairstyle Long, kit sad (tender, tired); ACTION: she carries a
-#    bowl of kibble to Yuki (carries the item Kibble). Decor: two lit torches (142, 74) and (138, 70). Living: Yuki (143, 72) facing South.
-#    Says: the tea has gone cold and the husky keeps watch (le husky veille).
-#    RISK: night darkness hides the pawns; the torch cells are guesses. PLAN: a third torch, hour 20 as a fallback.
-# 5. 7h Fog, hut, frame (141, 74) zoom 6.5. Nelim, mustard basic shirt (232, 190, 70), hairstyle Pigtails, kit neutral (waking up); ACTION: she
-#    holds the bean again (carries the item Rawbean). Decor: none placed, the bean is the one she holds. Living: Yuki (142, 72) and Noisette
-#    (143, 74), the same sentence as scene 1 with the three corrections off. Says: the game alone writes l'hamster, l'husky, d'haricots; the
-#    mod is the difference.
-#    RISK: fog hides the message backdrop; the sentence is the same as scene 1, so the images may read as a repeat. PLAN: different outfit,
-#    corner, hour and weather; if it still reads as a repeat, move its text to the harp sentence of scene 3.
-# HATS (owner rule, GALLERY.md criterion d): no scene dresses Nelim in a hat (shirts, robe, parka only), so no hair-under-hat mod is needed; if a hat is added later, mount a
-# show-hair mod in the map and keep her hair long and loose, never a ponytail or a bun under it.
-# Pose: no sitting or lying step exists (GALERIE.md): Nelim stands and holds, the animals stand. The message is posted LAST, right before the
-# screenshot, because it fades after a few seconds of real time.
-# Animals: scenes with a spawned animal clear the place ONCE (the animals are removed from the sanctuary) before spawning: "kept out of" would
-# send the spawned husky away again. Hairstyle names are the ones of NPT's CATALOGUE-LOOKS (FancyBun, Ponytails, Wavy, Long, Pigtails).
+# THE STORY: one autumn evening and the morning after in the tea room (the hut). Nelim is the protagonist, her husky Yuki and the hamster
+# Noisette her guests. Same outfit and hair all evening (forest green collar shirt (46, 98, 74), FancyBun); the morning after she wears a
+# mustard basic shirt (232, 190, 70) and Pigtails (she dressed and redid her hair overnight). What the mod does is invisible on a pawn, so
+# each scene shows a short message (34 characters or fewer, one line) that the grammar resolver writes: the French worker corrects the
+# source text or not (le husky, la harpe, son épée from the source "sa épée").
+# RHYTHM: 17h, 18h, 19h, 21h, then 7h; the game is paused in each scene.
+# 1 17h Clear, WIDE zoom 4, frame (141, 72), opening: Nelim starts at the stool (140, 72) and `Ingest` on Rawbean (140, 71), 40 ticks then
+#   pause (she just sat, the guests wait); Yuki (143, 71) and Noisette (139, 73) face South. "Le husky et le hamster attendent."
+# 2 18h Clear, MEDIUM zoom 6, frame (140, 73): fire axe (140, 74), lit TorchLamp (142, 74); she hauls the long sword to (141, 74), 25 ticks
+#   then pause; Yuki (142, 73). "Elle pose sa épée." (shows "son épée").
+# 3 19h Rain, TIGHT zoom 7, frame (142, 72): Royalty harp (144, 74), lit TorchLamp (141, 76), the sword stays on the floor, PsychiteTea
+#   on the table; `Ingest` on PsychiteTea, 30 ticks; Yuki (141, 73). "Nelim écoute la harpe." (source "la harpe").
+# 4 21h Clear, MEDIUM zoom 5, frame (141, 72): two lit torches (142, 74), (138, 70), the cold tea still on the table; she hauls Kibble to
+#   Yuki (143, 72), 25 ticks. "Elle sert le husky."
+# 5 7h Fog, WIDE zoom 4, frame (141, 72), closing bookend of 1: same gesture (`Ingest` on Rawbean), three settings off, same message
+#   text "Le husky et le hamster attendent." which the game alone writes as "L'husky et l'hamster attendent." The mod is the difference.
+# RISKS: zoom 4 and 7 and the gesture ticks are unplayed; `Ingest` on PsychiteTea may be blocked by drug policy; harp cell a guess; fog and
+# rain may not show in a roofed hut; message must be resolved by GrammarResolver. HATS: none in the series (GALLERY.md criterion d).
+# Pose: no sitting step exists; `Ingest` at a table seats her. Animals: clear the place ONCE before spawning ("kept out of" would send the
+# spawned husky away). Hairstyle names are NPT's CATALOGUE-LOOKS.
+
 
 @review @timeout:900 @requires:nelim.pickletools.screenshotmode @requires:nelim.pickletools.clickdiagnostics @requires:lucius.eyegenes3 @requires:nelim.pickletools.colonistrace @requires:nelim.pickletools.screenshotstudio @requires:nelim.pickletools.camerazoom @requires:nelim.pickletools.stagedecor
 Feature: the gallery story of French Grammar Renew
