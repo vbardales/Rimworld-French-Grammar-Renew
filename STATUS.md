@@ -27,6 +27,7 @@ remaining:
     be based on his code (licence `silent`).
   - unverified: nothing has been uploaded since the 0.1.0 creation, so the page's description, gallery
     and change notes have never been seen in place.
+  - ticket 20261025-182501-478-7e03 queued (feature 09, French, sanctuary map, tree 04a5aab). Preview regenerated from the new panel config and validated by the owner 2026-10-25; echo still to validate at `mountPreview`.
   - defect: story-1 of feature 09 failed 2026-10-19/20 (run 20261019-gallery-story-2, single-scenario): `the cell (140, 72) already holds Stool`. Bean moved to (140, 71) 2026-10-25, NOT replayed; scenarios 2 to 5 never played; Inbox folder deleted after study. Ticket to file for the five scenarios.
   - unverified: gallery story (feature 09) not yet seen. Ticket 20261019-184214-288-8c52 queued (the first, 0a46, stalled at startup with no report: suspect one of the three added mods, bisect if it stalls again). Judge each capture against 4, redo weak scenes in small tickets, keep serious ones as candidates, reindex, then burn subtitles (lines in PUBLICATION.md).
   - feature: after the accepted gallery, redo Art/echo-source.png by the owner, then echo_review_sha; PUBLICATION.md open points (illustration tool for AI-GENERATED, THANKS for gallery staging mods, register rows for b606, Harmony, Pickle, RimLogging, RIMMSQOL); NPT to extract More Rodents, Fort Firefighter, VGP into GALLERY-PROPS.md (done by NPT, unplayed).
