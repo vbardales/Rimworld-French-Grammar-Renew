@@ -23,7 +23,7 @@
 #
 # SHOT PLAN, one line per scene (a to j; risk AND plan, criterion h):
 # 1. 17h Clear, hut, frame (139, 71) zoom 6. Nelim, terracotta basic shirt (214, 92, 64), hairstyle FancyBun, kit smile; ACTION: she holds a
-#    bean out (carries the item Rawbean). Decor: Rawbean on the table (140, 72). Living: Yuki the husky (143, 71) and Noisette the hamster
+#    bean out (carries the item Rawbean). Decor: Rawbean on the table (140, 71) ((140, 72) holds a Stool, run 20261019-gallery-story-2). Living: Yuki the husky (143, 71) and Noisette the hamster
 #    (139, 73), both facing South (More Rodents). Says: Nelim feeds her guests, and the game writes it right (le hamster, le husky de haricots).
 #    RISK: the message at the top left may be too small or hidden by presentation mode. PLAN: read it on the first capture; if illegible at full
 #    size, ask NPT for a larger message step, else fall back to the letters; hamster hidden behind the table: move it to (139, 74).
@@ -78,7 +78,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
-    And Nelim's Pickle Tools: I place the decor "Rawbean" at (140, 72)
+    And Nelim's Pickle Tools: I place the decor "Rawbean" at (140, 71)
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (143, 71)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
     And Nelim's Pickle Tools: an adult animal of kind "Hamster" named "Noisette" is spawned at (139, 73)
