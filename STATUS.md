@@ -27,13 +27,13 @@ remaining:
     be based on his code (licence `silent`).
   - unverified: nothing has been uploaded since the 0.1.0 creation, so the page's description, gallery
     and change notes have never been seen in place.
-  - ticket 20261025-182501-478-7e03 queued (feature 09, French, sanctuary map; plays the tree of its start, so the scenes of commit 5d2fb3e if not started before). Session id for the wake: local_f1324344-29bc-42b9-9476-43d0d2fe2c2f. Preview regenerated from the new panel config and validated by the owner 2026-10-25 (echo overlaps the copy line, accepted); echo still to validate at `mountPreview`.
-  - unverified: gallery scenes of feature 09 rewritten 2026-10-25, NOT PLAYED (plan 4.5 mean, table in the shotlist section). At RUN_DONE: read summary.json and junit.xml, open every capture, judge each against its line, redo weak scenes in small tickets, then reindex, then burn subtitles (lines in PUBLICATION.md). First things to read: gestures frozen mid-action, zoom 4 and 7, `Ingest` on PsychiteTea (drug policy), harp cell (144, 74), message legible at 268 px (else ask NPT for a larger scale via the TM; NPT is archived). Earlier failure (run 20261019-gallery-story-2, bean cell held a Stool) fixed: bean at (140, 71).
+  - ticket 20261025-182501-478-7e03 DONE 2026-10-30, 3 of 5 (Tests/Pickle/Inbox/gallery-story-3). Scenes 2, 3, 4 passed, captures opened: 2 and 4 read well (message legible, torch pools), 3 shows two ghost-like animals beside Nelim (Yuki not lying down, sword on floor) and zoom looks unchanged from 2. Scenes 1 and 5 FAILED: step `the animal "Noisette" stands at (139, 73) facing South`, "the cell (139, 73) is not standable" (spawn at that cell passed; pick a free cell, lines 65-66 and 204-205 of 09-gallery-story.feature, and the comments at lines 14 and 27). Scene 2 message shows "son épée" (the shown-correct one).
+  - unverified: redo scenes 1 and 5 (new Noisette cell), judge scene 3 (Yuki posture, zoom 7), then reindex, then burn subtitles (lines in PUBLICATION.md). Still to check: `Ingest` on PsychiteTea worked (cup in scene 3), message legible at 268 px, `Player.log` of the run unread.
   - feature: after the accepted gallery, redo Art/echo-source.png by the owner, then echo_review_sha; PUBLICATION.md open points (illustration tool for AI-GENERATED, THANKS for gallery staging mods, register rows for b606, Harmony, Pickle, RimLogging, RIMMSQOL); NPT to extract More Rodents, Fort Firefighter, VGP into GALLERY-PROPS.md (done by NPT, unplayed).
 session:      local_82860736-8ac6-4da1-8b6b-542b87bbe12e
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
 updated:      2026-10-18, gallery reopened by the owner (two letters were not a story), shootGallery[1.0.0]
-protocols_read_sha: 65f1477c389ca6e741af05b7745aa30f6b26b595
+protocols_read_sha: d699b6d9c08e2f0a1bb860e85e68443aca1fcc57
 ---
 # French Grammar Renew (unofficial): status
 
