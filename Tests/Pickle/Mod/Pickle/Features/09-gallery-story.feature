@@ -11,7 +11,7 @@
 # writes: the French worker corrects the source text or not (le husky, la harpe, son épée from the source "sa épée").
 # RHYTHM: 17h, 18h, 19h, 21h, then 7h; each gesture is started by a forced job, the game runs 25 to 40 ticks, then is paused.
 # LIGHT: the hut is roofed, so the light is its own: daylight through the doorway at 17h and 18h, dusk and torches at 19h and 21h, grey at 7h.
-# 1 17h Clear, WIDE zoom 4, frame (141, 72), opening. Foreground: Yuki (143, 71) and Noisette (139, 73) facing South; background: wooden
+# 1 17h Clear, WIDE zoom 4, frame (141, 72), opening. Foreground: Yuki (143, 71) and Noisette (143, 75) facing South; background: wooden
 #   wall and shelves; Nelim off-centre at the table. She starts at the stool (140, 72) and `Ingest` on Rawbean (140, 71), 40 ticks then
 #   pause. Instant: she has just sat, the guests wait (before: she came in; after: she eats). "Le husky et le hamster attendent."
 # 2 18h Clear, MEDIUM zoom 6, frame (140, 73). Foreground: Yuki (142, 73) watching; background: the lit TorchLamp (142, 74) and the fire
@@ -24,7 +24,7 @@
 #   the cold tea still on the table; Nelim centre-left. She hauls Kibble to Yuki, 25 ticks then pause. Instant: the bowl is lowered
 #   (after: Yuki eats). "Elle sert le husky."
 # 5 7h Fog, WIDE zoom 4, frame (141, 72), closing bookend of 1: same frame, same gesture a night later. Foreground: Yuki (142, 72) and
-#   Noisette (139, 73) facing South; background: wall and shelves, the sword on the floor (141, 74) and Rawbean (140,
+#   Noisette (143, 75) facing South; background: wall and shelves, the sword on the floor (141, 74) and Rawbean (140,
 #   71) on the table, no torch; Nelim off-centre. Three settings off. She starts at the stool and `Ingest` on Rawbean, 40
 #   ticks then pause. Instant: she has just sat after dressing (after: she eats). Same message text as 1, which the game alone writes as
 #   "L'husky et l'hamster attendent." The mod is the difference.
@@ -62,8 +62,8 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I place the decor "Rawbean" at (140, 71)
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (143, 71)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
-    And Nelim's Pickle Tools: an adult animal of kind "Hamster" named "Noisette" is spawned at (139, 73)
-    And Nelim's Pickle Tools: the animal "Noisette" stands at (139, 73) facing South
+    And Nelim's Pickle Tools: an adult animal of kind "Hamster" named "Noisette" is spawned at (143, 75)
+    And Nelim's Pickle Tools: the animal "Noisette" stands at (143, 75) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (140, 72) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "FancyBun"
@@ -201,8 +201,8 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (142, 72)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 72) facing South
-    And Nelim's Pickle Tools: an adult animal of kind "Hamster" named "Noisette" is spawned at (139, 73)
-    And Nelim's Pickle Tools: the animal "Noisette" stands at (139, 73) facing South
+    And Nelim's Pickle Tools: an adult animal of kind "Hamster" named "Noisette" is spawned at (143, 75)
+    And Nelim's Pickle Tools: the animal "Noisette" stands at (143, 75) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 190, 70)
     And Nelim's Pickle Tools: "Nelim" stands at (140, 72) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Pigtails"
