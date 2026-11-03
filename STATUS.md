@@ -31,10 +31,11 @@ remaining:
   - ticket 20261030-162745-526-8432 queued (scenes 1 and 5, Noisette at (143, 75), evidence Tests/Pickle/Inbox/gallery-story-4; session local_f1324344-29bc-42b9-9476-43d0d2fe2c2f). Then:
   - unverified: redo scenes 1 and 5 (new Noisette cell), judge scene 3 (Yuki posture, zoom 7), then reindex, then burn subtitles (lines in PUBLICATION.md). Still to check: `Ingest` on PsychiteTea worked (cup in scene 3), message legible at 268 px, `Player.log` of the run unread.
   - feature: after the accepted gallery, redo Art/echo-source.png by the owner, then echo_review_sha; PUBLICATION.md open points (illustration tool for AI-GENERATED, THANKS for gallery staging mods, register rows for b606, Harmony, Pickle, RimLogging, RIMMSQOL); NPT to extract More Rodents, Fort Firefighter, VGP into GALLERY-PROPS.md (done by NPT, unplayed).
-session:      local_82860736-8ac6-4da1-8b6b-542b87bbe12e
+  - unverified: Preview re-rendered 2026-11-03 (echo size rule): `Preview.png` byte-identical, not committed. Echo (open book) overlaps the tagline "the game" and the lamp sits by "Renew": defect, to fix when the owner redoes the echo from the accepted gallery (`echo-source.png`).
+session:      local_56f20dd4-a2b6-45bf-9572-f41986d52e86
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
 updated:      2026-10-18, gallery reopened by the owner (two letters were not a story), shootGallery[1.0.0]
-protocols_read_sha: d699b6d9c08e2f0a1bb860e85e68443aca1fcc57
+protocols_read_sha: 6dcadf897d29aca88ad460c2a3c1703f5c827c96
 ---
 # French Grammar Renew (unofficial): status
 
