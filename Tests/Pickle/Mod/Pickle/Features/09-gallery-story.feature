@@ -17,7 +17,7 @@
 # 2 18h Clear, MEDIUM zoom 6, frame (140, 73). Foreground: Yuki (142, 73) watching; background: the lit TorchLamp (142, 74) and the fire
 #   axe (140, 74); Nelim left of centre. She hauls the long sword to (141, 74), 25 ticks then pause. Instant: the sword has just left her
 #   hands (after: she straightens up). "Elle pose sa épée." (shows "son épée").
-# 3 19h Rain, TIGHT zoom 7, frame (142, 72). Foreground: the PsychiteTea cup on the table; background: Royalty harp (144, 74), lit TorchLamp
+# 3 19h Rain, TIGHT zoom 4.5 (root size is cells high: 7 showed the whole hut), frame (142, 72). Foreground: the PsychiteTea cup on the table; background: Royalty harp (144, 74), lit TorchLamp
 #   (141, 76), the sword still on the floor; Yuki (141, 73) lies down and listens (LayDown); Nelim stands right of the cup at (142, 72), off-centre. `Ingest` on PsychiteTea, 30 ticks then pause. Instant: the first
 #   sip (before: the harp started; after: she listens on). "Nelim écoute la harpe." (source "la harpe").
 # 4 21h Clear, MEDIUM zoom 5, frame (141, 72). Foreground: Yuki (143, 72) facing her; background: two lit torches (142, 74), (138, 70),
@@ -130,15 +130,14 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
     And Nelim's Pickle Tools: I place the decor "PsychiteTea" at (140, 71)
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (141, 73)
-    And Nelim's Pickle Tools: the animal "Yuki" stands at (141, 73) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (142, 72) facing West
     And Nelim's Pickle Tools: "Nelim" hairstyle is "FancyBun"
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
-    And Nelim's Pickle Tools: I frame the cell (142, 72) at zoom 7
+    And Nelim's Pickle Tools: I frame the cell (142, 72) at zoom 4.5
     And Nelim's Pickle Tools: time is paused for the capture
-    And Nelim's Pickle Tools: "Yuki" lies down
+    And Nelim's Pickle Tools: the animal "Yuki" is kept asleep
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Ingest" on the item "PsychiteTea" at (140, 71)
     And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
     And Nelim's Pickle Tools: a big message "Nelim écoute la harpe." is held on screen
