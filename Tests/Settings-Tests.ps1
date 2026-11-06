@@ -1,4 +1,4 @@
-# Additional regressions run inside Run-Tests.ps1, against the actual distributed DLL.
+# Settings regressions run inside Run-Tests.ps1, against the actual distributed DLL (shared checks cover XML parse, Keyed parity and source link).
 Section 'Settings, language isolation and shortcut contract'
 
 $optionNames = @('fixRichTextElision','fixAspiratedH','fixPossessive','fixPawnKindGender','frenchTypography','verboseLogging')
@@ -100,43 +100,4 @@ It 'shortcut is hidden by default and uses the native settings worker contract' 
     if ($type.GetProperty('Visible').DeclaringType -ne [RimWorld.MainButtonWorker]) { 'worker overrides native visibility ownership' }
     if ($type.GetProperty('Disabled').DeclaringType -ne [RimWorld.MainButtonWorker]) { 'worker overrides native enabled state' }
 
-}
-
-It 'all shipped XML parses and shortcut translations resolve to translatable fields' {
-    foreach ($file in Get-ChildItem $modDir -Recurse -Filter *.xml) {
-        $doc = New-Object System.Xml.XmlDocument; $doc.Load($file.FullName)
-    }
-    [xml]$defs = Get-Content (Join-Path $modDir 'Defs\MainButtons.xml') -Raw
-    $doc = New-Object System.Xml.XmlDocument
-    $doc.Load((Join-Path $modDir 'Languages\French\DefInjected\MainButtonDef\FrenchGrammarPlus.xml'))
-    foreach ($field in 'label','description') {
-        $key = 'FGP_Settings.' + $field
-        if ([string]::IsNullOrWhiteSpace($defs.Defs.MainButtonDef.$field)) { "English source missing: $key" }
-        if ([string]::IsNullOrWhiteSpace($doc.LanguageData.$key)) { "French injection missing: $key" }
-        if ($haveCode -and $null -eq [RimWorld.MainButtonDef].GetField($field)) { "unknown target field: $key" }
-    }
-}
-
-It 'Keyed resources have no duplicates, empty values or mismatched parameters' {
-    $all = @{}
-    foreach ($lang in 'English','French') {
-        $doc = New-Object System.Xml.XmlDocument
-        $doc.Load((Join-Path $modDir "Languages\$lang\Keyed\FrenchGrammarPlus.xml"))
-        $seen = @{}
-        foreach ($node in $doc.LanguageData.ChildNodes) {
-            if ($node.NodeType -ne 'Element') { continue }
-            if ($seen.ContainsKey($node.Name)) { "duplicate $lang key $($node.Name)" }
-            if ([string]::IsNullOrWhiteSpace($node.InnerText) -or $node.InnerText -match 'TODO|TODO_TRANSLATE') { "empty or unfinished $lang key $($node.Name)" }
-            $seen[$node.Name] = @([regex]::Matches($node.InnerText, '\{[^{}]+\}') | ForEach-Object Value | Sort-Object) -join '|'
-        }
-        $all[$lang] = $seen
-    }
-    foreach ($key in $all.English.Keys) {
-        if ($all.English[$key] -cne $all.French[$key]) { "parameter mismatch: $key" }
-    }
-}
-
-It 'description ends with the source link matching About.url' {
-    $expected = '[url=' + $about.ModMetaData.url + ']Source code on GitHub[/url]'
-    if (-not $about.ModMetaData.description.TrimEnd().EndsWith($expected)) { 'missing or inconsistent final source link' }
 }

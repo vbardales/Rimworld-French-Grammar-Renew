@@ -3,15 +3,14 @@
   The mod's own test suite. Runs without RimWorld, in a couple of seconds.
 
 .DESCRIPTION
-  The original five groups contain twenty-six tests. Settings-Tests.ps1 adds seven regressions:
-  native Scribe persistence, defaults, language isolation/logging, shortcut contract and XML/l10n.
+  Five groups, then Settings-Tests.ps1 (native Scribe persistence, defaults, language isolation, shortcut contract).
 
     The grammar        every correction run against the game's own French rules
     The patch targets  the three methods the mod hangs off, and the parameter names Harmony
                        matches by
     The word lists     both files, against the defs the game actually ships
     Translations       every key the C# asks for, in English and in French, key for key
-    What ships         the About, the folder Steam receives, and the documents beside it
+    The sources        the C# sources stay pure ASCII
 
   WHAT MAKES THIS SUITE WORTH HAVING. The game's own LanguageWorker_French loads and runs outside
   RimWorld. So the first group does not describe what the engine gets wrong, it asks it:
@@ -28,8 +27,9 @@
   are not all there - and GetTypes() on it always throws. Nothing here calls it: only the handful
   of types these tests name are touched, and those resolve.
 
-  The suite writes with Write-Output and never Write-Host: the output has to survive being piped
-  into a file or a variable, which Write-Host does not.
+  The harness is the shared lib/TestRunner.ps1 (It returns problems, Complete-Tests exits 1 on a failure).
+  Generic checks (Keyed EN/FR parity, About, packaging, STATUS front matter, XML parse, source link) are the
+  shared ones of the protocols repository, not repeated here (cut of 2026-11-06).
 
   PURE ASCII, like the mod's own source. Accented test strings are written as \uXXXX and expanded
   by Fr() below, so no codepage and no missing byte-order mark can mangle this file. PowerShell
@@ -51,14 +51,8 @@
     a duplicate entry added                     -> the parse test, naming the species
     a species the game does not ship added      -> the other coverage test
     "115 entries" changed to "114"              -> the header count test, alone
-    a French key deleted                        -> the key-for-key test
     an English key deleted                      -> the C# asks for it test, and key for key
-    the packageId changed in About.xml          -> the packageId test, printing both
     an accented character put in a .cs file     -> the pure ASCII test
-    TESTING.md copied into Mod/                 -> the what Steam receives test
-    Mod/ATTRIBUTION.md deleted                  -> the same test, with the other message
-    STATUS.md front matter unclosed             -> the front matter test
-    a French field name in STATUS.md            -> the field names test
     the mod assembly removed                    -> all twelve tests that need it, saying so
 
   THE MUTATION PASS FOUND A HOLE IN THIS FILE, which is the whole point of running it. The last
@@ -87,27 +81,12 @@ $ErrorActionPreference = 'Stop'
 # Harness
 # ---------------------------------------------------------------------------------------------
 
-$script:ran = 0
-$script:failed = 0
+# Shared harness (lib/TestRunner.ps1): It returns the problems of a test, nothing returned = pass.
+$SharedDir = @((Join-Path $ModRoot '../scripts'), (Join-Path $ModRoot '.github/scripts')) | Where-Object { Test-Path -LiteralPath (Join-Path $_ 'lib/TestRunner.ps1') } | Select-Object -First 1
+if (-not $SharedDir) { throw 'lib/TestRunner.ps1 not found (../scripts or .github/scripts)' }
+. (Join-Path $SharedDir 'lib/TestRunner.ps1')
 
-# A test body writes its problems to the pipeline and stays silent when it has none. No assertion
-# vocabulary: one test that lists every offending case beats ten that stop at the first.
-function It([string]$name, [scriptblock]$body) {
-    $script:ran++
-    $problems = @()
-    try   { $problems = @(& $body | Where-Object { $_ }) }
-    catch { $problems = @("threw: $($_.Exception.Message)") }
-
-    if ($problems.Count -eq 0) {
-        Write-Output "  ok    $name"
-    } else {
-        $script:failed++
-        Write-Output "  FAIL  $name"
-        foreach ($p in $problems) { Write-Output "          $p" }
-    }
-}
-
-function Section([string]$name) { Write-Output ''; Write-Output $name }
+function Section([string]$name) { Write-Host ''; Write-Host $name }
 
 # Expands \uXXXX so this file stays pure ASCII, the same trick and the same reason as the mod's
 # own source. Written out rather than imported: the suite must not depend on the thing it tests.
@@ -231,7 +210,7 @@ function Corrected([string]$s) {
 
 $Guard = [string][char]0x200B
 
-Write-Output "French Grammar Renew - test suite"
+Write-Host "French Grammar Renew - test suite"
 Write-Output "  mod       $ModRoot"
 Write-Output "  game data $GameData"
 if (-not $haveCode) { Write-Output "  NOTE: code tests will be skipped, an assembly is missing" }
@@ -614,12 +593,6 @@ It 'every key the C# asks for exists in English' {
     }
 }
 
-It 'French matches English key for key' {
-    if ($null -eq $englishKeys -or $null -eq $frenchKeys) { 'a Keyed file is missing'; return }
-    foreach ($k in $englishKeys) { if ($frenchKeys -cnotcontains $k) { "'$k' is in English and not in French" } }
-    foreach ($k in $frenchKeys)  { if ($englishKeys -cnotcontains $k) { "'$k' is in French and not in English" } }
-}
-
 It 'no key is shipped that nothing asks for' {
     if ($null -eq $englishKeys) { 'the English Keyed file is missing'; return }
     foreach ($k in $englishKeys) {
@@ -628,39 +601,8 @@ It 'no key is shipped that nothing asks for' {
 }
 
 # =============================================================================================
-Section 'What ships, and what sits beside it'
+Section 'The sources'
 # =============================================================================================
-
-$aboutPath = Join-Path $modDir 'About\About.xml'
-$about = $null
-if (Test-Path $aboutPath) { $about = New-Object System.Xml.XmlDocument; $about.Load($aboutPath) }
-
-It 'the About''s packageId is the one the C# hard-codes' {
-    if ($null -eq $about) { 'About.xml is missing'; return }
-    $inXml = [string]$about.ModMetaData.packageId
-    $m = [regex]::Match($sourceText, 'PackageId\s*=\s*"([^"]+)"')
-    if (-not $m.Success) { 'no PackageId constant found in the source'; return }
-    if ($inXml -cne $m.Groups[1].Value) {
-        "About.xml says '$inXml', the C# says '$($m.Groups[1].Value)'"
-    }
-}
-
-It 'the folder Steam receives carries nothing but the mod' {
-    # The uploader sends Mod/ whole, with no exclusion possible.
-    $strays = @()
-    foreach ($name in @('STATUS.md', 'TESTING.md', 'README.md', 'CHANGELOG.md', '.gitignore')) {
-        if (Test-Path (Join-Path $modDir $name)) { $strays += $name }
-    }
-    foreach ($d in @('obj', 'bin', 'Source', 'Tests', 'Art')) {
-        if (Test-Path (Join-Path $modDir $d)) { $strays += "$d/" }
-    }
-    foreach ($s in $strays) { "Mod/$s would be published to the Workshop" }
-
-    # ATTRIBUTION.md and LICENSE are deliberately duplicated into Mod/; their absence is the fault.
-    foreach ($name in @('ATTRIBUTION.md', 'LICENSE')) {
-        if (-not (Test-Path (Join-Path $modDir $name))) { "Mod/$name is missing; the published folder must carry its own copy" }
-    }
-}
 
 It 'the C# sources are pure ASCII' {
     foreach ($f in @(Get-ChildItem (Join-Path $ModRoot 'Source') -Recurse -Filter *.cs -ErrorAction SilentlyContinue)) {
@@ -672,47 +614,9 @@ It 'the C# sources are pure ASCII' {
     }
 }
 
-It 'the status sheet''s field names are the English ones' {
-    # A sweep across the repository once translated these keys and left the prose behind, and a
-    # sheet half in each language is far harder to spot than an empty one. Hunting French words
-    # in the prose is hopeless here of all places - this is a French mod and its documents quote
-    # French on purpose - so what is checked is the field names, which have exactly one spelling.
-    $p = Join-Path $ModRoot 'STATUS.md'
-    if (-not (Test-Path $p)) { 'STATUS.md is missing'; return }
-    $old = @{
-        'depot:' = 'repo:'; 'visibilite:' = 'visibility:'; 'detache:' = 'detached:'
-        'etape:' = 'stage:'; 'vitrine:' = 'showcase:'; 'teste_le:' = 'tested_on:'
-        'reste:' = 'remaining:'; 'maj:' = 'updated:'; 'licence_ou:' = 'licence_at:'
-    }
-    $lines = @(Get-Content $p -Encoding UTF8)
-    foreach ($key in $old.Keys) {
-        foreach ($line in $lines) {
-            if ($line.TrimStart().StartsWith($key)) { "'$key' is the French field name; it is '$($old[$key])'" }
-        }
-    }
-}
-
-It 'the status sheet has a closed front matter with its session and date' {
-    $p = Join-Path $ModRoot 'STATUS.md'
-    if (-not (Test-Path $p)) { 'STATUS.md is missing'; return }
-    $lines = @(Get-Content $p -Encoding UTF8)
-    $fences = @($lines | Where-Object { $_ -ceq '---' }).Count
-    if ($fences -lt 2) { "the front matter is not closed: $fences '---' lines. An unclosed one turns the sheet into prose and the next reader finds nothing" }
-    foreach ($key in @('mod:', 'packageId:', 'workflow_stage:', 'licence:', 'session:', 'updated:')) {
-        if (-not ($lines | Where-Object { $_.StartsWith($key) })) { "the front matter has no '$key'" }
-    }
-}
-
 # =============================================================================================
 
 . (Join-Path $PSScriptRoot 'Settings-Tests.ps1')
 
-Write-Output ''
-if ($script:failed -eq 0) {
-    Write-Output "$($script:ran) tests, all passing."
-} else {
-    Write-Output "$($script:ran) tests, $($script:failed) failing."
-}
-
 [System.AppDomain]::CurrentDomain.remove_AssemblyResolve($script:asmResolver)
-exit ([int]($script:failed -gt 0))
+Complete-Tests
