@@ -69,6 +69,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    And Nelim's Pickle Tools: the things "DarklightBrazier" within 8 cells of (141, 72) are hidden
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 4
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: "Yuki" follows "Nelim" within 2 cells
@@ -210,12 +211,13 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    And Nelim's Pickle Tools: the things "DarklightBrazier" within 8 cells of (141, 72) are hidden
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 4
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: "Yuki" follows "Nelim" within 2 cells
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Ingest" on the item "Rawbean" at (140, 71)
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
-    And Nelim's Pickle Tools: a big message "Le husky et Pécan attendent." is held on screen
+    And Nelim's Pickle Tools: a big message "L'husky et Pécan attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     Then I take a screenshot "story 5 the morning without the mod"
     And Nelim's Pickle Tools: the decor is removed
