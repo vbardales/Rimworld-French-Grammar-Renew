@@ -173,3 +173,26 @@ Risks, not rated: zoom 4 and 7 never tried; gesture ticks depend on walking dist
 Opus director pass of this day kept as in v3; this version adds no second pass (one call per shotlist).
 
 2026-11-06 night review (director): ALL tickets since gallery-story-7 ran in ENGLISH (no `-Language French`): the French worker was inactive, so scene 2 shows "sa épée" instead of "son épée" (only gallery-story-3 was French). Verdicts: scene 1 and 5 keep (Nelim's face hidden by the bean sack, hut dark: weak but readable), scene 2 REFUSED until replayed in French, scene 4 keep, scene 3 REFUSED (cup on floor, no rain, Yuki pose). Refiled scenes 1, 2, 4, 5 with `-Language French`: ticket 20261106-232113-341-07aa, evidence Tests/Pickle/Inbox/gallery-story-14. Scene 3 waits for NPT (`carries the item` step).
+
+## NSB (sync 2026-11-06, partial read)
+
+Places read: not re-read this run (hut unchanged for the mod). Tribe read: 2026-11-06 (`CATALOGUE-ANIMAUX.md`, `PECAN-PROFIL.md`, NSB `steps.md`; NPT `docs/steps.md` for carry, lie down, sit, weather).
+NSB change: Pécan (FoxSquirrel, Vesper's, Erin's Fox Squirrel) is now in the animal catalogue, so the shotlist use is free (rule 1). NPT now has `carries the item`, `lies down`, `is kept asleep`, `sits on the building`, `the weather is set at once to`: scene 3 rewritten with them (cup in hand, rain at once), ticket f4f2.
+Rule 5: mod adds no animal (grammar worker), nothing MISSING.
+
+| Place | Shots | Changes for gallery | Last read |
+|---|---|---|---|
+| hut | 1-5 | DarklightBrazier hidden, own torches, decor removed after each shot | not re-read |
+
+| Colonist | Shots | Outfit | Last read | Exceptions |
+|---|---|---|---|---|
+| Nelim | 1-5 | forest green CollarShirt (46,98,74) evening, mustard shirt (232,190,70) morning; hair canon Roo_HD_Hair_Highpony | not re-read | none |
+
+| Animal | Shots | Outfit | Last read | Exceptions |
+|---|---|---|---|---|
+| Yuki (husky) | 1-5 | none | catalogue 2026-11-06 | none |
+| Pécan (FoxSquirrel) | 1, 5 | none (profile: no compatible apparel) | 2026-11-06 | none, in NSB catalogue |
+
+| Included animal | Shot |
+|---|---|
+| none (mod ships no animal) | n/a |
