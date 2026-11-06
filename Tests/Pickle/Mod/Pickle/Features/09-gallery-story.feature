@@ -78,7 +78,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Nelim's Pickle Tools: a big message "Le husky et Pécan attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
-    And Nelim's Pickle Tools: the things within 8 cells of (141, 72) are listed
+    And Nelim's Pickle Tools: the pawns within 12 cells of (143, 72) are listed
     Then I take a screenshot "story 1 the meal"
     And Nelim's Pickle Tools: the decor is removed
     And no errors were logged
@@ -222,7 +222,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Nelim's Pickle Tools: a big message "L'husky et Pécan attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
-    And Nelim's Pickle Tools: the things within 8 cells of (141, 72) are listed
+    And Nelim's Pickle Tools: the pawns within 12 cells of (143, 72) are listed
     Then I take a screenshot "story 5 the morning without the mod"
     And Nelim's Pickle Tools: the decor is removed
     And no errors were logged
