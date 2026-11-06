@@ -97,7 +97,6 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_FireAxe" at (140, 74)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (142, 74)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (142, 74) is lit
-    And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (142, 73)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 73) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (138, 74) facing East
@@ -131,7 +130,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the decor "TorchLamp" at (141, 76) is lit
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
     And Nelim's Pickle Tools: I place the decor "PsychiteTea" at (140, 71)
-    And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (141, 73)
+    And Nelim's Pickle Tools: the animal "Yuki" stands at (141, 73) facing East
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (142, 72) facing West
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
@@ -169,7 +168,6 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the decor "TorchLamp" at (138, 70) is lit
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
     And Nelim's Pickle Tools: I place the decor "PsychiteTea" at (140, 71)
-    And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (143, 72)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 72) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (140, 73) facing East
