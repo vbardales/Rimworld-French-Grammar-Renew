@@ -64,6 +64,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
     And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 75)
     And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 75) facing South
+    And Nelim's Pickle Tools: the animal "Pécan" faces south
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (140, 72) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
@@ -77,6 +78,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Nelim's Pickle Tools: a big message "Le husky et Pécan attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
+    And Nelim's Pickle Tools: the things within 8 cells of (141, 72) are listed
     Then I take a screenshot "story 1 the meal"
     And Nelim's Pickle Tools: the decor is removed
     And no errors were logged
@@ -206,6 +208,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 72) facing South
     And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 75)
     And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 75) facing South
+    And Nelim's Pickle Tools: the animal "Pécan" faces south
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 190, 70)
     And Nelim's Pickle Tools: "Nelim" stands at (140, 72) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
@@ -219,6 +222,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Nelim's Pickle Tools: a big message "L'husky et Pécan attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
+    And Nelim's Pickle Tools: the things within 8 cells of (141, 72) are listed
     Then I take a screenshot "story 5 the morning without the mod"
     And Nelim's Pickle Tools: the decor is removed
     And no errors were logged
