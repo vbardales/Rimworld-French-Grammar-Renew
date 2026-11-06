@@ -60,10 +60,9 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: I place the decor "Rawbean" at (140, 71)
-    And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (143, 71)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
-    And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 75)
-    And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 75) facing South
+    And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
+    And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 69) facing South
     And Nelim's Pickle Tools: the animal "Pécan" faces south
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (140, 72) facing South
@@ -204,10 +203,9 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: I place the decor "Rawbean" at (140, 71)
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
-    And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (142, 72)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 72) facing South
-    And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 75)
-    And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 75) facing South
+    And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
+    And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 69) facing South
     And Nelim's Pickle Tools: the animal "Pécan" faces south
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 190, 70)
     And Nelim's Pickle Tools: "Nelim" stands at (140, 72) facing South
