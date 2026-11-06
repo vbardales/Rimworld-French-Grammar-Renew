@@ -5,8 +5,8 @@
 # The letter pair (08-gallery.feature) stays as the last two images; they are interface windows, set aside.
 #
 # THE STORY: one autumn evening and the morning after in the tea room (the hut). Nelim is the protagonist, her husky Yuki and the hamster
-# Noisette her guests. Same outfit and hair all evening (forest green collar shirt (46, 98, 74), FancyBun); the morning after she wears a
-# mustard basic shirt (232, 190, 70) and Pigtails (she dressed and redid her hair overnight). What the mod does is invisible on a pawn, so
+# Noisette her guests. Same outfit and hair all evening (forest green collar shirt (46, 98, 74), canon Roo_HD_Hair_Highpony); the morning after she wears a
+# mustard basic shirt (232, 190, 70), same canon Roo_HD_Hair_Highpony (owner, 2026-11-06: Highpony unless justified). What the mod does is invisible on a pawn, so
 # each scene shows a short message (34 characters or fewer, one line, `a big message ... is held on screen`) that the grammar resolver
 # writes: the French worker corrects the source text or not (le husky, la harpe, son épée from the source "sa épée").
 # RHYTHM: 17h, 18h, 19h, 21h, then 7h; each gesture is started by a forced job, the game runs 25 to 40 ticks, then is paused.
@@ -66,7 +66,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the animal "Noisette" stands at (143, 75) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (140, 72) facing South
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "FancyBun"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 4
@@ -99,7 +99,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 73) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (138, 74) facing East
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "FancyBun"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "smug"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: I frame the cell (140, 73) at zoom 6
@@ -132,7 +132,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: an adult animal of kind "Husky" named "Yuki" is spawned at (141, 73)
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (142, 72) facing West
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "FancyBun"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: I frame the cell (142, 72) at zoom 4.5
@@ -170,7 +170,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 72) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (140, 73) facing East
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "FancyBun"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "sad"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 5
@@ -206,7 +206,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the animal "Noisette" stands at (143, 75) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 190, 70)
     And Nelim's Pickle Tools: "Nelim" stands at (140, 72) facing South
-    And Nelim's Pickle Tools: "Nelim" hairstyle is "Pigtails"
+    And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 4
