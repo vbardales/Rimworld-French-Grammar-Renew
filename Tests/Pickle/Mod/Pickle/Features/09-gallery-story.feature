@@ -103,6 +103,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "smug"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+$L
     And Nelim's Pickle Tools: I frame the cell (140, 73) at zoom 6
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "MeleeWeapon_LongSword" to (141, 74)
@@ -174,6 +175,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "sad"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+$L
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 5
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: "Nelim" is forced to haul 1 of the item "Kibble" to (142, 72)
