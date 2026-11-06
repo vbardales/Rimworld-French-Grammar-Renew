@@ -115,7 +115,7 @@ Feature: the gallery story of French Grammar Renew
     And no errors were logged
 
   Scenario: story-3-the-harp
-    Given I set the weather to "Rain"
+    Given Nelim's Pickle Tools: the weather is set at once to "Rain"
     And I set the hour to 19
     And Nelim's Sanctuary: the animals are removed from the sanctuary "hut"
     And Nelim's Sanctuary: I am at the sanctuary "hut"
@@ -130,7 +130,6 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (141, 76)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (141, 76) is lit
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
-    And Nelim's Pickle Tools: I place the decor "PsychiteTea" at (140, 71)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (141, 73) facing East
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (142, 72) facing West
@@ -142,8 +141,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: the animal "Yuki" is kept asleep
     And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
-    And Nelim's Pickle Tools: "Nelim" is forced into the job "Ingest" on the item "PsychiteTea" at (140, 71)
-    And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
+    And Nelim's Pickle Tools: "Nelim" carries the item "PsychiteTea"
     And Nelim's Pickle Tools: a big message "Nelim écoute la harpe." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     When Nelim's Pickle Tools: I let 2 frames pass
