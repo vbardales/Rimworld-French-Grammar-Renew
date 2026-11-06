@@ -138,10 +138,12 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I frame the cell (142, 72) at zoom 4.5
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: the animal "Yuki" is kept asleep
+    And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
     And Nelim's Pickle Tools: "Nelim" is forced into the job "Ingest" on the item "PsychiteTea" at (140, 71)
     And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
     And Nelim's Pickle Tools: a big message "Nelim écoute la harpe." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
+    When Nelim's Pickle Tools: the things within 8 cells of (141, 72) are listed
     Then I take a screenshot "story 3 the harp"
     And Nelim's Pickle Tools: the decor is removed
     And no errors were logged
