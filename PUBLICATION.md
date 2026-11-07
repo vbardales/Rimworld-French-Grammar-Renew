@@ -110,11 +110,11 @@ The folder `Art/Gallery/` (outside `Mod/`, the workflow's `--gallery-dir`) holds
 | index | file (to come) | shows |
 |---|---|---|
 | 0 | `0-preview.png` | the Preview, byte copy of `Mod/About/Preview.png` |
-| 1 | `1-meal.jpg` | Nelim and her husky Yuki in the tea room at 17h, a message with `le husky` and `de haricots` |
+| 1 | `1-meal.jpg` | Nelim sits down to a sack of beans at 17h while the husky Yuki and the fox squirrel Pécan wait, a message with `le husky` |
 | 2 | `2-sword.jpg` | Nelim with her sword and axe at 18h, a message with `son épée` and the gold `l'épée` |
-| 3 | `3-door.jpg` | Nelim and Yuki at the door at 19h, a message with `d'Éclat` |
-| 4 | `4-night.jpg` | the tea room at 21h, hair down, a message closing the evening |
-| 5 | `5-without-the-mod.jpg` | scene 1 again with the three corrections off: `l'husky`, `d'haricots` |
+| 3 | `3-harp.jpg` | rain at 19h, Nelim holds a cup and listens to the harp, Yuki sleeps, a message with `la harpe` |
+| 4 | `4-night.jpg` | the tea room at 21h by torchlight, Nelim serves kibble to the husky, a message with `le husky` |
+| 5 | `5-without-the-mod.jpg` | scene 1 again at 7h with the corrections off: `l'husky` |
 | 6 | `6-letter-with-the-mod.png` | a letter of twelve paragraphs as the game writes it with the mod |
 | 7 | `7-letter-without-the-mod.png` | the same letter with the corrections off |
 
@@ -126,11 +126,11 @@ Each scene without an interface window carries one English line at the bottom, l
 
 | index | file | line |
 |---|---|---|
-| 1 | `1-meal.jpg` | Nelim and Yuki share a quiet meal, and the game writes it the French way. |
+| 1 | `1-meal.jpg` | Nelim sits down to eat, and the game writes it the French way: le husky. |
 | 2 | `2-sword.jpg` | Her sword stays hers: son épée, never sa épée. |
-| 3 | `3-door.jpg` | Yuki follows Nelim home, and Éclat keeps its apostrophe. |
-| 4 | `4-night.jpg` | The tea goes cold, the husky sleeps, and the sanctuary with it. |
-| 5 | `5-without-the-mod.jpg` | The same evening with the game alone: l'husky, d'haricots. |
+| 3 | `3-harp.jpg` | Rain, tea and a harp: the evening settles in. |
+| 4 | `4-night.jpg` | Night falls, and she feeds the husky by torchlight. |
+| 5 | `5-without-the-mod.jpg` | The next morning with the game alone: l'husky. |
 
 ## Thank-you messages and the register
 
