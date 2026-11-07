@@ -199,3 +199,17 @@ Updated: nothing in scenarios (cosmetic or pending). Left alone: the five scenes
 | Included animal | Shot |
 |---|---|
 | none (the mod is a grammar worker, ships no animal) | n/a |
+
+## Shotlist estimate (2026-11-07, scenes already played, no rewrite: Opus pass skipped, owner verdict on hut pending)
+
+Story unchanged: one autumn evening 17h, 18h, 19h, 21h then 7h the morning after, tea room `hut`, Nelim, Yuki (Soren's husky) and Pécan (Vesper's FoxSquirrel). k ok (wide 1/5, medium 2/4, tight 3, opening 1, closing 5).
+
+| # | a | b | c | d | e | f | g | j | plan | capture verdict |
+|---|---|---|---|---|---|---|---|---|---|---|
+| 1 | hut 17h Clear, 40 ticks | Rawbean sack, table, stools, shelves | Yuki + Pécan facing S | green CollarShirt (46,98,74), Highpony, smile kit | forced Ingest, just sat | wide zoom 4 (141,72) | "Le husky et Pécan attendent." | ✘ same text without mod | 4.5 | keep, weak: face hidden by sack, dark |
+| 2 | 18h Clear, 25 ticks | lit TorchLamp, fire axe, LongSword, shelves | Yuki front | same shirt, smug | hauls sword to (141,74) | medium zoom 6 (140,73) | "Elle pose son épée." | son épée | 5 | accepted |
+| 3 | 19h Rain at once | Harp (144,74), TorchLamp, sword, cup in hand | Yuki kept asleep | same shirt, calm | carries PsychiteTea | tight zoom 4.5 (142,72) | "Nelim écoute la harpe." | ✘ same text without mod | 4.5 | accepted |
+| 4 | 21h Clear, 25 ticks | 2 torches, jar, shelves | Yuki profile | same shirt | hauls Kibble | medium zoom 5 (141,72) | "Elle sert le husky." | ✘ same text without mod | 4.5 | accepted |
+| 5 | 7h Fog | sword on floor, Rawbean, no torch | Yuki + Pécan front | mustard shirt (232,190,70), Highpony | forced Ingest | wide zoom 4 bookend | "L'husky et Pécan attendent." | L'husky contrast | 5 | keep, weak: face hidden, fog unseen |
+
+Plan mean 4.7. Weak points: j on 1, 3, 4 (a message cannot show a grammar fix that is already right); scenes 1 and 5 hide Nelim's face; hut is the old layout (decorated version validated 2026-11-06 not in the fixture).
