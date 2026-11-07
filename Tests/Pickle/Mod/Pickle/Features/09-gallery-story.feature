@@ -59,7 +59,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
-    And Nelim's Pickle Tools: I place the decor "MealSimple" at (139, 72)
+    And Nelim's Pickle Tools: 1 of the item "MealSimple" are spawned at (139, 72)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
     And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
     And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 69) facing South
@@ -199,7 +199,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
-    And Nelim's Pickle Tools: I place the decor "MealSimple" at (139, 72)
+    And Nelim's Pickle Tools: 1 of the item "MealSimple" are spawned at (139, 72)
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 72) facing South
     And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
