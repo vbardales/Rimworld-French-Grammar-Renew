@@ -126,7 +126,7 @@ Each scene without an interface window carries one English line at the bottom, l
 
 | index | file | line |
 |---|---|---|
-| 1 | `1-meal.jpg` | Nelim sits down to eat, and the game writes it the French way: le husky. |
+| 1 | `1-meal.jpg` | Nelim sets the meal down, and the game writes it the French way: le husky. |
 | 2 | `2-sword.jpg` | Her sword stays hers: son épée, never sa épée. |
 | 3 | `3-harp.jpg` | Rain, tea and a harp: the evening settles in. |
 | 4 | `4-night.jpg` | Night falls, and she feeds the husky by torchlight. |
