@@ -210,6 +210,9 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
     And Nelim's Pickle Tools: I place the decor "PsychiteTea" at (140, 71)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (142, 74)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (138, 70)
+    And Nelim's Pickle Tools: I place the decor "MeleeWeapon_FireAxe" at (140, 74)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 72) facing South
     And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
     And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 69) facing South
