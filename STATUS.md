@@ -42,7 +42,7 @@ remaining:
 session:      local_56f20dd4-a2b6-45bf-9572-f41986d52e86
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
 updated:      2026-10-18, gallery reopened by the owner (two letters were not a story), shootGallery[1.0.0]
-protocols_read_sha: 3a44b97c45d256943af0bfa4326ef0f873f95599
+protocols_read_sha: e50928000bb957ac07098875d03ff6097b1637de
 ---
 # French Grammar Renew (unofficial): status
 
@@ -231,3 +231,5 @@ NEXT (2026-11-07, before sleep): when RUN_DONE cba0 lands (gallery-story-16): op
 2026-11-08 scenes 1 and 5 recomposed (de4223e): `puts down what it carries` at (139, 72) after `carries the item` MealSimple, so hands free, torso, mouth and mustard shirt in view; scene 1 gets two lit TorchLamp (142, 74), (138, 70); scene 5 gets a cold PsychiteTea cup (140, 71). Check-ShotlistVsScenario OK. Ticket 20261107-234249-294-b627 queued (scenes 1 and 5, French, wsl-deps.sanctuary.map, Tests/Pickle/Inbox/gallery-story-19). Risks: put-down on the table cell (139, 72) may land on the nearest free cell; fog still not visible in the roofed hut. At RUN_DONE: summary.json, junit.xml, open both captures, score-gallery. Scene 3 awaits the owner's word.
 
 2026-11-08 OWNER "ok j'accepte" scene 3 (gallery-story-18 capture, harp, rain, three torches, cup in hand): copied to Art/Gallery-clean/3-harp.jpg. Accepted in Gallery-clean now: 2-sword, 3-harp, 4-night. Waiting ticket b627 for scenes 1 and 5, then reindex (old letters 1/2 in Art/Gallery become 6/7), burn subtitles, minify evidence.
+
+2026-11-08 ticket b627 DONE (gallery-story-19, French, 2 of 2 passed). Captures opened: scene 1 candidate (Nelim standing, face in view, MealSimple on table, two lit torches, Yuki and Pécan; decoration 4), copied to Art/Gallery-clean/1-meal.jpg. Scene 5 REDO on decoration 3.5 (no torch, bare floor, fog unseen in the roofed hut; capture deleted): unlit TorchLamp (142, 74), (138, 70) and fire axe (140, 74) added (0225576). Ticket 20261108-001047-955-4eae queued (scene 5 only, French, Tests/Pickle/Inbox/gallery-story-20). Rule 2026-11-08: Virginie reviews ONCE, at the end: when all 5 are candidates, send one message with all images, then 🟠 accept or refuse each. Then reindex (letters 1/2 become 6/7), burn subtitles (`Add-Subtitle.ps1`, `Check-Status gallery-subtitles`), minify evidence.
