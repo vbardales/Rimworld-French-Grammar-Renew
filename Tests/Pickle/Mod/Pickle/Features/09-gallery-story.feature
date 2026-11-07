@@ -212,6 +212,8 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I place the decor "PsychiteTea" at (140, 71)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (142, 74)
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (138, 70)
+    And Nelim's Pickle Tools: the building "TorchLamp" at (142, 74) is put out
+    And Nelim's Pickle Tools: the building "TorchLamp" at (138, 70) is put out
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_FireAxe" at (140, 74)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 72) facing South
     And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
