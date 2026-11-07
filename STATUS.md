@@ -41,7 +41,7 @@ remaining:
 session:      local_56f20dd4-a2b6-45bf-9572-f41986d52e86
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
 updated:      2026-10-18, gallery reopened by the owner (two letters were not a story), shootGallery[1.0.0]
-protocols_read_sha: f7592aa80bf9af62b5743df4685935b6ff26d48c
+protocols_read_sha: f0219f10b948804b3bfd2586c5fca74bf45c3805
 ---
 # French Grammar Renew (unofficial): status
 
