@@ -213,3 +213,5 @@ Story unchanged: one autumn evening 17h, 18h, 19h, 21h then 7h the morning after
 | 5 | 7h Fog | sword on floor, Rawbean, no torch | Yuki + Pécan front | mustard shirt (232,190,70), Highpony | forced Ingest | wide zoom 4 bookend | "L'husky et Pécan attendent." | L'husky contrast | 5 | keep, weak: face hidden, fog unseen |
 
 Plan mean 4.7. Weak points: j on 1, 3, 4 (a message cannot show a grammar fix that is already right); scenes 1 and 5 hide Nelim's face; hut is the old layout (decorated version validated 2026-11-06 not in the fixture).
+
+2026-11-07 owner "ok": scenes 1 and 5 recomposed in the OLD hut (Nelim seated at the table with a MealSimple at (139, 72), starts (141, 72) facing West, face in view; old captures of 1 and 5 deleted). Ticket 20261107-171309-504-cba0, French, evidence Tests/Pickle/Inbox/gallery-story-16. Scenes 2, 3, 4 kept (gallery-story-14). Risks: `Ingest` on the meal may not seat her on the stool (cell guess from the old capture); defName MealSimple. Hut stays old until NSB copies the decorated save into the fixture.
