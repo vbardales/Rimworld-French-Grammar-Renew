@@ -174,27 +174,28 @@ Opus director pass of this day kept as in v3; this version adds no second pass (
 
 2026-11-06 night review (director): ALL tickets since gallery-story-7 ran in ENGLISH (no `-Language French`): the French worker was inactive, so scene 2 shows "sa épée" instead of "son épée" (only gallery-story-3 was French). Verdicts: scene 1 and 5 keep (Nelim's face hidden by the bean sack, hut dark: weak but readable), scene 2 REFUSED until replayed in French, scene 4 keep, scene 3 REFUSED (cup on floor, no rain, Yuki pose). Refiled scenes 1, 2, 4, 5 with `-Language French`: ticket 20261106-232113-341-07aa, evidence Tests/Pickle/Inbox/gallery-story-14. Scene 3 waits for NPT (`carries the item` step).
 
-## NSB (sync 2026-11-06, partial read)
+2026-11-07 ticket 07aa+f4f2 DONE (one launch, French, 5/5 passed, evidence Tests/Pickle/Inbox/gallery-story-14; gallery-story-15 never existed, scene 3 is in 14). Captures opened: 2 now "Elle pose son épée." (mod works), 3 cup in hand + rain outside + Yuki lying, 1/4/5 as before. Weak: scenes 1 and 5 Nelim's face hidden by the bean sack, hut dark. Old Inbox runs 3 to 13 deleted (superseded). Next: owner accepts or refuses, then copy to Art/Gallery-clean, reindex, subtitles, minify 14 to Evidence.
 
-Places read: not re-read this run (hut unchanged for the mod). Tribe read: 2026-11-06 (`CATALOGUE-ANIMAUX.md`, `PECAN-PROFIL.md`, NSB `steps.md`; NPT `docs/steps.md` for carry, lie down, sit, weather).
-NSB change: Pécan (FoxSquirrel, Vesper's, Erin's Fox Squirrel) is now in the animal catalogue, so the shotlist use is free (rule 1). NPT now has `carries the item`, `lies down`, `is kept asleep`, `sits on the building`, `the weather is set at once to`: scene 3 rewritten with them (cup in hand, rain at once), ticket f4f2.
-Rule 5: mod adds no animal (grammar worker), nothing MISSING.
+## NSB (sync 2026-11-07)
+
+Places read: 2026-11-07 (`SANCTUAIRE-LIEUX.md` sections 1, 4, `hut` row; `EMBELLISSEMENT-LIEUX.md` hut rows; `SANCTUAIRE-CASES.md` not opened). Tribe read: 2026-11-07 (`NELIM-PROFIL.md` hair and outfit rows, `APPARENCES-CANON.md` hair row, `YUKI-PROFIL.md`, `PECAN-PROFIL.md`, `CATALOGUE-ANIMAUX.md`); `NSB-ROSTER.md`, `HUMAINS-PROFILS.md`, `GALERIE-COLONS.md` not opened.
+Rules said back: NSB places, colonists, domestic animals free (1); outside NSB needs express validation (2); colonist properties need it too (3); outfits free (4); every animal the mod ships in a shot (5).
+Changed in NSB since last sync: (a) the tea room `hut` was validated 2026-11-06 in its DECORATED form (tatami without border, low Korean table, cushions, oil andon lamp). That version lives in `PickleTools/Tests/Pickle/Inbox/sanctuary-hall-rework-2/Nelims-tribe-decor-mods.rws` with `wsl-deps.sanctuary-decor-mods.map` (19 decor mods, HAR, Yuran), loaded through the DecorBase test mod. The standard fixture `Nelims-tribe` is still the OLD hut (wooden floor, table, two stools): that is what our five captures show. NSB copies nothing into the fixture until the redecoration ends. (b) Yuki is a FEMALE husky bound to Soren (collar fuchsia, `Apparel_leatherdogcollar` default); our header says "her husky" (cosmetic, nothing rewritten). (c) Pécan is in the catalogue (Vesper's, no compatible apparel).
+Updated: nothing in scenarios (cosmetic or pending). Left alone: the five scenes keep the old hut; switching to the decorated save changes the floor, table, stools and cell plan of every scene, so it is the owner's call with the gallery verdict.
 
 | Place | Shots | Changes for gallery | Last read |
 |---|---|---|---|
-| hut | 1-5 | DarklightBrazier hidden, own torches, decor removed after each shot | not re-read |
+| hut (tea-room, frame (140, 73) in NSB, ours (141, 72)) | 1-5 | DarklightBrazier hidden, own torches, harp, sword, cup, kibble, decor removed after each shot; old hut layout | 2026-11-07 |
 
 | Colonist | Shots | Outfit | Last read | Exceptions |
 |---|---|---|---|---|
-| Nelim | 1-5 | forest green CollarShirt (46,98,74) evening, mustard shirt (232,190,70) morning; hair canon Roo_HD_Hair_Highpony | not re-read | none |
+| Nelim | 1-5 | forest green CollarShirt (46,98,74) evening (matches NSB daily look idea, free by rule 4); mustard shirt (232,190,70) morning; hair canon `Roo_HD_Hair_Highpony` (no hat) | 2026-11-07 (hair, outfit rows) | none; hair unchanged, canon |
 
 | Animal | Shots | Outfit | Last read | Exceptions |
 |---|---|---|---|---|
-| Yuki (husky) | 1-5 | none | catalogue 2026-11-06 | none |
-| Pécan (FoxSquirrel) | 1, 5 | none (profile: no compatible apparel) | 2026-11-06 | none, in NSB catalogue |
+| Yuki (husky, female, Soren's) | 1-5 | none planned (default collar) | 2026-11-07 | none, in NSB; header wording "her husky" is off |
+| Pécan (FoxSquirrel, female, Vesper's) | 1, 5 | none (profile: no compatible apparel) | 2026-11-07 | none, in NSB catalogue |
 
 | Included animal | Shot |
 |---|---|
-| none (mod ships no animal) | n/a |
-
-2026-11-07 ticket 07aa+f4f2 DONE (one launch, French, 5/5 passed, evidence Tests/Pickle/Inbox/gallery-story-14; gallery-story-15 never existed, scene 3 is in 14). Captures opened: 2 now "Elle pose son épée." (mod works), 3 cup in hand + rain outside + Yuki lying, 1/4/5 as before. Weak: scenes 1 and 5 Nelim's face hidden by the bean sack, hut dark. Old Inbox runs 3 to 13 deleted (superseded). Next: owner accepts or refuses, then copy to Art/Gallery-clean, reindex, subtitles, minify 14 to Evidence.
+| none (the mod is a grammar worker, ships no animal) | n/a |
