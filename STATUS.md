@@ -196,3 +196,5 @@ Rule 5: mod adds no animal (grammar worker), nothing MISSING.
 | Included animal | Shot |
 |---|---|
 | none (mod ships no animal) | n/a |
+
+2026-11-07 ticket 07aa+f4f2 DONE (one launch, French, 5/5 passed, evidence Tests/Pickle/Inbox/gallery-story-14; gallery-story-15 never existed, scene 3 is in 14). Captures opened: 2 now "Elle pose son épée." (mod works), 3 cup in hand + rain outside + Yuki lying, 1/4/5 as before. Weak: scenes 1 and 5 Nelim's face hidden by the bean sack, hut dark. Old Inbox runs 3 to 13 deleted (superseded). Next: owner accepts or refuses, then copy to Art/Gallery-clean, reindex, subtitles, minify 14 to Evidence.
