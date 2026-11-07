@@ -38,11 +38,11 @@ remaining:
   - Ideas from NPT steps and NSB catalogues (sub-agent read, unverified, none applied): hide `DarklightBrazier` near the hut braziers; `carries the item` for the cup; `the animal ... lies at (x, y) facing` for Yuki; `face is held neutral` plus smile kit; `sits on the building`; pajamas `Apparel_PonpecoPajamaB` for scene 5; head close-up `the camera frames the head of`; PlantPot Daylily and torches; Yuki leather dog collar. Note CATALOGUE-ANIMAUX says Yuki is Soren's husky (shotlist says Nelim's). Most steps compiled, not played.
   - unverified: then reindex the five captures, burn subtitles (lines in PUBLICATION.md). Still to check: message legible at 268 px; second grey animal behind Yuki in scenes 1 and 5 (unplanned, stray husky?). Inbox kept: story-3 (scenes 2, 4 captures) and story-4 (scenes 1, 5); minify to Evidence/ after the gallery is accepted.
   - feature: after the accepted gallery, redo Art/echo-source.png by the owner, then echo_review_sha; PUBLICATION.md open points (illustration tool for AI-GENERATED, THANKS for gallery staging mods, register rows for b606, Harmony, Pickle, RimLogging, RIMMSQOL); NPT to extract More Rodents, Fort Firefighter, VGP into GALLERY-PROPS.md (done by NPT, unplayed).
-  - unverified: Preview re-rendered 2026-11-03 (echo size rule): `Preview.png` byte-identical, not committed. Echo (open book) overlaps the tagline "the game" and the lamp sits by "Renew": defect, to fix when the owner redoes the echo from the accepted gallery (`echo-source.png`).
+  - Preview re-rendered 2026-11-07 and committed: echo no longer overlaps the tagline; echo still to redo from the accepted gallery (`echo-source.png`).
 session:      local_56f20dd4-a2b6-45bf-9572-f41986d52e86
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
 updated:      2026-10-18, gallery reopened by the owner (two letters were not a story), shootGallery[1.0.0]
-protocols_read_sha: f0219f10b948804b3bfd2586c5fca74bf45c3805
+protocols_read_sha: 3e0af204a6b942424a2b6b12f03361af412ffeb9
 ---
 # French Grammar Renew (unofficial): status
 
@@ -218,3 +218,5 @@ Plan mean 4.7. Weak points: j on 1, 3, 4 (a message cannot show a grammar fix th
 2026-11-07 owner "ok": scenes 1 and 5 recomposed in the OLD hut (Nelim seated at the table with a MealSimple at (139, 72), starts (141, 72) facing West, face in view; old captures of 1 and 5 deleted). Ticket 20261107-171309-504-cba0, French, evidence Tests/Pickle/Inbox/gallery-story-16. Scenes 2, 3, 4 kept (gallery-story-14). Risks: `Ingest` on the meal may not seat her on the stool (cell guess from the old capture); defName MealSimple. Hut stays old until NSB copies the decorated save into the fixture.
 
 NEXT (2026-11-07, before sleep): when RUN_DONE cba0 lands (gallery-story-16): open scenes 1 and 5, check face visible and Nelim seated; if good copy to Art/Gallery-clean as 1-meal.jpg and 5-without-the-mod.jpg (2-sword, 3-harp, 4-night already there), send the two to Virginie for her word, then reindex (old letters 1/2 in Art/Gallery become 6/7), burn subtitles from PUBLICATION.md "Gallery subtitles", minify gallery-story-16 to Evidence with a RELEASE.md. Hut stays the old layout.
+
+2026-11-07 ticket 3954 DONE (gallery-story-17, French, 2 of 2 passed, lane azure, peak 4067 MiB). Captures opened: MealSimple now on the table (cell fix worked), Pecan and Yuki in frame, message legible. Verdict NOT ACCEPTED, sent to Virginie: Nelim still seated back to camera (ponytail and bent head, face not readable), scene 1 dark, scene 5 identical bookend (mustard shirt not readable, fog unseen). Not copied to Art/Gallery-clean. Preview re-rendered 2026-11-07 (echo no longer overlaps the tagline, lamp close to "GRAMMAR"), committed with `titleSize` default removed.
