@@ -12,8 +12,8 @@
 # RHYTHM: 17h, 18h, 19h, 21h, then 7h; each gesture is started by a forced job, the game runs 25 to 40 ticks, then is paused.
 # LIGHT: the hut is roofed, so the light is its own: daylight through the doorway at 17h and 18h, dusk and torches at 19h and 21h, grey at 7h.
 # 1 17h Clear, WIDE zoom 4, frame (141, 72), opening. Foreground: Yuki (143, 71) and Pécan (143, 75) facing South; background: wooden
-#   wall and shelves; Nelim off-centre at the table. She starts at (141, 72) facing West and `Ingest` on MealSimple on the table (139, 72), so she sits on the stool (140, 72), face in view (2026-11-07: the Rawbean sack hid her face), 40 ticks then
-#   pause. Instant: she has just sat, the guests wait (before: she came in; after: she eats). "Le husky et Pécan attendent."
+#   wall and shelves; Nelim off-centre. She stands at (141, 72) facing South (face to the camera, 2026-11-07 REDO: seated she showed only her hair), Yuki follows her (mid-walk), 40 ticks then
+#   pause, then `carries the item` MealSimple. Instant: she brings supper to the waiting guests (before: she came in; after: she sets it down). "Le husky et Pécan attendent."
 # 2 18h Clear, MEDIUM zoom 6, frame (140, 73). Foreground: Yuki (142, 73) watching; background: the lit TorchLamp (142, 74) and the fire
 #   axe (140, 74); Nelim left of centre. She hauls the long sword to (141, 74), 25 ticks then pause. Instant: the sword has just left her
 #   hands (after: she straightens up). "Elle pose sa épée." (shows "son épée").
@@ -24,9 +24,9 @@
 #   the cold tea still on the table; Nelim centre-left. She hauls Kibble to Yuki, 25 ticks then pause. Instant: the bowl is lowered
 #   (after: Yuki eats). "Elle sert le husky."
 # 5 7h Fog, WIDE zoom 4, frame (141, 72), closing bookend of 1: same frame, same gesture a night later. Foreground: Yuki (142, 72) and
-#   Pécan (143, 75) facing South; background: wall and shelves, the sword on the floor (141, 74) and MealSimple (139,
-#   72) on the table, no torch; Nelim off-centre. Three settings off. She starts at (141, 72) and `Ingest` on MealSimple, 40
-#   ticks then pause. Instant: she has just sat after dressing (after: she eats). Same message text as 1, which the game alone writes as
+#   Pécan (143, 75) facing South; background: wall and shelves, the sword on the floor (141, 74)
+#   no torch; Nelim off-centre, facing South in the mustard shirt (REDO 2026-11-07), carrying MealSimple. Three settings off. 40
+#   ticks then pause. Instant: she brings breakfast to the waiting guests (after: she sets it down). Same message text as 1, which the game alone writes as
 #   "L'husky et Pécan attendent." The mod is the difference.
 # THUMBNAIL (criterion j): the message is 2x Medium at the top centre; read each capture at 268 px wide, and if the message is not legible
 #   there, ask NPT for a larger scale before refiling. RISKS: zoom 4 and 7 and the gesture ticks are unplayed; `Ingest` on PsychiteTea may
@@ -59,13 +59,12 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
-    And Nelim's Pickle Tools: 1 of the item "MealSimple" are spawned at (139, 72)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
     And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
     And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 69) facing South
     And Nelim's Pickle Tools: the animal "Pécan" faces south
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
-    And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
@@ -73,8 +72,8 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 4
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: "Yuki" follows "Nelim" within 2 cells
-    And Nelim's Pickle Tools: "Nelim" is forced into the job "Ingest" on the item "MealSimple" at (139, 72)
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
+    And Nelim's Pickle Tools: "Nelim" carries the item "MealSimple"
     And Nelim's Pickle Tools: a big message "Le husky et Pécan attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     And Nelim's Pickle Tools: the pawns within 12 cells of (143, 72) are listed
@@ -130,6 +129,11 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (141, 76)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (141, 76) is lit
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (142, 74)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (142, 74) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (138, 70)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (138, 70) is lit
+    And Nelim's Pickle Tools: I place the decor "MeleeWeapon_FireAxe" at (140, 74)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (141, 73) facing East
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" stands at (142, 72) facing West
@@ -137,7 +141,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
     And Nelim's Pickle Tools: the things "DarklightBrazier" within 8 cells of (141, 72) are hidden
-    And Nelim's Pickle Tools: I frame the cell (142, 72) at zoom 4.5
+    And Nelim's Pickle Tools: I frame the cell (142, 73) at zoom 5.5
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: the animal "Yuki" is kept asleep
     And Nelim's Pickle Tools: I advance the paused game by exactly 30 ticks
@@ -199,14 +203,13 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
-    And Nelim's Pickle Tools: 1 of the item "MealSimple" are spawned at (139, 72)
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 72) facing South
     And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
     And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 69) facing South
     And Nelim's Pickle Tools: the animal "Pécan" faces south
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 190, 70)
-    And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing West
+    And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
@@ -214,8 +217,8 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 4
     And Nelim's Pickle Tools: time is paused for the capture
     And Nelim's Pickle Tools: "Yuki" follows "Nelim" within 2 cells
-    And Nelim's Pickle Tools: "Nelim" is forced into the job "Ingest" on the item "MealSimple" at (139, 72)
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
+    And Nelim's Pickle Tools: "Nelim" carries the item "MealSimple"
     And Nelim's Pickle Tools: a big message "L'husky et Pécan attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     And Nelim's Pickle Tools: the pawns within 12 cells of (143, 72) are listed
