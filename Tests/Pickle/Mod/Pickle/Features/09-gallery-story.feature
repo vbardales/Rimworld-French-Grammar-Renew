@@ -13,7 +13,7 @@
 # LIGHT: the hut is roofed, so the light is its own: daylight through the doorway at 17h and 18h, dusk and torches at 19h and 21h, grey at 7h.
 # 1 17h Clear, WIDE zoom 4, frame (141, 72), opening. Foreground: Yuki (143, 71) and Pécan (143, 75) facing South; background: wooden
 #   wall and shelves; Nelim off-centre. She stands at (141, 72) facing South (face to the camera, 2026-11-07 REDO: seated she showed only her hair), Yuki follows her (mid-walk), 40 ticks then
-#   pause, then `carries the item` MealSimple. Instant: she brings supper to the waiting guests (before: she came in; after: she sets it down). "Le husky et Pécan attendent."
+#   pause, then `carries the item` MealSimple and `puts down what it carries` at (139, 72) (REDO 2026-11-08: tray in front hid torso and mouth; hands free, face and shirt in view; two lit TorchLamp (142, 74), (138, 70) for light). Instant: she has just set supper down for the waiting guests (before: she came in; after: she turns to them). "Le husky et Pécan attendent."
 # 2 18h Clear, MEDIUM zoom 6, frame (140, 73). Foreground: Yuki (142, 73) watching; background: the lit TorchLamp (142, 74) and the fire
 #   axe (140, 74); Nelim left of centre. She hauls the long sword to (141, 74), 25 ticks then pause. Instant: the sword has just left her
 #   hands (after: she straightens up). "Elle pose sa épée." (shows "son épée").
@@ -25,7 +25,7 @@
 #   (after: Yuki eats). "Elle sert le husky."
 # 5 7h Fog, WIDE zoom 4, frame (141, 72), closing bookend of 1: same frame, same gesture a night later. Foreground: Yuki (142, 72) and
 #   Pécan (143, 75) facing South; background: wall and shelves, the sword on the floor (141, 74)
-#   no torch; Nelim off-centre, facing South in the mustard shirt (REDO 2026-11-07), carrying MealSimple. Three settings off. 40
+#   no torch; Nelim off-centre, facing South in the mustard shirt (REDO 2026-11-07), who sets MealSimple down on the table (139, 72) (REDO 2026-11-08: the carried tray hid her torso and mouth, so hands free, mustard shirt and smile in view); cold cup (140, 71). Three settings off. 40
 #   ticks then pause. Instant: she brings breakfast to the waiting guests (after: she sets it down). Same message text as 1, which the game alone writes as
 #   "L'husky et Pécan attendent." The mod is the difference.
 # THUMBNAIL (criterion j): the message is 2x Medium at the top centre; read each capture at 268 px wide, and if the message is not legible
@@ -59,6 +59,10 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the resource readout is hidden
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (142, 74)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (142, 74) is lit
+    And Nelim's Pickle Tools: I place the decor "TorchLamp" at (138, 70)
+    And Nelim's Pickle Tools: the decor "TorchLamp" at (138, 70) is lit
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
     And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
     And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 69) facing South
@@ -74,6 +78,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: "Yuki" follows "Nelim" within 2 cells
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Nelim's Pickle Tools: "Nelim" carries the item "MealSimple"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (139, 72)
     And Nelim's Pickle Tools: a big message "Le husky et Pécan attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     And Nelim's Pickle Tools: the pawns within 12 cells of (143, 72) are listed
@@ -204,6 +209,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the selection brackets are hidden
     And Nelim's Pickle Tools: I move the mouse to (10, 10)
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_LongSword" at (141, 74)
+    And Nelim's Pickle Tools: I place the decor "PsychiteTea" at (140, 71)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 72) facing South
     And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
     And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 69) facing South
@@ -219,6 +225,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: "Yuki" follows "Nelim" within 2 cells
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Nelim's Pickle Tools: "Nelim" carries the item "MealSimple"
+    And Nelim's Pickle Tools: "Nelim" puts down what it carries at (139, 72)
     And Nelim's Pickle Tools: a big message "L'husky et Pécan attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     And Nelim's Pickle Tools: the pawns within 12 cells of (143, 72) are listed
