@@ -20,5 +20,5 @@
   <FGP.Verbose>Journal détaillé</FGP.Verbose>
   <FGP.Verbose.Tip>Écrit dans le journal ce qui a été patché et chaque genre forcé. Pour signaler un bug.</FGP.Verbose.Tip>
 
-  <FGP.DataFiles>Les deux listes de mots sont des fichiers texte dans le dossier Data du mod. Modifiables sans recompiler ; relancer le jeu pour les recharger.</FGP.DataFiles>
+  <FGP.DataFiles>Les deux listes de mots sont des fichiers texte du dossier Data du mod. Elles peuvent être modifiées sans recompilation ; relancer le jeu pour les recharger.</FGP.DataFiles>
 </LanguageData>
