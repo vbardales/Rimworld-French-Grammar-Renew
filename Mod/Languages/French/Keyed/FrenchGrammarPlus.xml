@@ -9,7 +9,7 @@
   <FGP.AspiratedH.Tip>« le haricot » au lieu de « l'haricot ». La liste des mots est dans Data/aspirated-h.txt.</FGP.AspiratedH.Tip>
 
   <FGP.Possessive>Possessif devant une voyelle</FGP.Possessive>
-  <FGP.Possessive.Tip>« son épée » au lieu de « sa épée ».</FGP.Possessive.Tip>
+  <FGP.Possessive.Tip>« son épée » au lieu de « sa épée ». Le jeu ne le fait pas du tout.</FGP.Possessive.Tip>
 
   <FGP.KindGender>Genre grammatical des espèces</FGP.KindGender>
   <FGP.KindGender.Tip>Le genre du nom d'espèce ne dépend pas du sexe de l'animal : le nom « mégaraignée » reste féminin, même pour un mâle. La liste est dans Data/pawnkind-gender.txt.</FGP.KindGender.Tip>

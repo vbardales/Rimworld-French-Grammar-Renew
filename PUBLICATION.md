@@ -39,7 +39,7 @@ The latest RimWorld version handles elision, contraction and plurals natively: �
 ## What it fixes
 
 - **Rich text.** The engine's elision rules stop at a markup tag, so «de» before a coloured «Éclat» stays «de Éclat» instead of «d'Éclat». The same rules are applied again here, reaching across the tag. Mods that colour their labels benefit most.
-- **Aspirated h.** The engine treats every h as elidable and writes «l'husky» and «d'haricots». A word list marks the aspirated ones, and they keep their article: «le husky», «de haricots».
+- **Aspirated h.** The engine treats every h as elidable and writes «l'husky» and «d'haricots». A word list marks the aspirated ones, so the preceding form remains unchanged: «le husky», «de haricots».
 - **Possessives.** «sa épée» becomes «son épée», as French requires before a vowel. The engine has no rule for it.
 - **Gender of species.** A species noun has a gender of its own, unrelated to the sex of the animal it describes: «la mégaraignée» stays feminine for a male. A word list gives each animal kind its gender and the generated text follows it.
 - **Typography, optional and off by default.** Non-breaking spaces before : ; ! and ?. Left off because it depends on the font having those characters.
@@ -90,7 +90,7 @@ One fenced block per version under `### <version>`; the CI sends it as written a
 [b]1.0.0[/b]
 [list]
 [*] Elision across rich text tags: «d'Éclat» instead of «de Éclat», for «de», «la», «du», «des», «au» and «aux».
-[*] Aspirated h keeps its article («le husky», «de haricots»), from an editable word list.
+[*] Aspirated h blocks the elision («le husky», «de haricots»), from an editable word list.
 [*] Possessive before a vowel: «son épée» instead of «sa épée».
 [*] A species keeps its own grammatical gender, whatever the sex of the animal.
 [*] Optional French typography (non-breaking spaces), off by default.
