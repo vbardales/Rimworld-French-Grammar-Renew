@@ -26,13 +26,13 @@ Rules that apply, and where they are written: `PUBLISHING.md` and `AUDIT.md` (pr
 
 **One source** (`PUBLISHING.md`, 2026-09-25): written once, in Markdown, in the block below. The CI converts it to Steam BBCode and generates the plain-text `<description>` of `Mod/About/About.xml` from it; `About.xml` must then be identical to it (`node .github/scripts/sync-about-description.mjs` once the workflow exists). No code fence inside, no double quote, no backslash, no em dash, no RimWorld version number (the page says «the latest RimWorld version»; the number lives in `supportedVersions`). The block ends with the source link.
 
-The current `About.xml` description is the 0.1.0 text, in plain capitals. This block replaces it: it adds the three sections the audit orders after the body (`IF I GO QUIET`, `AI-GENERATED`, `THANKS`), the attribution line, Workshop links on every mod named, and the `UNOFFICIAL` paragraph in full as its first lines.
+The current `About.xml` description is the 0.1.0 text, in all caps. This block replaces it: it adds the three sections the audit orders after the body (`IF I GO QUIET`, `AI-GENERATED`, `THANKS`), the attribution line, Workshop links on every mod named, and the `UNOFFICIAL` paragraph in full as its first lines.
 
 ```markdown
 UNOFFICIAL. This mod is published without the original author's explicit consent.
 If the original author contacts me to request its removal, I undertake to take it down promptly.
 
-Finishes the French grammar the game already does most of.
+Completes the French grammar support the game already provides.
 
 The latest RimWorld version handles elision, contraction and plurals natively: «le» before a vowel becomes «l'», «de le» becomes «du», «à les» becomes «aux». Those rules come from the old [LanguageWorker_French](https://steamcommunity.com/sharedfiles/filedetails/?id=2081845369) mod, and Ludeon adopted them. This mod deliberately does not reimplement them. It only covers what the engine still gets wrong.
 
@@ -41,7 +41,7 @@ The latest RimWorld version handles elision, contraction and plurals natively: �
 - **Rich text.** The engine's elision rules stop at a markup tag, so «de» before a coloured «Éclat» stays «de Éclat» instead of «d'Éclat». The same rules are applied again here, reaching across the tag. Mods that colour their labels benefit most.
 - **Aspirated h.** The engine treats every h as elidable and writes «l'husky» and «d'haricots». A word list marks the aspirated ones, and they keep their article: «le husky», «de haricots».
 - **Possessives.** «sa épée» becomes «son épée», as French requires before a vowel. The engine has no rule for it.
-- **Gender of species.** A species noun has a gender of its own, unrelated to the sex of the animal wearing it: «la mégaraignée» stays feminine for a male. A word list gives each animal kind its gender and the generated text follows it.
+- **Gender of species.** A species noun has a gender of its own, unrelated to the sex of the animal it describes: «la mégaraignée» stays feminine for a male. A word list gives each animal kind its gender and the generated text follows it.
 - **Typography, optional and off by default.** Non-breaking spaces before : ; ! and ?. Left off because it depends on the font having those characters.
 
 ## Settings

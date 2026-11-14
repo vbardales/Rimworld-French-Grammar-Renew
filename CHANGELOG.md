@@ -8,7 +8,7 @@ in game.
 
 On release: create the `v1.0.0` tag and the matching GitHub release.
 
-First version. Harmony required. Played in game by a Pickle suite, all scenarios green.
+First version. Requires Harmony. A Pickle suite ran all scenarios successfully in game.
 
 ### Added
 

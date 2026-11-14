@@ -55,12 +55,9 @@ Harmony matches patch arguments to the original's parameters **by name**. Three 
 `RulesForPawn`. If Ludeon renames one, the log says so at startup and that correction stops; it
 never breaks the game.
 
-## Not yet verified in game
+## Verified in game
 
-Everything above is read off the 1.6 assembly and off the old mod's source. None of it has been
-run yet. `TESTING.md` is the list of what has to be watched in a running colony and what counts as
-a pass: fourteen scenarios, starting with the log line that says all three patches took, and with
-**Verbose log** on throughout the first pass.
+A Pickle suite played the mod in a running game, in French and in English, on 2026-09-28 to 2026-10-12: 48 scenarios, all green (the log line that says all three patches took, the settings page in both languages, restart persistence, the shortcut button through RIMMSQOL). `TESTING.md` lists the scenarios and what counts as a pass; `docs/runs/history.md` has one line per run.
 
 One of them cannot be run with the base game alone. No vanilla French string carries a rich text
 tag, so the elision-across-tags correction needs a mod that colours its labels before it has
@@ -99,7 +96,7 @@ The additional settings regressions cover all 64 checkbox combinations with real
 serialization, missing stored values, species-rule isolation in English/German, verbose
 output and the shortcut definition/worker contract. Unity-backed pronoun translation and logging endpoints
 are supplied by test callbacks; this is not proof of a running game or Harmony installation.
-See `Tests/RESULTS.md` for the tested artifact and remaining in-game checks.
+See `Tests/RESULTS.md` for the tested artifact.
 
 ## Credits
 
