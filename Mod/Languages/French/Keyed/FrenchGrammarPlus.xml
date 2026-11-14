@@ -8,7 +8,7 @@
   <FGP.AspiratedH>H aspiré</FGP.AspiratedH>
   <FGP.AspiratedH.Tip>« le haricot » au lieu de « l'haricot ». La liste des mots est dans Data/aspirated-h.txt.</FGP.AspiratedH.Tip>
 
-  <FGP.Possessive>Possessif devant voyelle</FGP.Possessive>
+  <FGP.Possessive>Possessif devant une voyelle</FGP.Possessive>
   <FGP.Possessive.Tip>« son épée » au lieu de « sa épée ».</FGP.Possessive.Tip>
 
   <FGP.KindGender>Genre grammatical des espèces</FGP.KindGender>

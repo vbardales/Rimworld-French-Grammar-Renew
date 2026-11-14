@@ -12,7 +12,7 @@
   <FGP.Possessive.Tip>"sa épée" becomes "son épée". The engine does not do this at all.</FGP.Possessive.Tip>
 
   <FGP.KindGender>Grammatical gender of species</FGP.KindGender>
-  <FGP.KindGender.Tip>A species noun keeps its own gender whatever the sex of the animal. Word list in Data/pawnkind-gender.txt.</FGP.KindGender.Tip>
+  <FGP.KindGender.Tip>A species noun keeps its own gender, whatever the sex of the animal. Word list in Data/pawnkind-gender.txt.</FGP.KindGender.Tip>
 
   <FGP.Typography>Non-breaking spaces</FGP.Typography>
   <FGP.Typography.Tip>Before : ; ! and ?. Off by default because not every font has the narrow no-break space.</FGP.Typography.Tip>
