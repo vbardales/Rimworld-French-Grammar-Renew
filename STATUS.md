@@ -18,7 +18,7 @@ showcase:     complete
 tested_on:    4be6004 (2026-10-11 and 12: Pickle passes 1b, 1c, 2c green; 1, 2b, 3b, 4 of 2026-09-28 to 30 on the same code)
 workshop:     3806761557 (0.1.0, creation of the publishIdFile only; Steam keeps every new item private, and switching it to public is the owner's)
 remaining:
-  - feature: for `writeDocs` and `prepareRelease`, not yet started. No `PUBLICATION.md`; the description in `About.xml`
+  - feature: for `writeDocs` and `prepareRelease`, `PUBLICATION.md` now exists (description, `IF I GO QUIET`, `AI-GENERATED`, `THANKS`, attribution, gallery table and subtitles; checked 2026-11-14). Still open: `About.xml` description to regenerate from it; the description in `About.xml`
     lacks the `IF I GO QUIET`, `AI-GENERATED` and `THANKS` sections and the attribution line that
     AUDIT.md orders after the body; no thank-you comment for b606's page (2081845369, absent from the
     register); this mod is not yet in the `Covers` of the Harmony, Pickle, RimLogging and RIMMSQOL rows.

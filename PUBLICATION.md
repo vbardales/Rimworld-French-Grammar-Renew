@@ -110,7 +110,7 @@ The folder `Art/Gallery/` (outside `Mod/`, the workflow's `--gallery-dir`) holds
 | index | file (to come) | shows |
 |---|---|---|
 | 0 | `0-preview.png` | the Preview, byte copy of `Mod/About/Preview.png` |
-| 1 | `1-meal.jpg` | Nelim sits down to a sack of beans at 17h while the husky Yuki and the fox squirrel Pécan wait, a message with `le husky` |
+| 1 | `1-meal.jpg` | Nelim stands and sets a meal down on the table at 17h, two torches lit, while the husky Yuki and the fox squirrel Pécan wait, a message with `le husky` |
 | 2 | `2-sword.jpg` | Nelim with her sword and axe at 18h, a message with `son épée` and the gold `l'épée` |
 | 3 | `3-harp.jpg` | rain at 19h, Nelim holds a cup and listens to the harp, Yuki sleeps, a message with `la harpe` |
 | 4 | `4-night.jpg` | the tea room at 21h by torchlight, Nelim serves kibble to the husky, a message with `le husky` |
