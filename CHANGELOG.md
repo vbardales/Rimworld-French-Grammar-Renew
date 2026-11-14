@@ -26,7 +26,7 @@ First version. Requires Harmony. A Pickle suite ran all scenarios successfully i
 - Restricted the global species-rule patch to the active French language worker.
 - Added the final source-code link to the distributed About description.
 - Dropped the `hall` prefix from the aspirated-h list. Matching is by prefix, so it also caught `hallucination`,
-  `hallucinogene` and `hallux`, which take a mute h: the mod wrote "la hallucination" where vanilla "l'hallucination"
+  `hallucinogène` and `hallux`, which take a mute h: the mod wrote "la hallucination" where vanilla "l'hallucination"
   was right. The aspirated `hall` itself is no longer corrected; words of that family are added one by one when
   a text needs them. This was in the list of the 0.1.0 item.
 

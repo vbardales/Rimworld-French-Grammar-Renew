@@ -32,7 +32,7 @@ The current `About.xml` description is the 0.1.0 text, in all caps. This block r
 UNOFFICIAL. This mod is published without the original author's explicit consent.
 If the original author contacts me to request its removal, I undertake to take it down promptly.
 
-Completes the French grammar support the game already provides.
+Completes the French grammar support already provided by the game.
 
 The latest RimWorld version handles elision, contraction and plurals natively: «le» before a vowel becomes «l'», «de le» becomes «du», «à les» becomes «aux». Those rules come from the old [LanguageWorker_French](https://steamcommunity.com/sharedfiles/filedetails/?id=2081845369) mod, and Ludeon adopted them. This mod deliberately does not reimplement them. It only covers what the engine still gets wrong.
 
