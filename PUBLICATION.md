@@ -105,9 +105,9 @@ Confirm each line against the last green pass before sending: it says what the p
 
 The folder `Art/Gallery/` (outside `Mod/`, the workflow's `--gallery-dir`) holds only the images to upload, numbered `0-`, `1-`, `2-`, in page order. The Steam gallery is uploaded by hand. Image `0` is a byte copy of `Mod/About/Preview.png`.
 
-**State, 2026-10-18.** The owner accepted two letter captures on 2026-10-15, then asked on 2026-10-18 for the gallery to be reworked: two windows are not a story (`GALLERY.md`, «Une seule histoire»). The series below is **planned and not yet played**; its feature is `Tests/Pickle/Mod/Pickle/Features/09-gallery-story.feature`, the plan is in its header, and the two letters (`08-gallery.feature`) stay as the last two images. The files in `Art/Gallery/` today are the old accepted ones, to be renamed and reindexed when the new series is accepted (`Art/Gallery-clean/` will hold the unsubtitled originals).
+**State, 2026-11-15.** The five scenes are played and subtitled (`Art/Gallery/1-` to `5-`, unsubtitled originals in `Art/Gallery-clean/`); the two letters (`08-gallery.feature`) are renamed `6-` and `7-`, no gap, no duplicate. Scenes 2, 3 and 4 were accepted by the owner; scenes 1 and 5 and the whole series await her reread. The feature is `Tests/Pickle/Mod/Pickle/Features/09-gallery-story.feature`, the plan is in its header.
 
-| index | file (to come) | shows |
+| index | file | shows |
 |---|---|---|
 | 0 | `0-preview.png` | the Preview, byte copy of `Mod/About/Preview.png` |
 | 1 | `1-meal.jpg` | Nelim stands and sets a meal down on the table at 17h, two torches lit, while the husky Yuki and the fox squirrel Pécan wait, a message with `le husky` |

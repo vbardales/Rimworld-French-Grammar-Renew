@@ -41,7 +41,7 @@ remaining:
   - Preview re-rendered 2026-11-07 and committed: echo no longer overlaps the tagline; echo still to redo from the accepted gallery (`echo-source.png`).
 session:      local_56f20dd4-a2b6-45bf-9572-f41986d52e86
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
-updated:      2026-10-18, gallery reopened by the owner (two letters were not a story), shootGallery[1.0.0]
+updated:      2026-11-15, gallery renumbered (letters now 6 and 7), five scenes subtitled in Art/Gallery, awaiting the owner reread, shootGallery[1.0.0]
 protocols_read_sha: 94853549a80797ac10a9940526f1639911a46083
 ---
 # French Grammar Renew (unofficial): status
@@ -156,8 +156,8 @@ Revision `2cbc1eb` (master, pushed), tree clean. Verdict: **`shootGallery[1.0.0]
 | # | File | Shows | Why this order |
 |---|---|---|---|
 | 0 | `0-preview.png` | Preview, byte copy of `Mod/About/Preview.png` | Steam shows first image large |
-| 1 | `1-letter-with-the-mod.png` | letter of 12 paragraphs as game writes it with mod (`le husky`, `de haricots`, `son épée`, `d'Éclat`) | mod's result first |
-| 2 | `2-letter-without-the-mod.png` | same letter with three corrections off (`l'husky`, `d'haricots`, `sa épée`, `de Éclat`) | contrast explaining why mod exists |
+| 6 | `6-letter-with-the-mod.png` | letter of 12 paragraphs as game writes it with mod (`le husky`, `de haricots`, `son épée`, `d'Éclat`) | mod's result first |
+| 7 | `7-letter-without-the-mod.png` | same letter with three corrections off (`l'husky`, `d'haricots`, `sa épée`, `de Éclat`) | contrast explaining why mod exists |
 
 Both 630 x 1080, cropped sideways to window on `window-backdrop-for-height`, under 900 KB. Next, at `mountPreview`: provisional `Art/echo-preview.png` invalidated by accepted gallery (AUDIT.md 9.f); echo redone from it by Virginie (`echo-source.png`), then `echo_review_sha`.
 
