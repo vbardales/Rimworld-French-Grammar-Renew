@@ -81,7 +81,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Nelim's Pickle Tools: "Nelim" carries the item "MealSimple"
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (139, 72)
-    And Nelim's Pickle Tools: a big message "Yuki, le husky, attend." is held on screen
+    And Nelim's Pickle Tools: a big message "Le husky et Pécan attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     And Nelim's Pickle Tools: the pawns within 12 cells of (143, 72) are listed
     Then I take a screenshot "story 1 the meal"
@@ -235,7 +235,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Nelim's Pickle Tools: "Nelim" carries the item "MealSimple"
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (139, 72)
-    And Nelim's Pickle Tools: a big message "Yuki, l'husky, attend." is held on screen
+    And Nelim's Pickle Tools: a big message "L'husky et Pécan attendent." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     And Nelim's Pickle Tools: the pawns within 12 cells of (143, 72) are listed
     Then I take a screenshot "story 5 the morning without the mod"
