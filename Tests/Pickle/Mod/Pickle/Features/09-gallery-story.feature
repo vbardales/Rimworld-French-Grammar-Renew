@@ -64,14 +64,16 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (138, 70)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (138, 70) is lit
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
-    And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
-    And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 69) facing South
+    And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (144, 70)
+    And Nelim's Pickle Tools: the animal "Pécan" stands at (144, 70) facing South
     And Nelim's Pickle Tools: the animal "Pécan" faces south
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Pants"
     And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "smile"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Nelim's Pickle Tools: the things "DarklightBrazier" within 8 cells of (141, 72) are hidden
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 4
     And Nelim's Pickle Tools: time is paused for the capture
@@ -79,7 +81,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Nelim's Pickle Tools: "Nelim" carries the item "MealSimple"
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (139, 72)
-    And Nelim's Pickle Tools: a big message "Le husky et Pécan attendent." is held on screen
+    And Nelim's Pickle Tools: a big message "Yuki, le husky, attend." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     And Nelim's Pickle Tools: the pawns within 12 cells of (143, 72) are listed
     Then I take a screenshot "story 1 the meal"
@@ -216,14 +218,16 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the building "TorchLamp" at (138, 70) is put out
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_FireAxe" at (140, 74)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 72) facing South
-    And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
-    And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 69) facing South
+    And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (144, 70)
+    And Nelim's Pickle Tools: the animal "Pécan" stands at (144, 70) facing South
     And Nelim's Pickle Tools: the animal "Pécan" faces south
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 190, 70)
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Pants"
     And Nelim's Pickle Tools: "Nelim" stands at (141, 72) facing South
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Nelim's Pickle Tools: the things "DarklightBrazier" within 8 cells of (141, 72) are hidden
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 4
     And Nelim's Pickle Tools: time is paused for the capture
@@ -231,7 +235,7 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I advance the paused game by exactly 40 ticks
     And Nelim's Pickle Tools: "Nelim" carries the item "MealSimple"
     And Nelim's Pickle Tools: "Nelim" puts down what it carries at (139, 72)
-    And Nelim's Pickle Tools: a big message "L'husky et Pécan attendent." is held on screen
+    And Nelim's Pickle Tools: a big message "Yuki, l'husky, attend." is held on screen
     And Nelim's Pickle Tools: I let 2 frames pass
     And Nelim's Pickle Tools: the pawns within 12 cells of (143, 72) are listed
     Then I take a screenshot "story 5 the morning without the mod"
