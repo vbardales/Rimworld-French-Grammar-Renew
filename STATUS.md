@@ -88,6 +88,14 @@ Audited 2026-09-30 against `FrenchGrammarRenew` revision `23a392e`. Inventory: t
 
 `b606/RimWorld-LanguageWorker_French`: public, master, created 2020-03-25, last pushed 2020-11-30, not archived, issues enabled none open, no licence file, GitHub reports no licence, one fork (Elevator89's). Workshop item (2081845369) last updated 2020-11-30 (Steam manifest), declares 1.0, 1.1, 1.2; shipped files and README carry no licence wording. So `silent`. Starting from its repository impossible (no licence; history unfit for publication), pull request would be rewrite, not correction; reasons in `ATTRIBUTION.md`. **No issue or pull request sent**: public, owner's to allow.
 
+## Ecosystem (PiI, 2026-11-15, docs/inventory/ecosystem-steam/FrenchGrammarRenew.md)
+
+- Duplicates, forks, replacements: none. No continuation of the French LanguageWorker for 1.3 to 1.7 on Steam (29 searches).
+- Patches and retextures: none. Translations of the original: none (code mod).
+- Links: family only, LanguageWorker_Spanish Mod 2293997580 (2020 sibling) and our own French Grammar Plus 3806761557. Other mods only ship `Languages/French/LanguageInfo.xml` naming `LanguageWorker_French` (Shield Generators, Smart Medicine, Camera+, RimCities): not copies of the code.
+- Original comments (28): thanks, one question on 1.5 without answer, no fork link.
+- Verdict: nothing replaces ours. Pickle: Plus and Renew never both active; original 2081845369 (installed, dead) disabled so two `LanguageWorker_French` do not collide.
+
 ## The 0.1.0 upload
 
 `Mod/About/PublishedFileId.txt` (3806761557, dated 2026-09-23) untracked until today. Committed and pushed as `Add published Workshop file ID for 0.1.0`, with `## [0.1.0]` entry in `CHANGELOG.md` under unreleased 1.0.0. Upload carried `Mod/` as at `acf1b47`, apart from `desktop.ini`, which appeared 2026-09-27, after it. `Mod/desktop.ini` ignored by git, would be sent by upload from game (`BACKLOG.md`). No tag, no GitHub release made.
