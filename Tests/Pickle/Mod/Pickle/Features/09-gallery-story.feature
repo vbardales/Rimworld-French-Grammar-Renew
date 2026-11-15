@@ -9,6 +9,7 @@
 # mustard basic shirt (232, 190, 70), same canon Roo_HD_Hair_Highpony (owner, 2026-11-06: Highpony unless justified). What the mod does is invisible on a pawn, so
 # each scene shows a short message (34 characters or fewer, one line, `a big message ... is held on screen`) that the grammar resolver
 # writes: the French worker corrects the source text or not (le husky, la harpe, son épée from the source "sa épée").
+# Trousers (Apparel_Pants) in all five scenes and a face held neutral in 1 to 4 (owner, 2026-11-16: no bare legs, no sweat drop). Scene 5 lets the sweat show on purpose: she sweats in front of the agreement error the mod fixes.
 # RHYTHM: 17h, 18h, 19h, 21h, then 7h; each gesture is started by a forced job, the game runs 25 to 40 ticks, then is paused.
 # LIGHT: the hut is roofed, so the light is its own: daylight through the doorway at 17h and 18h, dusk and torches at 19h and 21h, grey at 7h.
 # 1 17h Clear, WIDE zoom 4, frame (141, 72), opening. Foreground: Yuki (143, 71) and Pécan (143, 75) facing South; background: wooden
@@ -105,10 +106,12 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the decor "TorchLamp" at (142, 74) is lit
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 73) facing South
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Pants"
     And Nelim's Pickle Tools: "Nelim" stands at (138, 74) facing East
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "smug"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Nelim's Pickle Tools: the things "DarklightBrazier" within 8 cells of (141, 72) are hidden
     And Nelim's Pickle Tools: I frame the cell (140, 73) at zoom 6
     And Nelim's Pickle Tools: time is paused for the capture
@@ -143,10 +146,12 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_FireAxe" at (140, 74)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (141, 73) facing East
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Pants"
     And Nelim's Pickle Tools: "Nelim" stands at (142, 72) facing West
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "calm"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Nelim's Pickle Tools: the things "DarklightBrazier" within 8 cells of (141, 72) are hidden
     And Nelim's Pickle Tools: I frame the cell (142, 73) at zoom 5.5
     And Nelim's Pickle Tools: time is paused for the capture
@@ -180,10 +185,12 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I place the decor "PsychiteTea" at (140, 71)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 72) facing West
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
+    And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Pants"
     And Nelim's Pickle Tools: "Nelim" stands at (140, 73) facing East
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "sad"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
+    And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Nelim's Pickle Tools: the things "DarklightBrazier" within 8 cells of (141, 72) are hidden
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 5
     And Nelim's Pickle Tools: time is paused for the capture
@@ -227,7 +234,6 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: "Nelim" hairstyle is "Roo_HD_Hair_Highpony"
     And Nelim's Pickle Tools: "Nelim" face kit is "neutral"
     And Nelim's Pickle Tools: "Nelim" facial expression is "normal"
-    And Nelim's Pickle Tools: "Nelim" face is held neutral
     And Nelim's Pickle Tools: the things "DarklightBrazier" within 8 cells of (141, 72) are hidden
     And Nelim's Pickle Tools: I frame the cell (141, 72) at zoom 4
     And Nelim's Pickle Tools: time is paused for the capture
