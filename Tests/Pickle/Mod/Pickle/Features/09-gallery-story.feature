@@ -65,8 +65,8 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: I place the decor "TorchLamp" at (138, 70)
     And Nelim's Pickle Tools: the decor "TorchLamp" at (138, 70) is lit
     And Nelim's Pickle Tools: the animal "Yuki" stands at (143, 71) facing South
-    And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (144, 70)
-    And Nelim's Pickle Tools: the animal "Pécan" stands at (144, 70) facing South
+    And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
+    And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 69) facing South
     And Nelim's Pickle Tools: the animal "Pécan" faces south
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_CollarShirt" dyed rgb (46, 98, 74)
     And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Pants"
@@ -225,8 +225,8 @@ Feature: the gallery story of French Grammar Renew
     And Nelim's Pickle Tools: the building "TorchLamp" at (138, 70) is put out
     And Nelim's Pickle Tools: I place the decor "MeleeWeapon_FireAxe" at (140, 74)
     And Nelim's Pickle Tools: the animal "Yuki" stands at (142, 72) facing South
-    And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (144, 70)
-    And Nelim's Pickle Tools: the animal "Pécan" stands at (144, 70) facing South
+    And Nelim's Pickle Tools: a female adult animal of kind "FoxSquirrel" named "Pécan" is spawned at (143, 69)
+    And Nelim's Pickle Tools: the animal "Pécan" stands at (143, 69) facing South
     And Nelim's Pickle Tools: the animal "Pécan" faces south
     And Nelim's Pickle Tools: "Nelim" wears "Apparel_BasicShirt" dyed rgb (232, 190, 70)
     And Nelim's Pickle Tools: "Nelim" also wears "Apparel_Pants"

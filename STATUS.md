@@ -42,7 +42,7 @@ remaining:
 session:      local_56f20dd4-a2b6-45bf-9572-f41986d52e86
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
 updated:      2026-11-15, gallery renumbered (letters now 6 and 7), five scenes subtitled in Art/Gallery, awaiting the owner reread, shootGallery[1.0.0]
-protocols_read_sha: 94853549a80797ac10a9940526f1639911a46083
+protocols_read_sha: 6202fb28009d0ccb335d6fe3a96d3de876befa4b
 ---
 # French Grammar Renew (unofficial): status
 
