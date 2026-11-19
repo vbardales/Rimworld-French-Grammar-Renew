@@ -8,7 +8,11 @@ packageId:    nelim.frenchgrammar
 repo:         Rimworld-French-Grammar-Renew
 visibility:   public
 detached:     yes
-workflow_stage: shootGallery[1.0.0]
+workflow_stage: localize[1.0.0]
+french_review_pending: true
+ecosystem_line: 1.0
+upstream_synced: 2026-11-19 b606/RimWorld-LanguageWorker_French@cb289a0 (upstream last push 2020-11-30 per the Original section; nothing integrated: licence silent, no code copied)
+workshop_required_items: n/a, not released yet
 licence:      silent
 licence_at:   b606's repository and Workshop item carry no licence (checked again on 2026-09-28), and the source has declared only RimWorld 1.0 to 1.2 since its last update on 2020-11-30. No file, no line and no word list of his is copied. One idea is his and is credited in ATTRIBUTION.md: the zero-width guard that keeps the vanilla elision rules off an aspirated word. This mod's own LICENSE is a bare MIT.
 upstream_mod_remotes:
@@ -18,6 +22,7 @@ showcase:     complete
 tested_on:    4be6004 (2026-10-11 and 12: Pickle passes 1b, 1c, 2c green; 1, 2b, 3b, 4 of 2026-09-28 to 30 on the same code)
 workshop:     3806761557 (0.1.0, creation of the publishIdFile only; Steam keeps every new item private, and switching it to public is the owner's)
 remaining:
+  - unverified: AUDIT 6.g/6.h/6.i (replay 2026-11-19): the French was changed on 2026-11-14 by the translation review (commits 257b33b to b6d9adc: FGP.Possessive, FGP.Possessive.Tip, FGP.DataFiles, FGP.RichText.Tip, FGP.KindGender.Tip) after Virginie's last reading (2026-10-11, 2026-10-18); no reading of these texts by her is recorded, and the `Translation audit` section below stops at the 2026-10-18 review (run in the faulty plugin window 2026-10-17 to 2026-11-11). Her reading of `TRANSLATION_REVIEW.md` (revision `bd706bc`) is awaited, then the section is rewritten (reviewer, date, revision, corrections) and the replay run again. Nothing else of the chain is open before the gallery.
   - feature: for `writeDocs` and `prepareRelease`, `PUBLICATION.md` now exists (description, `IF I GO QUIET`, `AI-GENERATED`, `THANKS`, attribution, gallery table and subtitles; checked 2026-11-14). Still open: `About.xml` description to regenerate from it; the description in `About.xml`
     lacks the `IF I GO QUIET`, `AI-GENERATED` and `THANKS` sections and the attribution line that
     AUDIT.md orders after the body; no thank-you comment for b606's page (2081845369, absent from the
@@ -32,8 +37,8 @@ remaining:
   - feature: after the accepted gallery, redo Art/echo-source.png by the owner, then echo_review_sha; PUBLICATION.md open points (illustration tool for AI-GENERATED, THANKS for gallery staging mods, register rows for b606, Harmony, Pickle, RimLogging, RIMMSQOL); NPT to extract More Rodents, Fort Firefighter, VGP into GALLERY-PROPS.md (done by NPT, unplayed).
 session:      local_56f20dd4-a2b6-45bf-9572-f41986d52e86
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
-updated:      2026-11-19, resume: protocols read, two gallery tickets queued (scenes 1 and 5), STATUS.md trimmed, shootGallery[1.0.0]
-protocols_read_sha: 3df3487e678c30c11212603e2b80dc2d526f6202
+updated:      2026-11-19, audit replay: stage localize[1.0.0] (6.g/6.h/6.i), french_review_pending
+protocols_read_sha: bcd87fee99a2f9e89c1ab3e477adde281fca6077
 ---
 # French Grammar Renew (unofficial): status
 
