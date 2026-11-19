@@ -33,7 +33,7 @@ remaining:
 session:      local_56f20dd4-a2b6-45bf-9572-f41986d52e86
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
 updated:      2026-11-19, resume: protocols read, two gallery tickets queued (scenes 1 and 5), STATUS.md trimmed, shootGallery[1.0.0]
-protocols_read_sha: b6dffae1771d4293af91253cfa700331460b42af
+protocols_read_sha: 3df3487e678c30c11212603e2b80dc2d526f6202
 ---
 # French Grammar Renew (unofficial): status
 
