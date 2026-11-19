@@ -27,51 +27,17 @@ remaining:
     be based on his code (licence `silent`).
   - unverified: nothing has been uploaded since the 0.1.0 creation, so the page's description, gallery
     and change notes have never been seen in place.
-  - ticket 20261025-182501-478-7e03 DONE 2026-10-30, 3 of 5 (Tests/Pickle/Inbox/gallery-story-3). Scenes 2, 3, 4 passed, captures opened: 2 and 4 read well (message legible, torch pools), 3 shows two ghost-like animals beside Nelim (Yuki not lying down, sword on floor) and zoom looks unchanged from 2. Scenes 1 and 5 FAILED: step `the animal "Noisette" stands at (139, 73) facing South`, "the cell (139, 73) is not standable" (spawn at that cell passed; pick a free cell, lines 65-66 and 204-205 of 09-gallery-story.feature, and the comments at lines 14 and 27). Scene 2 message shows "son épée" (the shown-correct one).
-  - ticket 20261030-162745-526-8432 DONE 2026-11-03, 2 of 2 passed, attempt 1 (Tests/Pickle/Inbox/gallery-story-4). Scenes 1 and 5 captures opened: message legible ("Le husky et le hamster attendent." / "L'husky et l'hamster attendent."), Yuki faces camera in 1, bookend frame holds. Player.log errors are Yorkshire terriers (JobDriver_Ingest/Wait NullReference), not this mod.
-  - ticket 20261103-210348-747-0c67 DONE 2026-11-06, 1 of 1 passed, attempt 1 (Tests/Pickle/Inbox/gallery-story-5). Scene 3 capture opened: zoom 4.5 frames the hut well, message "Nelim écoute la harpe." legible, harp and torch visible, Yuki upright beside Nelim (not lying down, `is kept asleep` ran). DEFECTS: two blue-flame creatures in the hut corners (unplanned, same ones as story-3 review), cup on floor not in hand, no rain cue. Not accepted. NPT: blue flames probably buildings, not pawns; Yuki may need ticks.
-  - ticket 20261106-130712-306-8816 queued (scene 3 alone, tree 25275c5): `things within 8 cells of (141, 72) are listed` probe, Yuki asleep 30 ticks before the cup. Read `[things-near]` in the log: defNames then `the things "<defName>" within 8 cells of (141, 72) are hidden` (NPT step), or pawns then ask NPT for a step.
-  - 2026-11-06 evening, all five scenes replayed on tree 0f12 batch (Tests/Pickle/Inbox/gallery-story-7, 11, 12, 13; story-3 and -4 folders older): braziers (`DarklightBrazier`) hidden in every scene, Pécan (FoxSquirrel, Erin.Foxsquirrel 2092951979, cell (143, 69)) in 1 and 5, only the colony Yuki (the spawn step made a 2nd Yuki: removed in all scenes), scene 5 message "L'husky et Pécan attendent.". Looks clean; owner has not accepted. Open: cup `PsychiteTea` still on the floor in scene 3 (not in hand), no rain cue, Yuki in scene 3 pose to judge. Then reindex captures, burn subtitles.
-  - 2026-11-07 run cba0 (gallery-story-16) FAILED 0 of 2: scenes 1 and 5, "the cell (139, 72) already holds Table2x2c" (decor step refuses an occupied cell). Fixed 69e4e57: `1 of the item "MealSimple" are spawned at (139, 72)` (new step, never played). Ticket 20261107-183805-419-3954 queued (scenes 1 and 5, wsl-deps.sanctuary.map, Tests/Pickle/Inbox/gallery-story-17). At RUN_DONE: read summary.json then junit.xml, open the captures (Nelim seated, face in view, MealSimple on the table), judge by GALLERY.md notes (image, adequacy, comprehension, decoration, all 4/5 or REDO), delete the run when read.
-  - Local scripts cut 2026-11-06 done and validated by Audit.
-  - OWNER 2026-11-06: Nelim keeps canon `Roo_HD_Hair_Highpony` unless justified (DONE in all five scenes, 2a0fc4a, Roo hair mod in the map). Noisette (hamster) becomes Pecan (NSB animal, female FoxSquirrel, Vesper's, from the mod "Foxsquirrel d'Erin"): NOT DONE. NPT answer 2026-11-06: mod "Erin's Fox Squirrel", packageId `Erin.Foxsquirrel`, workshopId 2092951979; PawnKindDef defName UNVERIFIED (mod not on disk, do not guess); no NSB map carries it. UNBLOCKED same day: mod on disk, defName `FoxSquirrel` confirmed by NPT, map line added, scenes 1 and 5 rewritten (768fe21, message "Le husky et Pécan attendent." / "L'husky et Pécan attendent."), ticket 20261106-172542-090-73df queued (scenes 1 and 5, Tests/Pickle/Inbox/gallery-story-7). Old captures untracked, nothing to `git rm`. Ticket 8816 read: the two blue flames are `DarklightBrazier` buildings at (136, 75) and (144, 70), cup `PsychiteTea` at (140, 71) is an item on the floor; scene 3 now hides the braziers (479ecf4), ticket 20261106-172622-046-fded queued (Tests/Pickle/Inbox/gallery-story-8). History of the plan: rewrite scenes 1 and 5 (no hamster in the message: proposed "Le husky et Pecan attendent." / "L'husky et Pecan attendent."), `git rm` the old scene 1 and 5 captures, add the mod to `wsl-deps.sanctuary.map`, refile 1 and 5.
-  - Ideas from NPT steps and NSB catalogues (sub-agent read, unverified, none applied): hide `DarklightBrazier` near the hut braziers; `carries the item` for the cup; `the animal ... lies at (x, y) facing` for Yuki; `face is held neutral` plus smile kit; `sits on the building`; pajamas `Apparel_PonpecoPajamaB` for scene 5; head close-up `the camera frames the head of`; PlantPot Daylily and torches; Yuki leather dog collar. Note CATALOGUE-ANIMAUX says Yuki is Soren's husky (shotlist says Nelim's). Most steps compiled, not played.
-  - unverified: then reindex the five captures, burn subtitles (lines in PUBLICATION.md). Still to check: message legible at 268 px; second grey animal behind Yuki in scenes 1 and 5 (unplanned, stray husky?). Inbox kept: story-3 (scenes 2, 4 captures) and story-4 (scenes 1, 5); minify to Evidence/ after the gallery is accepted.
+  - gallery state 2026-11-19: scenes 2, 3, 4 passed on the trousers scenario (minified in Tests/Pickle/Evidence/gallery-story-2/3/4-trousers, to open and judge by the session). Scenes 1 and 5 failed 2026-11-16 (Pecan cell (144, 70) not standable); fixed 056333e (cell (143, 69)); tickets 20261119-003020-000-5bd8 and 20261119-003028-503-43de queued (scenes 1 and 5). Owner no longer validates images (AGENTS.md, 2026-11-19): the session accepts or refuses, REDO deletes run and captures, no Parked. Then reindex, subtitles (rate-gallery run by the session), mountPreview. Inbox 1-trousers, 1-trousers-1, 5-trousers and RELAY files are read: delete at next cut.
+  - sync due: /mod-workflow:sync-nsb-npt (NSB changed 2026-11-17, NPT 2026-11-19) before the next scenario edit; upstream_synced missing (AUDIT 3.0).
   - feature: after the accepted gallery, redo Art/echo-source.png by the owner, then echo_review_sha; PUBLICATION.md open points (illustration tool for AI-GENERATED, THANKS for gallery staging mods, register rows for b606, Harmony, Pickle, RimLogging, RIMMSQOL); NPT to extract More Rodents, Fort Firefighter, VGP into GALLERY-PROPS.md (done by NPT, unplayed).
-  - Preview re-rendered 2026-11-07 and committed: echo no longer overlaps the tagline; echo still to redo from the accepted gallery (`echo-source.png`).
 session:      local_56f20dd4-a2b6-45bf-9572-f41986d52e86
 code_review_sha: 4be6004674e1a962a87e03134d6a2828a56dabae
-updated:      2026-11-15, gallery renumbered (letters now 6 and 7), five scenes subtitled in Art/Gallery, awaiting the owner reread, shootGallery[1.0.0]
-protocols_read_sha: 6202fb28009d0ccb335d6fe3a96d3de876befa4b
+updated:      2026-11-19, resume: protocols read, two gallery tickets queued (scenes 1 and 5), STATUS.md trimmed, shootGallery[1.0.0]
+protocols_read_sha: 4778b712108a584d43f2593c33f20830fb1dd2d2
 ---
 # French Grammar Renew (unofficial): status
 
 Session title `frenchgrammar / done`: packageId without `nelim.`, then `workflow_stage`.
-
-## Earlier audits
-
-Audit 2026-10-02, verdict, ordered gates of 2026-09-28 in `docs/runs/2026-10-02-status-audits.md` (folded 2026-10-13). History only; current state below.
-
-## Revision and changes
-
-- Audited: `ab7e776` (adds `PublishedFileId.txt`, 0.1.0 entry) on top of `acf1b47`, plus working-tree changes this session, committed with this sheet.
-- **Renamed** on owner's word, repository (`Rimworld-French-Grammar-Renew`, old address redirects) and folder (`FrenchGrammarRenew`) included: name `French Grammar Renew (unofficial)` (was `French Grammar Plus`), packageId `nelim.frenchgrammar` (was `nelim.frenchgrammarplus`). Follows collection's `Renew` for mod continuing dead one, and 2026-09-27 rule: packageId carries neither `Renew` nor suffix. Checked before change: new id free among 126 mods of collection; no save (29) and no active `ModsConfig.xml` names old one (only old backups). Touched `About.xml`, one C# constant, settings title and shortcut label in both languages, README and TESTING titles, `Art/preview.template.html`. DLL rebuilt, Workshop preview recomposed with existing renderer (illustration unchanged; only suffix word differs). `0.1.0` item still carries old id and old name until next upload.
-- **Wrote Pickle suite** (`Tests/Pickle/`): seven features, four local step classes bound against shipped DLL (built, 23,552 bytes, tracked), two pass maps, README with scope and omissions, and `Check-Steps.ps1`, which compiles all 120 step patterns, shared ones included, with Pickle's own expression engine (none invalid, none declared twice). Modelled on Flavor Text Extended - Francais suite; RIMMSQOL feature reuses shared steps of `PickleTools/RimmsqolSteps` unchanged. Not played.
-- Added `docs/PROTOCOLS-READ.md`, `BACKLOG.md`, `docs/runs/history.md`; archived 2026-09-13 sections; wrote `tested` criteria, pass plan, coverage map, evidence rule into `TESTING.md`; wrote provenance section into both `ATTRIBUTION.md` copies; refreshed `Tests/artifact-sha256.json` (`About.xml` and `Mod/LICENSE` entries stale since 2026-09-20 commits).
-- `.gitignore` now also ignores `*.ico`, `*.dds` / `*.DDS`, evidence folders. No `.dds` in repository, tracked or not, no test evidence anywhere; two folder-icon `.ico` files were untracked, now ignored.
-
-## Checks run
-
-| Check | Result |
-|---|---|
-| `_tools/Run-Tests.ps1` | 33 of 33, exit 0, before and after rename |
-| `dotnet build` to scratch folder, before rename | DLL SHA-256 `DE2793A5...`, **identical** to delivered one |
-| `dotnet build` of renamed sources | delivered DLL SHA-256 `32876E61...`, new id present, old one absent |
-| `Check-DefInjected`, `Check-XmlFields`, `Check-DefRefs`, `Check-TypeRefs`, `Check-ConfigErrors` | exit 0 each, before and after rename |
-| `Tests/artifact-sha256.json` against disk | two entries stale, refreshed |
-| Images | Preview 896 x 504, 490,927 B, contrast minima 14.14 / 8.83 / 7.21 / 10.67, badge 8.72, thumbnail read at 268 px, now carries cut-out ModIcon flush bottom-left at +15° as HTML layer above veil (see #3), after three owner-rejected passes; ModIcon 128 x 128, 26,932 B, read at 32 px |
-| Explorer folder icons | `desktop.ini` at root and in `Mod/` point at `Art/ModIcon.ico` and `Art/Preview.ico`, which exist; attributes as required. `Art/Preview.ico` still shows old suffix (local only) |
-| Game | **not started, not touched.** No RimWorld launched, no Pickle request filed |
 
 ## Translation audit
 
@@ -95,16 +61,6 @@ Audited 2026-09-30 against `FrenchGrammarRenew` revision `23a392e`. Inventory: t
 - Links: family only, LanguageWorker_Spanish Mod 2293997580 (2020 sibling) and our own French Grammar Plus 3806761557. Other mods only ship `Languages/French/LanguageInfo.xml` naming `LanguageWorker_French` (Shield Generators, Smart Medicine, Camera+, RimCities): not copies of the code.
 - Original comments (28): thanks, one question on 1.5 without answer, no fork link.
 - Verdict: nothing replaces ours. Pickle: Plus and Renew never both active; original 2081845369 (installed, dead) disabled so two `LanguageWorker_French` do not collide.
-
-## The 0.1.0 upload
-
-`Mod/About/PublishedFileId.txt` (3806761557, dated 2026-09-23) untracked until today. Committed and pushed as `Add published Workshop file ID for 0.1.0`, with `## [0.1.0]` entry in `CHANGELOG.md` under unreleased 1.0.0. Upload carried `Mod/` as at `acf1b47`, apart from `desktop.ini`, which appeared 2026-09-27, after it. `Mod/desktop.ini` ignored by git, would be sent by upload from game (`BACKLOG.md`). No tag, no GitHub release made.
-
-## Next transitions
-
-**`done` -> `tested`: all four passes now played, 48 of 48 scenarios green.** Pass 1 French (2026-09-28, `20260928-140036-944-e88b`, tree `5064be6`): 31/34, 3 skipped (RIMMSQOL). Pass 2 English first attempt (`20260928-191312-686-d0fb`) failed one scenario on step bug (rich-text colour tag step never stripped before comparing, not mod defect); fixed in `Tests/Pickle/Source/GrammarSteps.cs`, re-filed as pass 2b (2026-09-29, `20260929-135332-712-b8e6`, tree `ba50a84`): 12/12. Pass 3 restart first attempt (`20260928-191314-912-05b4`) crashed before any scenario, `SIGSEGV` in Mono GC, cross-mod signature seen on several other mods that day; re-filed unchanged as pass 3b (2026-09-30, `20260929-135532-799-5bc8`, tree `16493a0`): 2/2. Pass 4 RIMMSQOL (2026-09-28, `20260928-191315-350-63f2`, tree `5064be6`): 3/3. Evidence for each under `Tests/Pickle/Evidence/`, one line per run in `docs/runs/history.md`.
-
-**Not yet done: `done -> tested` transition itself.** Passes satisfy "every scenario has run and passed" and "every conditional scenario has run" (TESTING.md, "What `tested` requires"). Not yet re-checked against that section, item by item, with transition written up here as `done` was: "no manual test left to tick" (rows 3/4/5/8/9/10 above still read as genuinely unverified, not merely un-run, so needs decision — mark `not_applicable` with reason, or find way to check — before box can be ticked) and "both languages, logs read, regression pass after any correction" as closing statement, not scattered across passes. `translation_fr` also still needs Virginie's own review (see French-review entry in `remaining`), independent of this gate.
 
 ## Reservations, not blockers
 
